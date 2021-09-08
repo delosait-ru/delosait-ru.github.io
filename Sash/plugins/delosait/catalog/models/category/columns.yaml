@@ -1,0 +1,8 @@
+columns:
+    cat_title:
+        label: 'Название категории'
+        type: text
+    products_count:
+        label: Продуктов
+        relation: products
+        select: prod_title

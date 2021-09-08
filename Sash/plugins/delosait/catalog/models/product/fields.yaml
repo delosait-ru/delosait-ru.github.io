@@ -1,0 +1,25 @@
+fields:
+    prod_title:
+        label: Наименование
+        span: auto
+        type: text
+    slug:
+        label: ЧПУ
+        span: auto
+        type: text
+        preset: prod_title
+    prod_descr:
+        label: Описание
+        size: ''
+        span: auto
+        type: richeditor
+    is_active:
+        label: 'Активен?'
+        span: auto
+        type: switch
+    categories:
+        label: Категория
+        nameFrom: cat_title
+        descriptionFrom: description
+        span: auto
+        type: relation

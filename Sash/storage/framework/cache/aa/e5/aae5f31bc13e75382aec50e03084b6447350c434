@@ -1,0 +1,277 @@
+1631073131a:1:{s:12:"category.htm";a:6:{s:8:"fileName";s:12:"category.htm";s:7:"content";s:5986:"description = "Шаблон страницы категории"
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>October CMS - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="OctoberCMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+    <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/global.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/main.css'|theme }}" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <!--    <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.js"></script>-->
+
+
+    {% styles %}
+</head>
+
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            {% partial 'header' %}
+        </header>
+
+
+
+        <!-- Content -->
+        <main>
+            <div class="heading">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Каталог продукции</h1>
+                            <ul class="breadcrumbs">
+                                <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                                <li>Каталог</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 forder-2">
+
+                        <div class="discount_block">
+                            <svg class="ic_sidebar">
+                                <use xlink:href="{{'./assets/img/sprite.svg#discount'|theme}}"></use>
+                            </svg>
+
+                            <div class="order_block_title">
+                                Коммерческое предложение дистрибьютерам
+                            </div>
+                            <div class="order_block_subtitle">Оставьте заявку и узнайте об индивидуальных условиях работы в вашем регионе</div>
+                            <div class="btn-tr" data-bs-toggle="modal" data-bs-target="#callme">
+                                Отправить заявку
+                            </div>
+                        </div>
+                        <div class="buttons_block">
+                            <div data-bs-toggle="modal" data-bs-target="#buyme" class="calc_price_btn">
+                                <svg class="ic_sidebar-small">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#barrel3'|theme}}"></use>
+                                </svg>
+
+                                Сервис по подбору масел
+
+                            </div>
+                            <div class="calc_price_btn" data-bs-toggle="modal" data-bs-target="#askme">
+                                <svg class="ic_sidebar-small">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#documents'|theme}}"></use>
+                                </svg>
+
+                                Задать вопрос
+                            </div>
+
+                        </div>
+                        <div class="tizers_page">
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#route'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Эксклюзивные условия
+                                </div>
+                            </div>
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#barrel'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Широкий ассортимент
+                                </div>
+                            </div>
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#startup'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Кредитная линия и рекламная поддержка
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-8 right-block">
+                        <div class="row">
+                            {% page %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            {% partial 'footer' %}
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="{{ 'assets/js/vendor.js'|theme }}"></script>
+    <script src="{{ 'assets/js/main.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+
+</html>";s:5:"mtime";i:1631033597;s:6:"markup";s:5916:"<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>October CMS - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="OctoberCMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+    <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/global.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/main.css'|theme }}" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <!--    <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.js"></script>-->
+
+
+    {% styles %}
+</head>
+
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            {% partial 'header' %}
+        </header>
+
+
+
+        <!-- Content -->
+        <main>
+            <div class="heading">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>Каталог продукции</h1>
+                            <ul class="breadcrumbs">
+                                <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                                <li>Каталог</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 forder-2">
+
+                        <div class="discount_block">
+                            <svg class="ic_sidebar">
+                                <use xlink:href="{{'./assets/img/sprite.svg#discount'|theme}}"></use>
+                            </svg>
+
+                            <div class="order_block_title">
+                                Коммерческое предложение дистрибьютерам
+                            </div>
+                            <div class="order_block_subtitle">Оставьте заявку и узнайте об индивидуальных условиях работы в вашем регионе</div>
+                            <div class="btn-tr" data-bs-toggle="modal" data-bs-target="#callme">
+                                Отправить заявку
+                            </div>
+                        </div>
+                        <div class="buttons_block">
+                            <div data-bs-toggle="modal" data-bs-target="#buyme" class="calc_price_btn">
+                                <svg class="ic_sidebar-small">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#barrel3'|theme}}"></use>
+                                </svg>
+
+                                Сервис по подбору масел
+
+                            </div>
+                            <div class="calc_price_btn" data-bs-toggle="modal" data-bs-target="#askme">
+                                <svg class="ic_sidebar-small">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#documents'|theme}}"></use>
+                                </svg>
+
+                                Задать вопрос
+                            </div>
+
+                        </div>
+                        <div class="tizers_page">
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#route'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Эксклюзивные условия
+                                </div>
+                            </div>
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#barrel'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Широкий ассортимент
+                                </div>
+                            </div>
+                            <div class="tizer_page">
+                                <svg class="ic_tizer">
+                                    <use xlink:href="{{'./assets/img/sprite.svg#startup'|theme}}"></use>
+                                </svg>
+
+                                <div class="tizer_title">
+                                    Кредитная линия и рекламная поддержка
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-8 right-block">
+                        <div class="row">
+                            {% page %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            {% partial 'footer' %}
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="{{ 'assets/js/vendor.js'|theme }}"></script>
+    <script src="{{ 'assets/js/main.js'|theme }}"></script>
+
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+
+</html>";s:4:"code";N;s:11:"description";s:48:"Шаблон страницы категории";}}

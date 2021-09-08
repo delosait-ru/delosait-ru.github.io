@@ -1,0 +1,7 @@
+columns:
+    prod_title:
+        label: Название
+        type: text
+    created_at:
+        label: 'Дата создания'
+        type: timesince

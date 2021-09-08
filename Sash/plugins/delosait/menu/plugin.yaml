@@ -1,0 +1,11 @@
+plugin:
+    name: 'delosait.menu::lang.plugin.name'
+    description: 'delosait.menu::lang.plugin.description'
+    author: delosait
+    icon: oc-icon-bars
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Главная страница'
+        url: cms/themeoptions/update/sash
+        icon: icon-bars

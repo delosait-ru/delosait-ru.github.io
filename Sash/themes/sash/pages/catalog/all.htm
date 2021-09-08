@@ -1,0 +1,50 @@
+title = "Каталог"
+url = "/catalog"
+layout = "category"
+is_hidden = 0
+
+[myCatalog]
+==
+{#<h1>Это то что ты подключил компонент.</h1>
+теперь в переменной categories твои категории лежат.
+
+{% for item in categories %}
+<p><a href='/catalog/{{ item.slug }}'>{{ item.cat_title }}</a></p>
+{% for product in item.products %}
+<p>{{product.prod_title}}</p>
+{%endfor%}
+{% else %}
+Категории отсутствуют
+{% endfor %}
+
+
+Теперь если мы загрузили категорию, то вот она:
+{{ category.cat_title }}
+
+<p><a href='/catalog/{{ category.slug }}'>{{ item.cat_title }}</a></p>#}
+               
+               
+               
+               
+                {% for item in categories %}
+                       <div class="col-sm-12 col-md-6 col-lg-6">
+                          <a href="/catalog/{{ item.slug }}" class="cat-item">
+                              <div class="cat-item__img">
+                                  <img src="{{item.cat_img|media}}" alt="{{ item.cat_title }}">
+                              </div>
+                              <div class="cat-item__wrp">
+                                  <div class="cat-item__title">
+                                      {{ item.cat_title }}
+
+                                  </div>
+                                  <div class="cat-item__smallimage">
+                                      <svg class="ic_catalog">
+                                          <use xlink:href="{{'./assets/img/sprite.svg#right-arrow'|theme}}"></use>
+                                      </svg>
+
+                                  </div>
+                              </div>
+
+                          </a>
+                      </div>
+                {% endfor %}

@@ -1,0 +1,21 @@
+1631073121a:1:{s:12:"menu-top.htm";a:6:{s:8:"fileName";s:12:"menu-top.htm";s:7:"content";s:335:"description = "Главное меню"
+==
+<ul class="sf-menu">
+{% for item in items %}
+    <li>
+        <a {% if item.items %}class="dropdwn" {% endif %} href="{{ item.url }}"> {{ item.title }}</a>
+        {% if item.items %}
+        {% partial 'submenu' items=item.items %}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>";s:5:"mtime";i:1630927458;s:6:"markup";s:290:"<ul class="sf-menu">
+{% for item in items %}
+    <li>
+        <a {% if item.items %}class="dropdwn" {% endif %} href="{{ item.url }}"> {{ item.title }}</a>
+        {% if item.items %}
+        {% partial 'submenu' items=item.items %}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>";s:4:"code";N;s:11:"description";s:23:"Главное меню";}}

@@ -1,0 +1,90 @@
+1631032306a:1:{s:22:"stranica-kategorii.htm";a:9:{s:8:"fileName";s:22:"stranica-kategorii.htm";s:7:"content";s:1915:"title = "Страница категории"
+url = "/catalog"
+is_hidden = 0
+
+[builderList]
+modelClass = "Delosait\Catalog\Models\Category"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "slug"
+noRecordsMessage = "No records found"
+detailsPage = "stranica-tovara"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+    <div class="container-lg">
+    <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+                          <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="cat-item">
+                              <div class="cat-item__img">
+                                  <img src="./img/item1.jpg" alt="alt">
+                              </div>
+                              <div class="cat-item__wrp">
+                                  <div class="cat-item__title">
+                                      {{record.cat_title}}
+                                      {{record.cat_desc}}
+
+                                  </div>
+                                  <div class="cat-item__smallimage">
+                                      <svg class="ic_catalog">
+                                          <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                      </svg>
+
+                                  </div>
+                              </div>
+
+                          </a>
+                      </div>
+    
+    </div>
+    </div>
+       
+
+    {% endfor %}";s:5:"mtime";i:1631025898;s:6:"markup";s:1542:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+    <div class="container-lg">
+    <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+                          <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="cat-item">
+                              <div class="cat-item__img">
+                                  <img src="./img/item1.jpg" alt="alt">
+                              </div>
+                              <div class="cat-item__wrp">
+                                  <div class="cat-item__title">
+                                      {{record.cat_title}}
+                                      {{record.cat_desc}}
+
+                                  </div>
+                                  <div class="cat-item__smallimage">
+                                      <svg class="ic_catalog">
+                                          <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                      </svg>
+
+                                  </div>
+                              </div>
+
+                          </a>
+                      </div>
+    
+    </div>
+    </div>
+       
+
+    {% endfor %}";s:4:"code";N;s:5:"title";s:35:"Страница категории";s:3:"url";s:8:"/catalog";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:9:{s:10:"modelClass";s:32:"Delosait\Catalog\Models\Category";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"slug";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:15:"stranica-tovara";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -1,0 +1,123 @@
+name: Sash-oil
+description: 'Sash-oil'
+author: Peterikov Alexander
+homepage: 'https://www.delosait.ru'
+code: ''
+
+form:
+  tabs:
+    fields:
+      adress:
+        label: Адрес
+        span: auto
+        tab: Контактные данные
+      phone:
+        label: Телефон
+        span: auto
+        tab: Контактные данные
+      phone_lnk:
+        label: Ссылка на телефон
+        span: auto
+        tab: Контактные данные
+      email:
+        label: Email
+        span: auto
+        tab: Контактные данные
+        
+        
+      logo_color:
+        label: Логотип цветной
+        span: auto
+        tab: Основные
+        type: mediafinder
+        mode: image
+      logo_desc:
+        label: Дескриптор
+        span: auto
+        tab: Основные
+        type: text
+      main_title:
+        label: Главный заголовок
+        span: auto
+        tab: Основные
+        type: text
+      main_subtitle:
+        label: Главный подзаголовок
+        span: auto
+        tab: Основные
+        type: text   
+      main_image:
+        label: Главная картинка (webp)
+        span: auto
+        tab: Основные
+        type: mediafinder
+        mode: image        
+      main_image2:
+        label: Главная картинка (png)
+        span: auto
+        tab: Основные
+        type: mediafinder
+        mode: image  
+        
+      catalog_title:
+        label: Заголовок раздела
+        span: auto
+        tab: Витрина на главной
+        type: text
+      catalog_subtitle:
+        label: Подзаголовок раздела
+        span: auto
+        tab: Витрина на главной
+      slider:
+        label: Товары на главной странице
+        type: repeater
+        tab: Витрина на главной 
+        span: auto
+        form:
+          fields:
+            p_link:
+              label: Ссылка
+            p_image:
+              label: Изображение
+              type: mediafinder
+              mode: image
+            p_title:
+              label: Заголовок
+            p_articul:
+              label: Артикул
+              
+      about_title:
+        label: Заголовок раздела
+        span: auto
+        tab: О компании
+        type: text
+      about_text:
+        label: Информация о компании
+        span: auto
+        tab: О компании
+        type: richeditor
+
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

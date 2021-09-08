@@ -1,0 +1,16 @@
+list: $/delosait/catalog/models/category/columns.yaml
+modelClass: Delosait\Catalog\Models\Category
+title: Categories
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'delosait/catalog/categories/update/:id'
+showTree: true
+showReorder: true
+maxDepth: 1
+

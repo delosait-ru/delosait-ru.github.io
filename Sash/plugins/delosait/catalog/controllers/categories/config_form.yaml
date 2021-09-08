@@ -1,0 +1,10 @@
+name: Categories
+form: $/delosait/catalog/models/category/fields.yaml
+modelClass: Delosait\Catalog\Models\Category
+defaultRedirect: delosait/catalog/categories
+create:
+    redirect: 'delosait/catalog/categories/update/:id'
+    redirectClose: delosait/catalog/categories
+update:
+    redirect: delosait/catalog/categories
+    redirectClose: delosait/catalog/categories

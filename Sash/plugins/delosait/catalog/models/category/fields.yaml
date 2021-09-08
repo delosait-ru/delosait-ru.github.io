@@ -1,0 +1,31 @@
+fields:
+    cat_title:
+        label: 'Название категории'
+        span: auto
+        type: text
+    slug:
+        label: ЧПУ
+        span: auto
+        type: text
+        preset: cat_title
+    parent:
+        label: 'Родительская категория'
+        nameFrom: cat_title
+        descriptionFrom: description
+        span: auto
+        type: relation
+        emptyOption: '-- Категория не выбрана ---'
+    cat_desc:
+        label: 'Описание категории'
+        size: ''
+        span: auto
+        type: richeditor
+    is_active:
+        label: 'Активна?'
+        span: auto
+        type: switch
+    cat_img:
+        label: 'Изображение категории'
+        mode: image
+        span: auto
+        type: mediafinder

@@ -1,0 +1,20 @@
+plugin:
+    name: 'delosait.catalog::lang.plugin.name'
+    description: 'delosait.catalog::lang.plugin.description'
+    author: delosait
+    icon: oc-icon-align-justify
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Каталог
+        url: delosait/catalog/categories
+        icon: icon-file-text-o
+        sideMenu:
+            side-menu-item:
+                label: Категории
+                url: delosait/catalog/categories
+                icon: icon-sitemap
+            side-menu-item2:
+                label: Продукты
+                url: delosait/catalog/products
+                icon: icon-sitemap

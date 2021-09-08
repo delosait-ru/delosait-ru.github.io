@@ -1,0 +1,121 @@
+1631073121a:1:{s:10:"header.htm";a:7:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:2463:"[viewBag]
+
+[staticMenu]
+code = "menu-top"
+==
+<div class="container-lg">
+    <div class="header__top">
+        <div class="header__adress">
+            <svg class="ic_header">
+                <use xlink:href="{{'./assets/img/sprite.svg#marker'|theme}}"></use>
+            </svg>
+            {{this.theme.adress}}
+        </div>
+        <div class="header__contacts">
+            <div class="header__tel">
+                <svg class="ic_header">
+                    <use xlink:href="{{'./assets/img/sprite.svg#call2'|theme}}"></use>
+                </svg>
+                <a href="tel:{{this.theme.phone_lnk}}">{{this.theme.phone}}</a>
+            </div>
+            <div class="header__mail">
+                <svg class="ic_header">
+                    <use xlink:href="{{'./assets/img/sprite.svg#mail'|theme}}"></use>
+                </svg>
+                <a href="mailto:{{this.theme.email}}">{{this.theme.email}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="fixed_wrp">
+    <div class="container-lg">
+        <div class="header__bottom">
+            <a class="logolnk" href="/"><img src="{{this.theme.logo_color|media}}" alt="логотип Sash">
+                <div class="header__dscr">
+                    {{this.theme.logo_desc|raw}}
+                </div>
+            </a>
+            <div class="mobile_wrp">
+                <div class="wrapper">
+                    <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                    <div class="header-wrap clearfix">
+                        <div class="top-mnu">
+                            {% partial 'menu-top' items=staticMenu.menuItems %}
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_buttons">
+
+                    <a href="tel:{{this.theme.phone_lnk}}"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#call2"></use>
+                        </svg></a>
+                    <a href="mailto:{{this.theme.email}}"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg></a>
+                    <a href="./contacts"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#marker"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1630930011;s:6:"markup";s:2411:"<div class="container-lg">
+    <div class="header__top">
+        <div class="header__adress">
+            <svg class="ic_header">
+                <use xlink:href="{{'./assets/img/sprite.svg#marker'|theme}}"></use>
+            </svg>
+            {{this.theme.adress}}
+        </div>
+        <div class="header__contacts">
+            <div class="header__tel">
+                <svg class="ic_header">
+                    <use xlink:href="{{'./assets/img/sprite.svg#call2'|theme}}"></use>
+                </svg>
+                <a href="tel:{{this.theme.phone_lnk}}">{{this.theme.phone}}</a>
+            </div>
+            <div class="header__mail">
+                <svg class="ic_header">
+                    <use xlink:href="{{'./assets/img/sprite.svg#mail'|theme}}"></use>
+                </svg>
+                <a href="mailto:{{this.theme.email}}">{{this.theme.email}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="fixed_wrp">
+    <div class="container-lg">
+        <div class="header__bottom">
+            <a class="logolnk" href="/"><img src="{{this.theme.logo_color|media}}" alt="логотип Sash">
+                <div class="header__dscr">
+                    {{this.theme.logo_desc|raw}}
+                </div>
+            </a>
+            <div class="mobile_wrp">
+                <div class="wrapper">
+                    <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                    <div class="header-wrap clearfix">
+                        <div class="top-mnu">
+                            {% partial 'menu-top' items=staticMenu.menuItems %}
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_buttons">
+
+                    <a href="tel:{{this.theme.phone_lnk}}"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#call2"></use>
+                        </svg></a>
+                    <a href="mailto:{{this.theme.email}}"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg></a>
+                    <a href="./contacts"> <svg class="ic_mob">
+                            <use xlink:href="img/sprite.svg#marker"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:7:"viewBag";a:0:{}s:10:"staticMenu";a:1:{s:4:"code";s:8:"menu-top";}}}

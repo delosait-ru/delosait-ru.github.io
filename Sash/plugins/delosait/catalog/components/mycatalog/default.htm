@@ -1,0 +1,23 @@
+<h1>Это то что ты подключил компонент.</h1>
+
+теперь в переменной categories твои категории лежат.
+
+
+{% for item in categories %}
+<p><a href='/newcat/{{ item.slug }}'>{{ item.cat_title }}</a></p>
+{% for product in item.products %}
+<p>{{product.prod_title}}</p>
+{%endfor%}
+{% else %}
+Категории отсутствуют
+{% endfor %}
+
+
+
+
+
+
+Теперь если мы загрузили категорию, то вот она:
+
+
+{{ category.cat_title }}
