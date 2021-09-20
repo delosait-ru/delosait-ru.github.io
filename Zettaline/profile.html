@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+    <aside>
+        <!--   Для отображения в мобильной версии тегу <aside> необходимо добавить class="visible"   -->
+
+        <div class="close_aside">
+    <img src="./img/close-ic.svg" alt="alt">
+</div>
+<div class="header">
+    <div class="header__img">
+        <img src="./img/man.png" alt="alt">
+    </div>
+    <div class="header__name">
+        Дмитрий Жадан
+    </div>
+    <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
+</div>
+<nav>
+    <ul class="navigation">
+        <li class="active">
+            <a href="/">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#settings"></use>
+                </svg>
+                Настройки
+            </a>
+        </li>
+        <li>
+            <a href="/statistic.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#stat"></use>
+                </svg>
+                Стастистика
+            </a>
+        </li>
+        <li>
+            <a href="/finance.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#coin"></use>
+                </svg>
+                Финансы
+            </a>
+        </li>
+        <li>
+            <a href="/support.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#question"></use>
+                </svg>
+                Поддержка
+            </a>
+        </li>
+        <li>
+            <a href="/profile.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#profile"></use>
+                </svg>
+                Профиль
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#api"></use>
+                </svg>
+                API
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="footer">
+    <a href="#">
+        <svg class="navigation__ic">
+            <use xlink:href="./img/sprite.svg#exit"></use>
+        </svg>
+        Выход
+    </a>
+    <img src="./img/bg.svg" alt="alt">
+
+</div>
+
+    </aside>
+
+    <main>
+        <div class="content content--chat">
+    <div class="top-part">
+        <div class="block-title bt-finance">
+            Данные компании
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="top-part__logo">
+            <img src="./img/logo.png" alt="alt">
+        </div>
+    </div>
+    <div class="blackpart">
+        <form class="whitefields" action="">
+
+            <input class="whitefields__input" type="text" placeholder="Наименование компании">
+            <input class="whitefields__input" type="text" placeholder="Полные реквизиты">
+            <input class="whitefields__input" type="text" placeholder="Контактное Лицо">
+            <input class="whitefields__input" type="text" placeholder="Телефон">
+            <input class="whitefields__input" type="text" placeholder="Email">
+            <button class="btn-yellow">Cохранить</button>
+
+        </form>
+        <div class="blackpart-imgs">
+            <div class="img-left">
+                <img src="./img/bg-left.svg" alt="" alt>
+            </div>
+            <div class="img-right">
+                <img src="./img/bg-right.svg" alt="" alt>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+    </main>
+</body>
+
+
+</html>
