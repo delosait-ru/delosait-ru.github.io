@@ -489,7 +489,7 @@
     height: auto;
   }
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 657px) {
   .design {
     display: flex;
     justify-content: space-between;
@@ -524,7 +524,7 @@
     flex-basis: 32%;
   }
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 657px) {
   .buttons__block {
     flex-basis: 48%;
   }
