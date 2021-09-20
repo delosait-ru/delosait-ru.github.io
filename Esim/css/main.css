@@ -479,10 +479,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-  .design {
-    justify-content: space-between;
-  }
+@media only screen and (max-width: 1552px) {
   .design__block {
     margin-right: 0px;
     flex-basis: 32%;
@@ -522,7 +519,7 @@
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1552px) {
   .buttons__block {
     flex-basis: 32%;
   }
@@ -1433,7 +1430,7 @@ form {
   background: #fff;
   height: 48px;
   padding-left: 20px;
-  padding-top: 8px;
+  padding-top: 17px;
   border: none;
   box-shadow: none;
   width: 80%;
@@ -1444,7 +1441,6 @@ form {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -1453,7 +1449,6 @@ form {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -1462,7 +1457,6 @@ form {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
 }
