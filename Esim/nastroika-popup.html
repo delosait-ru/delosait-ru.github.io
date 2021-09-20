@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+    <aside>
+        <!--   Для отображения в мобильной версии тегу <aside> необходимо добавить class="visible"   -->
+
+        <div class="close_aside">
+    <img src="./img/close-ic.svg" alt="alt">
+</div>
+<div class="header">
+    <div class="header__img">
+        <img src="./img/man.png" alt="alt">
+    </div>
+    <div class="header__name">
+        Дмитрий Жадан
+    </div>
+    <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
+</div>
+<nav>
+    <ul class="navigation">
+        <li class="active">
+            <a href="/">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#settings"></use>
+                </svg>
+                Настройки
+            </a>
+        </li>
+        <li>
+            <a href="/statistic.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#stat"></use>
+                </svg>
+                Стастистика
+            </a>
+        </li>
+        <li>
+            <a href="/finance.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#coin"></use>
+                </svg>
+                Финансы
+            </a>
+        </li>
+        <li>
+            <a href="/support.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#question"></use>
+                </svg>
+                Поддержка
+            </a>
+        </li>
+        <li>
+            <a href="/profile.html">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#profile"></use>
+                </svg>
+                Профиль
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg class="navigation__ic">
+                    <use xlink:href="./img/sprite.svg#api"></use>
+                </svg>
+                API
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="footer">
+    <a href="#">
+        <svg class="navigation__ic">
+            <use xlink:href="./img/sprite.svg#exit"></use>
+        </svg>
+        Выход
+    </a>
+    <img src="./img/bg.svg" alt="alt">
+
+</div>
+
+    </aside>
+
+    <main>
+        <div class="content">
+    <div class="top-part">
+        <div class="top-part__btns">
+            <a href="/" class="btn-transparent">
+                Настройка калькулятора
+
+            </a>
+            <a href="./nastroika-nacenki.html" class="btn-transparent">
+                Настройка наценки
+
+            </a>
+            <a href="./nastroika-ekvairinga.html" class="btn-transparent">
+                Настройка эквайринга
+
+            </a>
+            <a href="./nastroika-popup.html" class="btn-transparent btn-transparent--active">
+                Настройка pop-up окна
+
+            </a>
+            <a href="./yuridicheskiy-razdel.html" class="btn-transparent">
+                Юридический раздел
+            </a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="top-part__logo">
+            <img src="./img/logo.png" alt="alt">
+        </div>
+    </div>
+
+
+    <div class="textarea">
+        <div class="block-title">
+            Сообщение всплывающего окна
+        </div>
+        <textarea class="cust-textarea" name="" id="" cols="20" rows="10">
+Вам точно необходим мобильный интернет в путешествии. Загляните в наш магазин eSim.
+            
+        </textarea>
+
+
+    </div>
+    <div class="block-title">
+        Выбор шрифта
+    </div>
+    <div class="fonts">
+
+        <div class="fonts__font">
+            <div class="fonts__title raleway">
+                Raleway
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+        </div>
+        <div class="fonts__font">
+            <div class="fonts__title montserrat">
+                Montserrat
+            </div>
+            <button class="btn-block btn-block--active">
+                Применено
+            </button>
+        </div>
+        <div class="fonts__font">
+            <div class="fonts__title playfair">
+                Playfair Display
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+        </div>
+        <div class="fonts__font">
+            <div class="fonts__title roboto">
+                Roboto
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+        </div>
+        <div class="fonts__font">
+            <div class="fonts__title opensans">
+                Open Sans
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+        </div>
+        <div class="fonts__font empty"></div>
+
+    </div>
+    <div class="block-title">
+        Выбор цвета фона
+    </div>
+    <div class="backgrounds">
+        <div class="bg">
+            <div class="bg__color bg__color--black">
+
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+
+        </div>
+        <div class="bg">
+            <div class="bg__color bg__color--fiolett">
+
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+
+        </div>
+        <div class="bg">
+            <div class="bg__color bg__color--orange">
+
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+
+        </div>
+        <div class="bg">
+            <div class="bg__color bg__color--green">
+
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+
+        </div>
+        <div class="bg">
+            <div class="bg__color bg__color--blue">
+
+            </div>
+            <button class="btn-block">
+                Применить
+            </button>
+
+        </div>
+        <div class="bg empty"></div>
+
+    </div>
+
+
+    <div class="illustration">
+        <div class="block-title">
+            Иллюстрация для фона
+        </div>
+        <div class="file-upload file-upload--big">
+            <label>
+                <div class="file-wrp"><input type="file" name="file">
+                    <span class="btn_text">Загрузите свой вариант иллюстрации в формате PNG или SVG</span>
+                    <span class="btn_text btn__succsess">Файл загружен!</span>
+                    <span class="btn_icon">
+                        <svg class="ic_file">
+                            <use xlink:href="img/sprite.svg#file-plus"></use>
+                        </svg>
+                    </span>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="block-title">
+        Предпросмотр
+    </div>
+    <div class="preview">
+        <img src="./img/preview.jpg" alt="alt">
+    </div>
+
+    <div class="save_settings">
+        <button class="btn-black">Сохранить настройки</button>
+    </div>
+
+
+    <div class="content-image">
+        <img src="./img/bg-main.svg" alt="alt">
+
+    </div>
+
+</div>
+
+    </main>
+</body>
+
+
+</html>
