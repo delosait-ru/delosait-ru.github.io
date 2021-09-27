@@ -34,10 +34,13 @@
         Дмитрий Жадан
     </div>
     <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
+    <div class="header__balance">
+        Баланс: <span>400$</span>
+    </div>
 </div>
 <nav>
     <ul class="navigation">
-        <li class="active">
+        <li>
             <a href="./">
                 <svg class="navigation__ic">
                     <use xlink:href="./img/sprite.svg#settings"></use>
@@ -61,7 +64,7 @@
                 Финансы
             </a>
         </li>
-        <li>
+        <li class="active">
             <a href="./support.html">
                 <svg class="navigation__ic">
                     <use xlink:href="./img/sprite.svg#question"></use>
@@ -77,14 +80,14 @@
                 Профиль
             </a>
         </li>
-        <li>
-            <a href="#">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#api"></use>
-                </svg>
-                API
-            </a>
-        </li>
+    <!--    <li>
+        <a href="#">
+            <svg class="navigation__ic">
+                <use xlink:href="./img/sprite.svg#api"></use>
+            </svg>
+            API
+        </a>
+    </li>-->
     </ul>
 </nav>
 <div class="footer">
@@ -122,7 +125,7 @@
                 Задайте интересующий вопрос
             </div>
             <form action="#">
-                <textarea cols="30" rows="1" class="chat__input" placeholder="Вопрос"></textarea>
+                <input class="chat__input" placeholder="Вопрос" type="text">
 
                 <button class="chat__btn btn-yellow">Отправить</button>
             </form>

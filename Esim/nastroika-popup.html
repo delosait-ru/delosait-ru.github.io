@@ -34,6 +34,9 @@
         Дмитрий Жадан
     </div>
     <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
+    <div class="header__balance">
+        Баланс: <span>400$</span>
+    </div>
 </div>
 <nav>
     <ul class="navigation">
@@ -77,14 +80,14 @@
                 Профиль
             </a>
         </li>
-        <li>
-            <a href="#">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#api"></use>
-                </svg>
-                API
-            </a>
-        </li>
+    <!--    <li>
+        <a href="#">
+            <svg class="navigation__ic">
+                <use xlink:href="./img/sprite.svg#api"></use>
+            </svg>
+            API
+        </a>
+    </li>-->
     </ul>
 </nav>
 <div class="footer">
@@ -271,7 +274,21 @@
         Предпросмотр
     </div>
     <div class="preview">
-        <img src="./img/preview.jpg" alt="alt">
+        <div class="ppopup">
+            <div class="ppopup__close">
+                <img src="./img/close-ic.svg" alt="alt">
+            </div>
+            <div class="ppopup__text">Вам точно необходим мобильный интернет в путешествии.<br>Загляните в наш магазин eSim.</div>
+
+            <div class="btn-custom btn-custom--blue btn-popup">
+                <span>Store Travel eSim</span>
+                <svg class="ic_btn">
+                    <use xlink:href="img/sprite.svg#shopping"></use>
+                </svg>
+
+            </div>
+
+        </div>
     </div>
 
     <div class="save_settings">

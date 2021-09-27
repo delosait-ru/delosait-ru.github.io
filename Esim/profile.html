@@ -34,10 +34,13 @@
         Дмитрий Жадан
     </div>
     <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
+    <div class="header__balance">
+        Баланс: <span>400$</span>
+    </div>
 </div>
 <nav>
     <ul class="navigation">
-        <li class="active">
+        <li>
             <a href="./">
                 <svg class="navigation__ic">
                     <use xlink:href="./img/sprite.svg#settings"></use>
@@ -69,7 +72,7 @@
                 Поддержка
             </a>
         </li>
-        <li>
+        <li class="active">
             <a href="./profile.html">
                 <svg class="navigation__ic">
                     <use xlink:href="./img/sprite.svg#profile"></use>
@@ -77,14 +80,14 @@
                 Профиль
             </a>
         </li>
-        <li>
-            <a href="#">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#api"></use>
-                </svg>
-                API
-            </a>
-        </li>
+    <!--    <li>
+        <a href="#">
+            <svg class="navigation__ic">
+                <use xlink:href="./img/sprite.svg#api"></use>
+            </svg>
+            API
+        </a>
+    </li>-->
     </ul>
 </nav>
 <div class="footer">
@@ -126,7 +129,7 @@
             <button class="btn-yellow">Cохранить</button>
 
         </form>
-        <div class="blackpart-imgs">
+        <div class="blackpart-imgs blackpart-imgs--profile">
             <div class="img-left">
                 <img src="./img/bg-left.svg" alt="" alt>
             </div>

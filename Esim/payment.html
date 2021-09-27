@@ -115,7 +115,7 @@
                 Настройка наценки
 
             </a>
-            <a href="./nastroika-ekvairinga.html" class="btn-transparent">
+            <a href="./nastroika-ekvairinga.html" class="btn-transparent btn-transparent--active">
                 Настройка эквайринга
 
             </a>
@@ -123,7 +123,7 @@
                 Настройка pop-up окна
 
             </a>
-            <a href="./yuridicheskiy-razdel.html" class="btn-transparent btn-transparent--active">
+            <a href="./yuridicheskiy-razdel.html" class="btn-transparent">
                 Юридический раздел
             </a>
         </div>
@@ -137,75 +137,72 @@
         </div>
     </div>
 
-    <div class="block-title">
-        Готовые решения
-    </div>
 
-    <div class="blackboxes">
 
-        <a href="#" class="blackbox-wrp">
-            <div class="blackbox">
-                <div class="blackbox__title">
-                    Пользовательское соглашение
-                </div>
-                <svg class="blackbox__img">
-                    <use xlink:href="img/sprite.svg#eye"></use>
-                </svg>
-            </div>
-            <svg class="blackbox__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
+    <ul class="breadcrumbs">
+        <li class="block-title"><a href="./nastroika-ekvairinga.html">Настройка эквайринга</a></li>
+        <li class="block-title">Оплата через Сбербанк</li>
+    </ul>
+    <div class="payment">
 
-        </a>
-        <a href="#" class="blackbox-wrp">
-            <div class="blackbox">
-                <div class="blackbox__title">
-                    Политика обработки персональных данных
-                </div>
-
-                <svg class="blackbox__img">
-                    <use xlink:href="img/sprite.svg#eye"></use>
-                </svg>
-            </div>
-            <svg class="blackbox__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-        </a>
-    </div>
-
-    <div class="uploads">
-        <div class="file-upload file-upload--xxl ">
-            <label>
-                <div class="file-wrp"><input type="file" name="file">
-                    <span class="btn_text">Загрузите свой вариант Пользовательского соглашения</span>
-                    <span class="btn_text btn__succsess">Файл загружен!</span>
-                    <span class="btn_icon">
-                        <svg class="ic_file">
-                            <use xlink:href="img/sprite.svg#file-plus"></use>
-                        </svg>
-                    </span>
-                </div>
-            </label>
+        <div class="payment__maintext">
+            Подробная справка по подключению и настройке платежной системы
         </div>
-        <div class="file-upload file-upload--xxl">
-            <label>
-                <div class="file-wrp"><input type="file" name="file">
-                    <span class="btn_text">Загрузите свой вариант Политики обработки персональных данных</span>
-                    <span class="btn_text btn__succsess">Файл загружен!</span>
-                    <span class="btn_icon">
-                        <svg class="ic_file">
-                            <use xlink:href="img/sprite.svg#file-plus"></use>
-                        </svg>
-                    </span>
-                </div>
-            </label>
+        <div class="input-group">
+            <label class="input-group__label" for="">Логин</label>
+            <input class="input-group__input" type="text" placeholder="login-api" value="">
+            <div class="input-group__hint">Логин указан в письме, которое прислал Сбербанк при подключении к ним</div>
         </div>
+        <div class="input-group">
+            <label class="input-group__label" for=""> Пароль</label>
+            <input class="input-group__input" type="password" placeholder="pasword">
+            <div class="input-group__hint">Пароль</div>
+        </div>
+        <div class="input-group">
+            <label class="input-group__label" for=""> Страна продавца</label>
+
+            <select class="input-group__select" name="" id="">
+                <option>Россия</option>
+                <option>Украина</option>
+            </select>
+
+            <div class="input-group__hint">Выберите Казахстан, если являетесь клиентом Сбербанка в Казахстане</div>
+        </div>
+        <div class="blacktext">
+            <div class="blacktext__title">
+                ФФД 1.05
+            </div>
+            <div class="blacktext__desc">
+                С 1 января 2019, в соответствии с требованием законодательства, все обязаны будут перейти на версию ФФД 1.05. Это обновлённый протокол формирования фискальных чеков. Подробнее о изменениях и новых полях вы можете прочитать в <a href="./index-open.html">Ссылка на страницу с открытым меню</a>.
+                Внимание! Включать ФФД 1.05 нужно только после того, как в кабинете Сбербанка в панеле <a href="./modal.html">Ссылка на страницу смодальным окнм </a> укажите версию формата фискального документа = 1.05
+            </div>
+
+
+
+        </div>
+        <div class="input-group">
+            <span class="input-group__label">ОТПРАВЛЯТЬ ДАННЫЕ В СЕРВИСЫ ПРИЕМА ДАННЫХ ТОЛЬКО ПОСЛЕ ОПЛАТЫ</span>
+            <label class="filters-check">
+
+                <input class="checkbox-hidden" type="checkbox" checked><span class="checkbox-wrap"></span>
+                Да
+            </label>
+            <div class="input-group__hint">Поставьте галочку, если нужно получать информацию только о покупателях, которые оплатили покупку. Уберите галочку, если вы хотите получать данные всех клиентов, которые заполнили форму, вне зависимости завершили они потом платеж или нет.</div>
+        </div>
+        <div class="input-group">
+            <label class="input-group__label" for="">ЗАГОЛОВОК</label>
+            <textarea class="input-group__textarea" name="" id="" cols="10" rows="2">Картой (Visa, Mastercard) через Альфа Банк</textarea>
+            <div class="input-group__hint">Будет отображаться в корзине (при наличии двух и более подключенных платежных систем)</div>
+        </div>
+
+
+
+
     </div>
 
     <div class="save_settings">
         <button class="btn-black">Сохранить настройки</button>
     </div>
-
 
     <div class="content-image">
         <img src="./img/bg-main.svg" alt="alt">

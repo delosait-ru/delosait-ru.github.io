@@ -1,0 +1,61 @@
+.ppopup {
+  width: 500px;
+  height: 400px;
+  background: #452AA5;
+  color: #fff;
+  position: relative;
+  padding: 100px 50px 0 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+.ppopup__close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.ppopup__close img {
+  width: 20px;
+  height: 20px;
+}
+.ppopup__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ppopup .btn-popup {
+  margin: 0 77px;
+}
+
+@media only screen and (max-width: 576px) {
+  .ppopup {
+    width: 100%;
+    height: 400px;
+    padding: 60px 20px 0 20px;
+    text-align: center;
+  }
+  .ppopup__close {
+    right: 20px;
+    top: 20px;
+  }
+  .ppopup__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .ppopup .btn-popup {
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 18px;
+  }
+}
+/*# sourceMappingURL=popup.css.map */

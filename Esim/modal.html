@@ -137,94 +137,81 @@
         </div>
     </div>
 
-    <div class="logos">
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">СберБанк</div>
-            <div class="logos__image">
-                <img src="./img/sber.png" alt="alt">
+
+
+    <ul class="breadcrumbs">
+        <li class="block-title"><a href="./nastroika-ekvairinga.html">Настройка эквайринга</a></li>
+        <li class="block-title">Оплата через Сбербанк</li>
+    </ul>
+    <div class="payment">
+
+        <div class="payment__maintext">
+            Подробная справка по подключению и настройке платежной системы
+        </div>
+        <div class="input-group">
+            <label class="input-group__label" for="">Логин</label>
+            <input class="input-group__input" type="text" placeholder="login-api">
+            <div class="input-group__hint">Логин указан в письме, которое прислал Сбербанк при подключении к ним</div>
+        </div>
+        <div class="input-group">
+            <label class="input-group__label" for=""> Пароль</label>
+            <input class="input-group__input" type="password" placeholder="pasword">
+            <div class="input-group__hint">Пароль</div>
+        </div>
+        <div class="input-group">
+            <label class="input-group__label" for=""> Страна продавца</label>
+
+            <select class="input-group__select" name="" id="">
+                <option>Россия</option>
+                <option>Украина</option>
+            </select>
+
+            <div class="input-group__hint">Выберите Казахстан, если являетесь клиентом Сбербанка в Казахстане</div>
+        </div>
+        <div class="blacktext">
+            <div class="blacktext__title">
+                ФФД 1.05
             </div>
-            <!--  <label class="filters-check">
+            <div class="blacktext__desc">
+                С 1 января 2019, в соответствии с требованием законодательства, все обязаны будут перейти на версию ФФД 1.05. Это обновлённый протокол формирования фискальных чеков. Подробнее о изменениях и новых полях вы можете прочитать в <a href="#">инструкции</a>.
+                Внимание! Включать ФФД 1.05 нужно только после того, как в кабинете Сбербанка в панеле <a href="./modal.html">ССЫЛКА НА ВСПЛЫВАШКУ ! </a> укажите версию формата фискального документа = 1.05
+            </div>
+
+
+
+        </div>
+        <div class="input-group">
+            <span class="input-group__label">ОТПРАВЛЯТЬ ДАННЫЕ В СЕРВИСЫ ПРИЕМА ДАННЫХ ТОЛЬКО ПОСЛЕ ОПЛАТЫ</span>
+            <label class="filters-check">
+
                 <input class="checkbox-hidden" type="checkbox" checked><span class="checkbox-wrap"></span>
-            </label>-->
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
+                Да
+            </label>
+            <div class="input-group__hint">Поставьте галочку, если нужно получать информацию только о покупателях, которые оплатили покупку. Уберите галочку, если вы хотите получать данные всех клиентов, которые заполнили форму, вне зависимости завершили они потом платеж или нет.</div>
+        </div>
 
 
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">Альфабанк</div>
-            <div class="logos__image">
-                <img src="./img/alfa.png" alt="alt">
-            </div>
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
-
-
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">Тинькофф Банк</div>
-            <div class="logos__image">
-                <img src="./img/tinkoff.png" alt="alt">
-            </div>
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
-
-
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">ВТБ Банк</div>
-            <div class="logos__image">
-                <img src="./img/vtb.png" alt="alt">
-            </div>
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
-
-
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">Робокасса</div>
-            <div class="logos__image">
-                <img src="./img/robo.png" alt="alt">
-            </div>
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
-
-
-        <a href="./payment.html" class="logos__logo">
-            <div class="logos__title">Юмани</div>
-            <div class="logos__image">
-                <img src="./img/yumoney.png" alt="alt">
-            </div>
-            <svg class="logos__ic">
-                <use xlink:href="img/sprite.svg#ic-check"></use>
-            </svg>
-
-        </a>
 
     </div>
-
-
-
 
     <div class="save_settings">
         <button class="btn-black">Сохранить настройки</button>
     </div>
 
-
     <div class="content-image">
         <img src="./img/bg-main.svg" alt="alt">
 
+    </div>
+    <div class="c-modal modal_active ">
+        <div class="c-modal__content">
+            <div class="c-modal__title">Сохранить изменения?</div>
+            <div class="c-modal__btns">
+                <button class="c-modal__btn">Да</button>
+                <button class="c-modal__btn">Нет</button>
+                <button class="c-modal__btn">Отмена</button>
+            </div>
+
+        </div>
     </div>
 </div>
 
