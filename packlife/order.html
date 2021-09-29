@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Packlife</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Packlife">
+    <meta property="og:url" content="http://#">
+    <meta property="og:image" content="img/meta.jpg">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body>
+
+    <div class="page">
+        <main class="content">
+            <div class="container-lg">
+                <div class="row sidebar_wrp">
+                    <div class="col-md-12 col-lg-6">
+                        <a href="/" class="logo_block logo_block--order">
+                            <img src="./img/logo.svg" alt="alt">
+                        </a>
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html">Главная</a></li>
+                            <li> Оформление заказа</li>
+                        </ul>
+                        <div class="order-content">
+                            <div class="express-payment">
+                                <div class="expayment_title">
+                                    Экспресс-оплата
+                                </div>
+                                <div class="expayment_methods">
+                                    <a href="#" class="expayment_methods__item">
+                                        <span><img src="./img/logo_for_pay_system2x.png" alt="alt"></span>
+
+                                    </a>
+                                    <a href="#" class="expayment_methods__item">
+                                        <span> <img src="./img/robo.png" alt="alt"></span>
+
+                                    </a>
+                                    <a href="#" class="expayment_methods__item">
+                                        <span><img src="./img/qiwi_ru%201.png" alt="alt"></span>
+
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="regform">
+                                <form name="#" method="post" action="#" enctype="multipart/form-data">
+                                    <div class="block_wrp">
+                                        <div class="wrp_row">
+                                            <div class="regform_title">
+                                                Контактные данные
+                                            </div>
+                                            <div class="regform_reg">
+                                                Уже зарегистрированы? / <a href="#">Войти</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group_modal form-group_modal__order">
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label for="username">Имя <span>*</span></label>
+                                                    <input id="username" class="form_input__modal" name="username-reg" type="text" placeholder="Введите Ваше имя" required>
+                                                </div>
+
+
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label for="mail">Электронная почта <span>*</span>&nbsp;&nbsp;</label>
+                                                    <input id="mail" class="form_input__modal" name="usermail-reg" type="email" placeholder="Введите e-mail" required>
+                                                    <label class="filters-check filters-check--order">
+                                                        <input class="checkbox-hidden" type="checkbox" checked name="E14"><span class="checkbox-wrap"></span>
+                                                        <div class="checkbox-textorder">Информировать меня о скидках и акциях</div>
+                                                    </label>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block_wrp">
+                                        <div class="regform_title">
+                                            Адрес доставки
+                                        </div>
+
+                                        <div class="row">
+
+
+                                            <div class="col-12 col-md-6">
+                                                <div class="select">
+                                                    <label for="country">Страна <span>*</span></label>
+                                                    <div id="country" class="select__header">
+                                                        <span class="select__current">Выберите...</span>
+                                                        <div class="select__icon">&#9660;</div>
+                                                    </div>
+
+                                                    <div class="select__body">
+                                                        <div class="select__item">Россия</div>
+                                                        <div class="select__item">Украина</div>
+                                                        <div class="select__item">Никарагуа</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="select">
+                                                    <label for="city">Город <span>*</span></label>
+                                                    <div id="city" class="select__header">
+                                                        <span class="select__current">Выберите...</span>
+                                                        <div class="select__icon">&#9660;</div>
+                                                    </div>
+
+                                                    <div class="select__body">
+                                                        <div class="select__item">Москва</div>
+                                                        <div class="select__item">Новосибирск</div>
+                                                        <div class="select__item">Краснодар</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-md-6">
+
+                                                <div class="select">
+                                                    <label for="region">Область / край <span>*</span></label>
+                                                    <div id="region" class="select__header">
+                                                        <span class="select__current">Выберите...</span>
+                                                        <div class="select__icon">&#9660;</div>
+                                                    </div>
+
+                                                    <div class="select__body">
+                                                        <div class="select__item">Московская область</div>
+                                                        <div class="select__item">Новосибирская область</div>
+                                                        <div class="select__item">Краснодарский край</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12 col-md-6">
+
+                                                <div class="form-group_modal form-group_modal__order">
+                                                    <label for="zipcode">Индекс <span>*</span>&nbsp;&nbsp;</label>
+                                                    <input id="zipcode" class="form_input__modal" name="userzip-reg" type="text" placeholder="Введите... " required>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="block_wrp block_delivery">
+
+                                        <div class="regform_title">
+                                            Способ доставки
+                                        </div>
+
+                                        <div class="filters-row">
+                                            <div class="ui-opt ui-opt_filter">
+                                                <label class="ui-radiobox ui-radiobox_filter">
+                                                    <input class="input-hidden" type="radio" name="a" val="a1" checked><span class="ui-radiobox__label radio_order">Самовывоз из нашего офиса (бесплатно)</span>
+                                                </label>
+
+
+                                                <label class="ui-radiobox ui-radiobox_filter">
+                                                    <input class="input-hidden" type="radio" name="a" val="a5"><span class="ui-radiobox__label radio_order">Почта России ( Посылка - 255 ₽, Срок доставки - 3 дн. )</span>
+                                                </label>
+                                                <label class="ui-radiobox ui-radiobox_filter">
+                                                    <input class="input-hidden" type="radio" name="a" val="a5"><span class="ui-radiobox__label radio_order">СДЭК ( Доставка курьером в Краснодар (3-4 раб. дня) - 560 р.</span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="sidebar">
+                            <div class="cart">
+                                <div class="cart_item">
+                                    <svg class="ic_cart">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--close"> </use>
+                                    </svg>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-2 d-flex align-items-center">
+                                            <div class="cart_item--img">
+                                                <img src="./img/blue.jpg" alt="alt">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-7 d-flex align-items-center">
+                                            <div class="cart_item--title">
+                                                Флакон полимерный 200 мл "Стоун" 24/410
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-3 d-flex align-items-center">
+                                            <div class="cart_item--priceblock">
+                                                <div class="item-price">
+                                                    <span>126.5</span>₽
+
+                                                </div>
+                                                <div class="ui-quantity ui-quantity--cart">
+                                                    <button class="ui-quantity__btn ui-quantity__minus">
+
+                                                        <svg class="minus plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-minus"></use>
+                                                        </svg>
+
+
+                                                    </button>
+                                                    <input type="text" value="1 шт." data-units="шт.">
+                                                    <button class="ui-quantity__btn ui-quantity__plus">
+
+                                                        <svg class="plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-plus"></use>
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="cart_item">
+                                    <svg class="ic_cart">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--close"> </use>
+                                    </svg>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-2 d-flex align-items-center">
+                                            <div class="cart_item--img">
+                                                <img src="./img/red2.jpg" alt="alt">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-7 d-flex align-items-center">
+                                            <div class="cart_item--title">
+                                                Флакон полимерный 200 мл "Стоун" 24/410
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-3 d-flex align-items-center">
+                                            <div class="cart_item--priceblock">
+                                                <div class="item-price">
+                                                    <span>126.5</span>₽
+
+                                                </div>
+                                                <div class="ui-quantity ui-quantity--cart">
+                                                    <button class="ui-quantity__btn ui-quantity__minus">
+
+                                                        <svg class="minus plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-minus"></use>
+                                                        </svg>
+
+
+                                                    </button>
+                                                    <input type="text" value="1 шт." data-units="шт.">
+                                                    <button class="ui-quantity__btn ui-quantity__plus">
+
+                                                        <svg class="plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-plus"></use>
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="cart_item">
+                                    <svg class="ic_cart">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--close"> </use>
+                                    </svg>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-2 d-flex align-items-center">
+                                            <div class="cart_item--img">
+                                                <img src="./img/blue3.jpg" alt="alt">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-7 d-flex align-items-center">
+                                            <div class="cart_item--title">
+                                                Флакон полимерный 200 мл "Стоун" 24/410
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-3 d-flex align-items-center">
+                                            <div class="cart_item--priceblock">
+                                                <div class="item-price">
+                                                    <span>126.5</span>₽
+
+                                                </div>
+                                                <div class="ui-quantity ui-quantity--cart">
+                                                    <button class="ui-quantity__btn ui-quantity__minus">
+
+                                                        <svg class="minus plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-minus"></use>
+                                                        </svg>
+
+
+                                                    </button>
+                                                    <input type="text" value="1 шт." data-units="шт.">
+                                                    <button class="ui-quantity__btn ui-quantity__plus">
+
+                                                        <svg class="plus">
+                                                            <use xlink:href="img/symbol/sprite.svg#icons--ic-plus"></use>
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bonuses">
+                                <div class="bonuses_info">
+                                    <div class="bonuses_ammount">
+                                        Накоплено баллов: <span>12058</span>
+                                    </div>
+                                    <div class="bonuses_ammount">
+                                        Будет начислено: <span>120</span>
+                                    </div>
+
+                                </div>
+                                <button class="btn_orange btn_order">Потратить бонусы</button>
+                            </div>
+                            <div class="result">
+                                <div class="resultsm">
+                                    <div class="result_txt">
+                                        Всего:
+                                    </div>
+                                    <div class="resultsm_amm">
+                                        <span>2 851.2</span>₽
+                                    </div>
+                                </div>
+                                <div class="resultdeliv">
+                                    <div class="tresult_txt">
+                                        Стоимость доставки
+                                    </div>
+                                    <div class="resultsm_amm">
+                                        <span>Бесплатно (самовывоз)</span>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="total_cart">
+                                    <div class="total_cart__txt">Итого</div>
+                                    <div class="total_cart__summ"><span>2 851</span>₽</div>
+
+
+                                </div>
+
+                            </div>
+                            <a class="btn_dark btn_buy" href="#">Перейти к оплате</a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_wrp">
+                <div class="container-lg">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-3 d-flex">
+                            <div class="logo_wrp">
+                                <a href="/">
+                                    <svg class="ic_footer">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--logo-white"> </use>
+                                    </svg>
+                                </a>
+                                <div class="market_img">
+                                    <img src="./img/logo-ymarket.png" alt="alt">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer_title">
+                                Информация
+                            </div>
+                            <div class="footer_phones">
+                                <a class="footer_phone" href="tel:+73833100468">+7 (383) 310-04-68</a>
+                                <a class="footer_phone" href="tel:+79835100468">+7 (983) 510-04-68</a>
+                                <a class="footer_link" target="_blank" href="https://wa.me/79835100468">Консультация в Whatsapp</a>
+                            </div>
+                            <div class="footer_contacts">
+                                <a href="mailto:info@packlife.ru" class="footer_contacts-item">
+                                    <svg class="ic_footer-info">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--email"> </use>
+                                    </svg>
+                                    <span>info@packlife.ru</span>
+                                </a>
+                                <a href="contacts.html" class="footer_contacts-item">
+                                    <svg class="ic_footer-info">
+                                        <use xlink:href="img/symbol/sprite.svg#icons--maps-and-flags"> </use>
+                                    </svg>
+                                    <span>г. Новосибирск, ул.Добролюбова д.31/1
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer_title">
+                                Информация
+                            </div>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с распылитем</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с колпачком</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с флип-топ</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с диск-топ</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с дозатором для крема</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с дозатором для мыла</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы с пипеткой</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Флаконы-капельницы</a> </li>
+                                    <li> <a class="footer_link" href="category.html">Баночки для крема</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="footer_title">
+                                Покупателям
+                            </div>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li> <a class="footer_link" href="information.html">Политика конфиденциальности</a> </li>
+                                    <li> <a class="footer_link" href="information.html">Пользовательское соглашение</a> </li>
+                                    <li> <a class="footer_link" href="information.html">Возврат товара</a> </li>
+                                    <li> <a class="footer_link" href="information.html">Доставка и оплата</a> </li>
+                                    <li> <a class="footer_link" href="information.html">Акции и спецпредложения</a> </li>
+
+                                </ul>
+                                <div class="payment_block">
+                                    <span><img src="./img/visa.png" alt="alt"></span>
+                                    <span> <img src="./img/master.png" alt="alt"></span>
+                                    <span> <img src="./img/mir.png" alt="alt"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_law">
+                <div class="container-lg">
+                    <div class="footer_law__wrp">
+                        <div class="oferta">
+                            Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.
+                        </div>
+                        <div class="delosait">
+                            <a href="https://www.delosait.ru">Сделано на delosait.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/select.js"></script>
+
+</body>
+
+</html>
