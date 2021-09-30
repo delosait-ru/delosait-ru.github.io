@@ -39,6 +39,11 @@
     flex-basis: 32%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .backgrounds {
+    margin-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 590px) {
   .bg {
     flex-basis: 48%;

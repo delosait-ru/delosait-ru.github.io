@@ -296,7 +296,7 @@ aside .footer {
   }
 }
 .visible {
-  display: block;
+  display: flex;
   box-shadow: 15px 0 0 #767676, 15px 0 30px #4f4f4f;
 }
 
@@ -313,7 +313,19 @@ aside .footer {
 }
 @media only screen and (max-width: 576px) {
   aside {
-    padding: 17px 17px 0 17px;
+    padding: 0;
+  }
+  aside .header {
+    padding: 17px 49px 0 66px;
+  }
+  aside nav {
+    padding: 17px 15px 0 82px;
+  }
+  aside nav li {
+    width: 100%;
+  }
+  aside .footer {
+    padding: 0px 49px 40px 82px;
   }
 }
 /*# sourceMappingURL=global.css.map */

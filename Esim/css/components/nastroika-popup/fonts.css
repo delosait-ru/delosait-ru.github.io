@@ -42,8 +42,17 @@
   }
 }
 @media only screen and (max-width: 590px) {
+  .fonts {
+    margin-bottom: 20px;
+  }
   .fonts__font {
     flex-basis: 48%;
+    margin-bottom: 10px;
+  }
+  .fonts__title {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=fonts.css.map */
