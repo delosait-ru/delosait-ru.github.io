@@ -947,7 +947,10 @@
   margin-bottom: 15px;
 }
 .filters-check .checkbox-wrap {
-  background: url("../img/check1.svg") no-repeat 0 0;
+  /* background: url("../img/check11.svg") no-repeat 0 0;*/
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #202020;
   width: 20px;
   height: 20px;
   margin-right: 15px;
@@ -957,13 +960,14 @@
   display: block;
   width: 16px;
   height: 12px;
-  background: url("../img/check2.svg") no-repeat 0 0;
+  background: url("../img/check224.svg") no-repeat 0 0;
   background-size: 100%;
   will-change: transform;
   transform: scale(0);
   opacity: 0;
   transition: all 0.1s linear;
   margin-left: 6px;
+  margin-bottom: 3px;
 }
 .filters-check .checkbox-text {
   display: inline-block;
@@ -1057,7 +1061,7 @@
 }
 @media only screen and (max-width: 760px) and (max-width: 560px) {
   .logos__logo {
-    padding-top: 25px;
+    padding: 25px 10px 30px 10px;
     height: auto;
   }
   .logos__img {
