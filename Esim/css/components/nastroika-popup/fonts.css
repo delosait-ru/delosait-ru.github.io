@@ -1,0 +1,65 @@
+.fonts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.fonts__font {
+  -ms-flex-preferred-size: 18%;
+  flex-basis: 18%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.fonts .btn-block {
+  width: 100%;
+}
+.fonts__title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fonts .raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+.fonts .montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.fonts .playfair {
+  font-family: "Playfair-Display", serif;
+}
+.fonts .roboto {
+  font-family: "Roboto", sans-serif;
+}
+.fonts .opensans {
+  font-family: "Open-Sans", sans-serif;
+}
+
+@media only screen and (max-width: 1420px) {
+  .fonts__font {
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .fonts {
+    margin-bottom: 20px;
+  }
+  .fonts__font {
+    -ms-flex-preferred-size: 48%;
+    flex-basis: 48%;
+    margin-bottom: 10px;
+  }
+  .fonts__title {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 5px;
+  }
+}
