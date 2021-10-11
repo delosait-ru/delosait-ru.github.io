@@ -129,12 +129,12 @@
 
     .bal_btn {
         width: 100%;
-        font-size: 6px;
+        font-size: 9px;
         line-height: 8px;
         letter-spacing: 0em;
         padding: 2px 10px 2px 3px;
         margin-bottom: 8px;
-        height: 9px;
+        height: 12px;
     }
 
     .bal_btn span {

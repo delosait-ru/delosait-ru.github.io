@@ -42,8 +42,8 @@
 @media only screen and (max-width: 576px) {
     .pop-up--summ {
         display: flex;
-        width: 65px;
-        height: 55px;
+        width: 85px;
+        height: 65px;
         padding: 5px 6px;
         left: 0;
         right: 0;
@@ -52,9 +52,9 @@
     }
 
     .pop-title {
-        font-size: 7px;
+        font-size: 10px;
         line-height: 9px;
-        margin-bottom: 2px;
+        margin-bottom: 6px;
 
     }
 
