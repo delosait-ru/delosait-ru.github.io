@@ -142,15 +142,18 @@
     background: #5de0a5;
   }
   .form__info {
-    font-size: 7px;
+    font-size: 9px;
     font-style: normal;
     font-weight: 400;
-    line-height: 8px;
+    line-height: 10px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
     padding-right: 0;
     width: 156px;
+  }
+  .form__info a {
+    color: #fff;
   }
 
   .form__mobile-logo {
