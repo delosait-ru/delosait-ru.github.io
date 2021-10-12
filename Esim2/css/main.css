@@ -63,6 +63,9 @@
   text-align: left;
   padding-right: 129px;
 }
+.form__info a {
+  color: #000;
+}
 
 .mobile-hidden {
   display: none;
