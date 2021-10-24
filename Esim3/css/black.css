@@ -1,0 +1,23 @@
+.wrapper-black {
+  background: url("../img/bg.jpg");
+}
+.wrapper-black .logo-letter {
+  color: #adc41c;
+}
+.wrapper-black .checkbox-tools:checked + label {
+  box-shadow: 0px 0px 15px 4px #BCCC27;
+}
+.wrapper-black .checkbox-tools:checked + label .label-title {
+  background: #FFFDC9;
+}
+.wrapper-black .checkbox-tools:checked + label .label-summ {
+  color: #88B003;
+}
+
+.btn-green {
+  background: linear-gradient(283.7deg, #88B003 -19.51%, #BCCC27 107.52%);
+  transition: all 0.3s;
+}
+.btn-green:hover {
+  background: linear-gradient(140.7deg, #88B003 -19.51%, #BCCC27 107.52%);
+}

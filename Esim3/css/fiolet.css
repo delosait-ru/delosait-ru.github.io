@@ -1,0 +1,24 @@
+.wrapper-fiolet {
+  background: url("../img/bgf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-fiolet .logo-letter {
+  color: #a18bed;
+}
+.wrapper-fiolet .checkbox-tools:checked + label {
+  box-shadow: 0px 0px 15px 4px #FFEFFF;
+}
+.wrapper-fiolet .checkbox-tools:checked + label .label-title {
+  background: #EBD8FF;
+}
+.wrapper-fiolet .checkbox-tools:checked + label .label-summ {
+  color: #A18BED;
+}
+
+.btn-fiolet {
+  background: linear-gradient(283.73deg, #A58CF0 26.23%, #EBD8FF 97.27%);
+}
+.btn-fiolet:hover {
+  background: linear-gradient(120.73deg, #A58CF0 26.23%, #EBD8FF 97.27%);
+}
