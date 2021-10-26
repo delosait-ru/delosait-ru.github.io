@@ -229,6 +229,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 20px #B3B3B3;
+  border-radius: 5px;
+}
+
+::-moz-scrollbar-thumb {
   box-shadow: inset 0 0 8px #B3B3B3;
   border-radius: 5px;
 }
@@ -316,7 +321,7 @@
 .privacy__check .checkbox-yel::after {
   content: "";
   display: block;
-  width: 20px;
+  width: 18px;
   height: 15px;
   background: url("../img/check-yel.svg") no-repeat 0 0;
   background-size: 100%;
@@ -326,7 +331,7 @@
   transition: all 0.1s linear;
   position: absolute;
   top: 0px;
-  left: -1px;
+  left: 3px;
 }
 .privacy__check .checkbox-text {
   display: inline-block;
@@ -423,6 +428,7 @@
   width: 100%;
   max-width: 152px;
   margin-left: 30px;
+  color: #393B3F;
   cursor: pointer;
 }
 .freg__btn:hover {
@@ -680,3 +686,4 @@
     padding: 0 10px;
   }
 }
+/*# sourceMappingURL=main.css.map */
