@@ -55,9 +55,10 @@
   top: 95%;
   z-index: 30;
   background: #fff;
-  box-shadow: 0 10px 20px #0000001a;
+  box-shadow: 0 10px 20px #0000001a, 1px 0px 0 #fff, -1px 0 0 #fff;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
+  width: 100%;
 }
 
 .select__item {
@@ -98,6 +99,9 @@
 
 .open {
   border-radius: 10px 10px 0 0;
+}
+.open .select__body {
+  display: block;
 }
 
 .select__header {
