@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header header-page">
+    <div class="container-lg">
+        <div class="row d-flex align-items-center">
+            <div class="col-6 col-sm-3 col-md-2">
+                <a class="header__logo" href="./">
+                    <img src="./img/logo.png" alt="alt">
+                </a>
+            </div>
+            <div class="d-none d-sm-block col-sm-3 col-md-7 col-lg-3 d-flex align-items-center">
+                <div class="header__desc">
+                    Ремонт , сервис , монтаж, пуско-наладка , обучение , продажа станков TRUMPF
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block col-lg-4">
+                <div class="header__search d-flex align-items-center">
+                    <form action="{{ 'search' | page }}" method="get">
+                        <input class="header__input" name="q" type="text" placeholder="Поиск среди 150 станков" autocomplete="off">
+                        <button class="header__btn" type="submit">
+                            <svg class="header__ic">
+                                <use xlink:href="img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3 d-flex justify-content-end">
+                <div class="header__phone">
+                    <a class="phone-icon" href="+78888">
+                        <svg class="ic_header">
+                            <use xlink:href="img/sprite.svg#call"></use>
+                        </svg>
+                    </a>
+                    <div class="phone-links">
+                        <a class="phone-link" href="#">
+                            +79044488840
+                        </a>
+                        <div class="phone-call">
+                            Вам перезвонить?
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 col-sm-1 col-md-1 col-lg-12">
+                <div class="header__menu">
+                    <div class="wrapper home-menu">
+                        <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                        <div class="header-wrap clearfix">
+                            <div class="top-mnu">
+                                <ul class="sf-menu">
+                                    <li><a href="./about.html">О компании</a></li>
+                                    <li><a class="dropdwn" href="./services.html">Услуги</a>
+                                        <ul class="small-sub">
+
+                                            <li>
+                                                <a href="./information.html">Услуга 1</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./information.html">Услуга 2</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./information.html">Услуга 3</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="/news.html">Новости</a></li>
+                                    <li><a class="dropdwn" href="./catalog.html">Каталог</a>
+                                        <ul class="small-sub">
+
+                                            <li>
+                                                <a href="./catalog-page.html">Категория 1</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./catalog-page.html">Категория 2</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./catalog-page.html">Категория 3</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="/contacts.html">Контакты</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-1 d-lg-none d-md-block ">
+                <div class="mobile_wrp">
+                    <div class="mobile_buttons">
+
+                        <a href="https://api.whatsapp.com/send?phone=7916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="img/sprite.svg#call2"></use>
+                            </svg></a>
+                        <a href="tel:8916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="img/sprite.svg#mail"></use>
+                            </svg></a>
+                        <a href="mailto:ask@maatexpert11111.ru"> <svg class="ic_mob">
+                                <use xlink:href="img/sprite.svg#marker"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <main>
+            <div class="heading">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Контакты</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                    <li>Контакты</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container-lg">
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 contact_block1">
+
+                <div class="office_img">
+                    <img src="./img/office.png" alt="alt">
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 contact_block2">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad4d94f5adecb0922f6cd55bbec80a60117cf5c445fc4cd60a1b810fc7cb88ad4&amp;width=100%25&amp;height=456&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="col-md-6 contact_block3">
+
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="contact_wrp">
+                                <div class="contact_title">
+                                    Адрес
+                                </div>
+                                <div class="contact_info">
+                                    Ростов-на-Дону, Адлерский пер., дом № 51
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="contact_wrp">
+                                <div class="contact_title">
+                                    Телефоны
+                                </div>
+                                <div class="contact_info">
+                                    <a class="contact_phone" href="tel:73833100468">тел: +79044488840
+                                    </a>
+                                    <a class="contact_phone" href="tel:73833100468">тел: +79044488840
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="contact_wrp">
+                                <div class="contact_title">
+                                    Режим работы
+                                </div>
+                                <div class="contact_info">
+                                    Пн - Пт: 9.00 - 18.00<br>
+                                    Сб - Вс: выходные
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="contact_wrp">
+                                <div class="contact_title">
+                                    Электронная почта
+                                </div>
+                                <div class="contact_info">
+                                    <a class="contact_mail" href="mailto:protek-rnd@ya.ru">protek-rnd@ya.ru</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="questions_block block--contacts">
+                                <div class="questions_block--links">
+                                    <a class="q_link" href="mailto:info@sash-oil.ru">
+                                        <svg class="ic_quest">
+                                            <use xlink:href="img/sprite.svg#mail"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="questions_block--text">
+                                    Остались вопросы?<br>Напишите нам!
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__logos">
+                    <img src="./img/logo-white.png" alt="">
+                    <img src="./img/market.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Информация
+                </div>
+                <div class="footer__phones">
+                    <a class="footer__phone" href="tel:+79044488840">+79044488840</a>
+                    <a class="footer__phone" href="tel:+79044488840">+79044488840</a>
+                </div>
+                <div class="footer__ws">
+                    <a href="https://wa.me/79044488840">Консультация Whtaspapp</a>
+                </div>
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <a href="mailto:protek-rnd@ya.ru">protek-rnd@ya.ru</a>
+                </div>
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#maps-and-flags"></use>
+                    </svg>
+                    <a href="./contacts.html">
+                        Ростов-на-Дону, Адлерский пер., дом № 51
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Каталог
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./catalog.html">Станки для лазерной резки</a></li>
+                    <li><a href="./catalog.html">Вырубные станки</a></li>
+                    <li><a href="./catalog.html">Гибочные станки</a></li>
+                    <li><a href="./catalog.html">Комбинированные станки</a></li>
+                    <li><a href="./catalog.html">Автоматизированные системы</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Услуги
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./information.html">Ремонт</a></li>
+                    <li><a href="./information.html">Установка и ввод в эксплуатацию</a></li>
+                    <li><a href="./information.html">Программное обеспечение</a></li>
+                    <li><a href="./information.html">Консультирование</a></li>
+                    <li><a href="./information.html">Лизинг</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__info">
+            <div class="footer__privacy">
+                Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.
+            </div>
+            <div class="footer__delosait">
+                <a href="https://wwww.delosait.ru">Сделано на delosait.ru</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="callme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-7">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Перезвоним,&nbsp;ответим на&nbsp;все вопросы, подготовим коммерческое предложение</div><br>
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Имя" required>
+                                <!--  <label for="userphone">Введите Ваш телефон <span>*</span></label>-->
+                                <input class="form_input__modal phone_mask" name="Телефон" type="text" placeholder="Телефон" required>
+                                <input class="form_input__modal" name="Электронная почта" type="email" placeholder="Электронная почта" required>
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox1">
+                                        <input type="checkbox" id="Checkbox1" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox1"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте Sash-oil.ru">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Комерческое предложение">
+
+
+                        </form>
+                        <div id="success">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-5 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="8(800)2000 600"> +7(904)4488840</a>
+                                        <a href="mailto:protek-rnd@ya.ru">
+
+                                            protek-rnd@ya.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="askme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Задайте вопрос нашим консультантам</div><br>
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Название компании" required>
+
+                                <!--  <label for="userphone">Введите Ваш email <span>*</span></label>-->
+                                <input class="form_input__modal" name="Электронная почта" type="text" placeholder="Электронная почта" required>
+                                <textarea class="form_input__modal" placeholder="Ваш вопрос" name="Сообщение" cols="30" rows="10"></textarea>
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте POSCLUB.RU">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Задать вопрос">
+
+
+                        </form>
+                        <div id="success2">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="8(800)2000 600"> +7(904)4488840</a>
+                                        <a href="mailto:protek-rnd@ya.ru"> protek-rnd@ya.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="buyme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Введите ваши данные</div><br>
+
+                                <input class="form_input__modal" name="Электронная почта" type="text" placeholder="Электронная почта" required>
+                                <input class="form_input__modal" name="Электронная почта" type="tel" placeholder="Ваш телефон" required>
+                                <textarea class="form_input__modal" placeholder="Параметры" name="Сообщение" cols="30" rows="10"></textarea>
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте POSCLUB.RU">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Задать вопрос">
+
+
+                        </form>
+                        <div id="success2">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="8(800)2000 600"> 8(800)2000 600</a>
+                                        <a href="mailto:info@sash-oil.ru"> protek-rnd@ya.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
