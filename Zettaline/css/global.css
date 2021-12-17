@@ -14,65 +14,37 @@
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: url("../fonts/../fonts/Raleway-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/../fonts/Raleway-Medium.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/../fonts/Raleway-Bold.woff2") format("woff2");
+  font-family: "Akrobat";
+  src: url("../fonts/../fonts/Akrobat-ExtraBold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Raleway";
-  src: url("../fonts/../fonts/Raleway-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/../fonts/Montserrat-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/../fonts/Montserrat-Semibold.woff2") format("woff2");
+  font-family: "Roboto";
+  src: url("../fonts/../fonts/Roboto Bold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
+  src: url("../fonts/../fonts/Roboto Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
   src: url("../fonts/../fonts/Roboto.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: "Playfair-Display";
-  src: url("../fonts/../fonts/Playfair-Display.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/../fonts/Open-Sans.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "Roboto";
+  src: url("../fonts/../fonts/Roboto Light.woff2") format("woff2");
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
@@ -231,19 +203,22 @@ summary {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
-  color: #202020;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #434343;
 }
 
 img {
@@ -253,61 +228,28 @@ img {
 
 a {
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-main {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  z-index: 10;
-  min-width: 320px;
-  max-width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
-  margin: 0 auto 0 374px;
-  box-sizing: border-box;
+h4 {
+  font-family: "Akrobat", sans-serif;
+  font-size: 65px;
+  margin: 60px 0;
+  text-transform: uppercase;
+  color: #000;
 }
 
-aside {
-  position: fixed;
-  min-height: 100vh;
-  background: #202020;
-  left: 0;
-  top: 0;
-  width: 359px;
-  display: flex;
-  flex-direction: column;
-  border-right: 15px solid #4F4F4F;
-  box-shadow: 15px 0 0 #767676;
-  text-align: center;
-  padding: 57px 49px 0 82px;
-  z-index: 20;
-}
-aside .footer {
-  margin-top: auto;
-}
-
-.visible {
-  display: block;
-  box-shadow: 15px 0 0 #767676, 15px 0 30px #4f4f4f;
-}
-
-@media only screen and (max-width: 1200px) {
-  main {
-    margin: 0 auto 0 auto;
-    padding: 0 0;
+@media only screen and (max-width: 992px) {
+  h4 {
+    font-size: 48px;
+    margin: 30px 0;
   }
 }
-@media only screen and (max-width: 1200px) {
-  aside {
-    display: none;
+@media only screen and (max-width: 608px) {
+  h4 {
+    font-size: 24px;
+    margin: 20px 0;
   }
 }
-@media only screen and (max-width: 576px) {
-  aside {
-    padding: 17px 17px 0 17px;
-  }
-}
-/*# sourceMappingURL=global.css.map */

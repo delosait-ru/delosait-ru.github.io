@@ -9,282 +9,430 @@
     <meta name="theme-color" content="#111111">
     <title>New site</title>
 
-
-
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
-
-
 </head>
 
 <body>
+    <div class="page">
+        <header class="header">
+    <div class="header__header">
+        <div class="container-lg">
+            <div class="logos">
+                <div class="logos__left">
+                    <div class="logos__white">
+                        <img src="./img/logow.svg" alt="">
+                    </div>
+                    <div class="logos__blue">
+                        <img src="./img/logo1-blue.png" alt="">
 
-    <aside>
-        <!--   Для отображения в мобильной версии тегу <aside> необходтимо добавить class="visible"-->
+                    </div>
+                </div>
+                <div class="logos__right">
+                    <div class="logos__white">
+                        <img src="./img/logo2-white.png" alt="">
+                    </div>
+                    <div class="logos__blue">
+                        <img src="./img/logo2-blue.png" alt="">
 
-        <div class="close_aside">
-    <img src="./img/close-ic.svg" alt="alt">
-</div>
-<div class="header">
-    <div class="header__img">
-        <img src="./img/man.png" alt="alt">
-    </div>
-    <div class="header__name">
-        Дмитрий Жадан
-    </div>
-    <a class="header__email" href="mailto:#">dmitrii@mail.com</a>
-</div>
-<nav>
-    <ul class="navigation">
-        <li class="active">
-            <a href="/">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#settings"></use>
-                </svg>
-                Настройки
-            </a>
-        </li>
-        <li>
-            <a href="/statistic.html">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#stat"></use>
-                </svg>
-                Стастистика
-            </a>
-        </li>
-        <li>
-            <a href="/finance.html">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#coin"></use>
-                </svg>
-                Финансы
-            </a>
-        </li>
-        <li>
-            <a href="/support.html">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#question"></use>
-                </svg>
-                Поддержка
-            </a>
-        </li>
-        <li>
-            <a href="/profile.html">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#profile"></use>
-                </svg>
-                Профиль
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <svg class="navigation__ic">
-                    <use xlink:href="./img/sprite.svg#api"></use>
-                </svg>
-                API
-            </a>
-        </li>
-    </ul>
-</nav>
-<div class="footer">
-    <a href="#">
-        <svg class="navigation__ic">
-            <use xlink:href="./img/sprite.svg#exit"></use>
-        </svg>
-        Выход
-    </a>
-    <img src="./img/bg.svg" alt="alt">
-
-</div>
-
-    </aside>
-
-    <main>
-        <div class="content">
-    <div class="top-part">
-        <div class="top-part__btns">
-            <a href="/" class="btn-transparent btn-transparent--active">
-                Настройка калькулятора
-
-            </a>
-            <a href="./nastroika-nacenki.html" class="btn-transparent">
-                Настройка наценки
-
-            </a>
-            <a href="./nastroika-ekvairinga.html" class="btn-transparent">
-                Настройка эквайринга
-
-            </a>
-            <a href="./nastroika-popup.html" class="btn-transparent">
-                Настройка pop-up окна
-
-            </a>
-            <a href="./yuridicheskiy-razdel.html" class="btn-transparent">
-                Юридический раздел
-            </a>
-
-        </div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="top-part__logo">
-            <img src="./img/logo.png" alt="alt">
-        </div>
-    </div>
-    <div class="block-title">
-        Код: <span>sjfciesjfksnvlelfe2v4s6vs352vsd5ved5</span>
-    </div>
-    <div class="code">
-        <button class="btn-black">Скопировать код</button>
-    </div>
-    <div class="block-title">Дизайн калькулятора</div>
-    <div class="design">
-        <div class="design__block">
-            <div class="design__img">
-                <img src="./img/design1.jpg" alt="alt">
-            </div>
-            <button class="btn-block">
-                Применить
-            </button>
-        </div>
-        <div class="design__block">
-            <div class="design__img">
-                <img src="./img/design2.jpg" alt="alt">
-            </div>
-            <button class="btn-block btn-block--active" disabled>
-                Применено
-            </button>
-        </div>
-        <div class="design__block">
-            <div class="design__img">
-                <img src="./img/design3.jpg" alt="alt">
-            </div>
-            <button class="btn-block">
-                Применить
-            </button>
-        </div>
-        <div class="design__block">
-            <div class="design__img">
-                <img src="./img/design4.jpg" alt="alt">
-            </div>
-            <button class="btn-block">
-                Применить
-            </button>
-        </div>
-        <div class="design__block">
-            <div class="design__img">
-                <img src="./img/design5.jpg" alt="alt">
-            </div>
-            <button class="btn-block">
-                Применить
-            </button>
-        </div>
-        <div class="design__block empty"></div>
-    </div>
-    <div class="block-title">
-        Кнопка
-    </div>
-    <div class="buttons">
-        <div class="buttons__block">
-            <div class="btn-custom btn-custom--green">
-                <span>Store Travel eSim</span>
-                <svg class="ic_btn">
-                    <use xlink:href="img/sprite.svg#shopping"></use>
-                </svg>
+                    </div>
+                </div>
 
             </div>
-            <button class="btn-block">
-                Применить
-            </button>
         </div>
-        <div class="buttons__block">
-            <div class="btn-custom btn-custom--blue">
-                <span>Store Travel eSim</span>
-                <svg class="ic_btn">
-                    <use xlink:href="img/sprite.svg#shopping"></use>
-                </svg>
+        <hr>
 
+        <div class="container-lg">
+            <div class="wrapper">
+                <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                <div class="header-wrap clearfix">
+                    <div class="top-mnu">
+                        <ul class="sf-menu">
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/about.html">О компании</a></li>
+                            <li><a href="/spheres.html">Сферы деятельности</a></li>
+                            <li><a href="/partners.html">Наши партнеры</a></li>
+                            <li><a href="/projects.html">Проекты</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <button class="btn-block btn-block--active" disabled>
-                Применено
-            </button>
-
         </div>
-        <div class="buttons__block">
-            <div class="btn-custom btn-custom--orange">
-                <span>Store Travel eSim</span>
-                <svg class="ic_btn">
-                    <use xlink:href="img/sprite.svg#shopping"></use>
-                </svg>
-
-            </div>
-            <button class="btn-block" disabled>
-                Применено
-            </button>
-        </div>
-        <div class="buttons__block">
-            <div class="btn-custom btn-custom--salat">
-                <span>Store Travel eSim</span>
-                <svg class="ic_btn">
-                    <use xlink:href="img/sprite.svg#shopping"></use>
-                </svg>
-
-            </div>
-            <button class="btn-block" disabled>
-                Применено
-            </button>
-        </div>
-        <div class="buttons__block">
-            <div class="btn-custom btn-custom--fiolett">
-                <span>Store Travel eSim</span>
-                <svg class="ic_btn">
-                    <use xlink:href="img/sprite.svg#shopping"></use>
-                </svg>
-
-            </div>
-            <button class="btn-block" disabled>
-                Применено
-            </button>
-        </div>
-        <div class="buttons__block empty"></div>
-
     </div>
-
-    <div class="block-title">
-        Логотип
-    </div>
-    <div class="file-upload">
-        <label>
-            <div class="file-wrp"><input type="file" name="file">
-                <span class="btn_text">Прикрепите логотип</span>
-                <span class="btn_icon">
-                    <svg class="ic_file">
-                        <use xlink:href="img/sprite.svg#file-plus"></use>
-                    </svg>
-                </span>
-                <span class="btn_text btn__succsess">Файл загружен!</span>
+    <div class="header__main">
+        <div class="container-lg">
+            <div class="heading">
+                <h1>
+                    Телекоммуникационное оборудование и&nbsp;услуги
+                </h1>
+                <p>оборудование DWDM для дата-центров, городских сетей и&nbsp;магистральных линий связи</p>
             </div>
-        </label>
+        </div>
     </div>
-    <div class="block-title">
-        Предпросмотр
-    </div>
-    <div class="preview">
-        <img src="./img/preview.jpg" alt="alt">
+    <div class="header__footer">
 
-        <button class="btn-black">Сохранить настройки</button>
+        <div class="bottom">
+            <div class="container-lg">
+                <div class="bottom__wrp">
+                    <a href="#partners" class="bottom__btn btn_box">
+                        <svg class="ic_down">
+                            <use xlink:href="img/sprite.svg#down-arrow"></use>
+                        </svg>
+
+                    </a>
+                    <div class="bottom__tizers">
+                        <div class="bottom__tizer">
+                            <svg class="ic_header">
+                                <use xlink:href="img/sprite.svg#medal"></use>
+                            </svg>
+                            <div class="bottom__text">
+                                Первоклассный сервис
+                                и&nbsp;качественная консультация клиентов
+                            </div>
+
+                        </div>
+                        <div class="bottom__tizer">
+                            <svg class="ic_header">
+                                <use xlink:href="img/sprite.svg#automation"></use>
+                            </svg>
+                            <div class="bottom__text">
+                                Гибкость и&nbsp;професииональный подход
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main>
+            <div id="partners" class="container-lg">
+    <div class="partners-title">
+        Наши партнеры
+    </div>
+    <div class="partners">
+        <div class="partners__item">
+            <div class="partners__img">
+                <img src="./img/partner1.png" alt="">
+            </div>
+            <div class="partners__desc">
+                ООО «Дойче Банк» - банк
+                с иностранным участием
+            </div>
+
+        </div>
+        <div class="partners__item">
+            <div class="partners__img">
+                <img src="./img/partner2.png" alt="">
+            </div>
+            <div class="partners__desc">
+                АО "КОММЕРЦБАНК (ЕВРАЗИЯ)" - банк с иностранным участием
+            </div>
+
+        </div>
+        <div class="partners__item">
+            <div class="partners__img">
+                <img src="./img/partner3.png" alt="">
+            </div>
+            <div class="partners__desc">
+                ООО “Яндекс” - российская IT компания
+            </div>
+
+        </div>
+        <div class="partners__item">
+            <div class="partners__img">
+                <img src="./img/partner4.png" alt="">
+            </div>
+            <div class="partners__desc">
+                ЗАО “Раском” - российский поставщик услуг связи
+            </div>
+
+        </div>
     </div>
 </div>
-<div class="content-image">
-    <img src="./img/bg-main.svg" alt="alt">
+
+            <section class="customers">
+
+    <div class="container-lg">
+        <h4>Кто уже покупает у нас?</h4>
+        <div class="row g-0">
+            <div class="col-sm-6">
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="./img/cus1.jpg" alt="">
+                    </div>
+                    <div class="customers__title">
+                        Банки
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="./img/cus2.jpg" alt="">
+                    </div>
+                    <div class="customers__title">
+                        Операторы связи
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="./img/cus3.jpg" alt="">
+                    </div>
+                    <div class="customers__title">
+                        Крупные компании и&nbsp;корпорации
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="customers__item">
+                    <div class="customers__img">
+                        <img src="./img/cus4.jpg" alt="">
+                    </div>
+                    <div class="customers__title">
+                        Государственные учреждения
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+            <div class="cloud">
+
+    <div class="container-lg">
+
+        <h4>
+            В ОТРАСЛИ ДЕФИЦИТ СПЕЦИАЛИЗИРОВАНЫХ КОМПАНИЙ, <span>&nbsp;У&nbsp;НАС ВСЕ ОБОРУДОВАНИЕ&nbsp;
+                &nbsp;В&nbsp;НАЛИЧИИ ПРЯМО СЕЙЧАС&nbsp;</span>
+        </h4>
+        <p>с полной послепродажной поддержкой
+            и индивидуальным подходом к каждому клиенту</p>
+        <img src="./img/cloud-01.png" alt="" class="cloud1">
+        <!--    <img src="./img/cloud-02.png" alt="" class="cloud2">-->
+        <img src="./img/cloud-03.png" alt="" class="cloud3">
+        <!--      <img src="./img/cloud-04.png" alt="" class="cloud4">-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+            </div>
+            <div class="col-sm-6">
+                <div class="cloud__block">
+                    <div class="cloud__subtitle">Мы работаем на оборудовании для использования на сетях связи</div>
+                    <ul class="cloud__list">
+                        <li>DWDM FSP 3000</li>
+                        <li>ALM</li>
+                        <li>OSA Oscilloquartz</li>
+                    </ul>
+                    <div class="cloud__logo">
+                        <img src="./img/logo2-blue.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
 
 </div>
 
-    </main>
+            <section class="tizers-wrp">
+    <div class="container-lg">
+
+        <!-- /bootstrap nav -->
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <h4 class="sticky-top">Почему выгоднее сотрудничать с&nbsp;нами?</h4>
+
+
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+                <div class="tizers">
+                    <div class="tizer">
+                        <div class="tizer__top">
+                            <img src="./img/tiz1.svg" alt="">
+                            <div class="tizer__title">
+                                ЛУЧШЕЕ ОБОРУДОВАНИЕ И&nbsp;СЕРВИС В ОТРАСЛИ
+                            </div>
+                        </div>
+                        <div class="tizer__bottom">
+                            Нашей компанией реализовано множество проектов в Европе и России.
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="tizer">
+                        <div class="tizer__top">
+                            <img src="./img/tiz2.svg" alt="">
+                            <div class="tizer__title">
+                                КОНКУРЕНТНАЯ ЦЕНА
+                            </div>
+                        </div>
+                        <div class="tizer__bottom">
+                            Всегда найдём индивидуальное решение.
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="tizer">
+                        <div class="tizer__top">
+                            <img src="./img/tiz3.svg" alt="">
+                            <div class="tizer__title">
+                                СЖАТЫЕ СРОКИ ВНЕДРЕНИЯ ПРОЕКТОВ
+                            </div>
+                        </div>
+                        <div class="tizer__bottom">
+                            Богатый опыт реализации проектов и наличие оборудования на складе позволяет существенно сократить сроки внедрения
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <div class="about">
+    <div class="container-lg">
+        <div class="about__wrp">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-7">
+                    <div class="about__content">
+                        <h2>
+                            ADVA Optical Networking
+                        </h2>
+                        <p>
+                            является одним из ведущих мировых поставщиков сетевых решений для быстрого развертывания в телекоммуникационных сетях сервисов, связанных с передачей разнородных данных.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-5">
+                    <div class="about__img wow animate__animated animate__slower animate__delay-1s  animate__fadeIn animated">
+                        <img src="./img/3000.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            <section class="contacts">
+    <div class="container-lg">
+
+        <h4>Связаться с нами</h4>
+        <div class="video-bg">
+            <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" poster="./img/poster.jpg" muted>
+                <source src="./contact.mp4" type="video/mp4">
+
+                <source src="./contact.webm" type="video/webm">
+
+                <!-- <source src="./img/video.ogv" type="video/ogv">-->
+
+
+            </video>
+            <div class="contacts__fade"></div>
+
+
+            <div class="contacts__info">
+                <div class="contacts__top">
+                    <div class="contacts__left">
+                        Angaben gemäß § 5 TMG:<br>
+                        Frmensitz der Superbia GmbH<br>
+                        Zur Marienhöhe 7a<br>
+                        93161 Sinzing<br>
+                        <br>
+                        <div class="contacts__email">
+                            <svg class="ic_contacts">
+                                <use xlink:href="img/sprite.svg#mail"></use>
+                            </svg>
+                            <a href="#">info@superbia-group.com</a>
+
+                        </div>
+                        <hr>
+                        <p>
+                            Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz
+                            DE 261719871
+                            Verantwortlicher für journalistisch-redaktionelle Inhalte gem. § 55 II RstV: Alexander Hochmuth
+                        </p>
+                        <p>
+                            Der Nutzung der im Zuge der Impressumspflicht und der weiteren veröffentlichten Kontaktdaten durch Dritte bspw. zur Übersendung von unangeforderter Werbung und Informationsmaterialien wird widersprochen. Wir behalten uns rechtliche Schritte im Falle der unverlangten
+                        </p>
+                    </div>
+                    <div class="contacts__right">
+
+                        Registergericht: Amtsgericht Regensburg<br>
+                        Registriernummer HRB 11075<br>
+                        Vertretungsberechtigter Geschäftsführer: Alexander Hochmuth
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__buttons">
+            <a href="./contacts.html" class="contacts__button--red">
+                Связаться с нами
+            </a>
+            <a href="tel:888888" class="contacts__button--phone">
+                0941 - 37809129
+            </a>
+            <a class="contacts__button--ic" href="#">
+                <svg class="ic_btn">
+                    <use xlink:href="img/sprite.svg#call"></use>
+                </svg>
+
+            </a>
+            <a class="contacts__button--mail" href="#">
+                <svg class="ic_btn">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+
+            </a>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+    <div class="container-lg">
+        <div class="footer__wrp">
+            <div class="footer__logo">
+                <img src="./img/logob.svg" alt="">
+            </div>
+            <div class="footer__center">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Политика cookies</a>
+            </div>
+            <div class="footer__logo">
+                <img src="./img/logo2-blue.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-
 
 </html>
