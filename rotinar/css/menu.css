@@ -24,3 +24,12 @@ body
 {
    margin: 0 30px 0 0px;
 }
+#wb_TextMenu1
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 953px;
+   height: 23px;
+   z-index: 0;
+}

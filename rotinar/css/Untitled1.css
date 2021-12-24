@@ -118,6 +118,26 @@ a.menu-top:hover
    color: #E53734;
    text-decoration: none;
 }
+a.phoneform
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phoneform:visited
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phoneform:active
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phoneform:hover
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
 h1, .h1
 {
    font-family: Arial;
