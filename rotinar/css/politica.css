@@ -2505,7 +2505,7 @@ body
 {
    position: absolute;
    left: 16px;
-   top: 196px;
+   top: 226px;
    width: 302px;
    height: 72px;
    z-index: 176;
@@ -2567,7 +2567,7 @@ body
 {
    position: absolute;
    left: 17px;
-   top: 406px;
+   top: 436px;
    width: 327px;
    height: 82px;
    z-index: 178;
@@ -2576,7 +2576,7 @@ body
 {
    position: absolute;
    left: 17px;
-   top: 298px;
+   top: 328px;
    width: 301px;
    height: 72px;
    z-index: 177;
@@ -2972,9 +2972,9 @@ body
    left: 50%;
    margin-left: -180px;
    top: 50%;
-   margin-top: -286px;
+   margin-top: -310px;
    width: 361px;
-   height: 572px;
+   height: 621px;
    z-index: 195;
 }
 #Layer32
@@ -3234,7 +3234,7 @@ body
 {
    position: absolute;
    left: 32px;
-   top: 519px;
+   top: 549px;
    width: 313px;
    height: 19px;
    text-align: center;
@@ -3411,7 +3411,7 @@ body
 {
    position: absolute;
    left: 16px;
-   top: 60px;
+   top: 90px;
    width: 297px;
    height: 54px;
    z-index: 179;
@@ -3515,7 +3515,7 @@ body
 {
    position: absolute;
    left: 17px;
-   top: 130px;
+   top: 160px;
    width: 319px;
    height: 36px;
    z-index: 183;
@@ -3673,8 +3673,8 @@ body
 #wb_IconFont23
 {
    position: absolute;
-   left: 34px;
-   top: 512px;
+   left: 17px;
+   top: 543px;
    width: 20px;
    height: 20px;
    text-align: center;

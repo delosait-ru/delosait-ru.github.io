@@ -1,10 +1,95 @@
+<?php
+function ValidateEmail($email)
+{
+   $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+   return preg_match($pattern, $email);
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'layer26')
+{
+   $mailto = 'yourname@yourdomain.com';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Сообщение с сайта rotinar.ru';
+   $message = 'Данные посетителя:';
+   $success_url = '';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      $message .= "IP Address : ";
+      $message .= $_SERVER['REMOTE_ADDR'];
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=ISO-8859-1'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Заправка техническими газами</title>
 <link href="css/Untitled1.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
+<link href="css/ss.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/wwb15.min.js"></script>
@@ -45,7 +130,7 @@
 <div id="Layer1">
 <div id="Layer1_Container">
 <div id="wb_Image1">
-<img src="images/hr6ck5vur0.jpg" id="Image1" alt=""></div>
+<a href="./index.php"><img src="images/hr6ck5vur0.jpg" id="Image1" alt=""></a></div>
 <div id="wb_Text1">
 <span id="wb_uid6"><strong>24</strong></span><span id="wb_uid7"><strong> ГАЗ</strong></span></div>
 <div id="wb_Text2">
@@ -53,7 +138,7 @@
 <div id="wb_IconFont1">
 <div id="IconFont1"><i class="material-icons">&#xe0e1;</i></div></div>
 <div id="wb_Text3">
-<span id="wb_uid9"><a href="mailto:vitaliyb@rr-grup.ru" class="mail-header">vitaliyb@rr-grup.ru</a></span></div>
+<span id="wb_uid9"><a href="mailto:vitaliyb@rr-grup.ru" class="mail-header">gas-84958223051@yandex.ru</a></span></div>
 <div id="wb_Text4">
 <span id="wb_uid10"><strong><a href="tel:84958223051" class="phone">+7 (495) 822-30-51</a></strong></span></div>
 </div>
@@ -65,7 +150,7 @@
 <div id="Layer2_Container">
 <div id="wb_EmbeddedPage1">
 <div id="wb_TextMenu1">
-<span><a href="http://" class="menu-top">&#1050;&#1080;&#1089;&#1083;&#1086;&#1088;&#1086;&#1076;</a></span><span><a href="http://" class="menu-top">&#1055;&#1088;&#1086;&#1087;&#1072;&#1085;</a></span><span><a href="http://" class="menu-top">&#1040;&#1094;&#1077;&#1090;&#1080;&#1083;&#1077;&#1085;</a></span><span><a href="http://" class="menu-top">&#1059;&#1075;&#1083;&#1077;&#1082;&#1080;&#1089;&#1083;&#1086;&#1090;&#1072;</a></span><span><a href="http://" class="menu-top">&#1040;&#1088;&#1075;&#1086;&#1085;</a></span><span><a href="http://" class="menu-top">&#1057;&#1074;&#1072;&#1088;&#1086;&#1095;&#1085;&#1072;&#1103; &#1089;&#1084;&#1077;&#1089;&#1100;</a></span><span><a href="http://" class="menu-top">&#1040;&#1079;&#1086;&#1090;</a></span><span><a href="http://" class="menu-top">&#1043;&#1077;&#1083;&#1080;&#1081;</a></span></div>
+<span><a href="http://" class="menu-top">&#1050;&#1080;&#1089;&#1083;&#1086;&#1088;&#1086;&#1076;</a></span><span><a href="./propan.php" class="menu-top">&#1055;&#1088;&#1086;&#1087;&#1072;&#1085;</a></span><span><a href="http://" class="menu-top">&#1040;&#1094;&#1077;&#1090;&#1080;&#1083;&#1077;&#1085;</a></span><span><a href="http://" class="menu-top">&#1059;&#1075;&#1083;&#1077;&#1082;&#1080;&#1089;&#1083;&#1086;&#1090;&#1072;</a></span><span><a href="http://" class="menu-top">&#1040;&#1088;&#1075;&#1086;&#1085;</a></span><span><a href="http://" class="menu-top">&#1057;&#1074;&#1072;&#1088;&#1086;&#1095;&#1085;&#1072;&#1103; &#1089;&#1084;&#1077;&#1089;&#1100;</a></span><span><a href="http://" class="menu-top">&#1040;&#1079;&#1086;&#1090;</a></span><span><a href="http://" class="menu-top">&#1043;&#1077;&#1083;&#1080;&#1081;</a></span></div>
 </div>
 </div>
 </div>
@@ -80,7 +165,7 @@
 </div>
 </div>
 <div id="wb_Shape1">
-<a href="" onclick="ShowObjectWithEffect('overlay', 1, 'fade', 300);ShowObjectWithEffect('modal', 1, 'dropdown', 500);return false;"><img class="hover" src="images/img0001_hover.png" alt="" id="wb_uid13"><span class="default"><img src="images/img0001.png" id="Shape1" alt="" data-fancybox data-src="#buy" href="javascript:;"></span></a></div>
+<a href="" onclick="ShowObjectWithEffect('overlay', 1, 'fade', 300);ShowObjectWithEffect('modal', 1, 'dropdown', 500);return false;"><img class="hover" src="images/img0002_hover.png" alt="" id="wb_uid13"><span class="default"><img src="images/img0002.png" id="Shape1" alt="" data-fancybox data-src="#buy" href="javascript:;"></span></a></div>
 </div>
 </div>
 <div id="Layer10">
@@ -205,7 +290,8 @@
 </div>
 </div>
 </div>
-<form name="Layer26" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Layer26">
+<form name="Layer26" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" id="Layer26">
+<input type="hidden" name="formid" value="layer26">
 <div id="Layer26_Container">
 <input type="text" id="Editbox1" class="phone1" name="Телефон" value="" spellcheck="false" placeholder="&#1042;&#1072;&#1096;&#1077; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;">
 <input type="text" id="Editbox2" name="Имя" value="" spellcheck="false" placeholder="&#1042;&#1072;&#1096;&#1077; &#1080;&#1084;&#1103;">
