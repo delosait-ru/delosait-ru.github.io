@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<!--Убираем дерганье от fancybox, нахер!-->
+<style>
+    html {
+        overflow-y: scroll !important;
+    }
+
+    body {
+        overflow-y: hidden !important;
+    }
+
+</style>
+
+<body>
+    <div class="page">
+
+        <header class="header-wrp header-page">
+    <div class="container-lg">
+        <div class="header header-top">
+            <div class="header__logo">
+                <a href="./"><img src="/img/logo-gold.svg" alt="логотип mijet"></a>
+            </div>
+            <div class="header__top">
+                <div class="header__top-contacts">
+                    <div class="header__descriptor">
+                        Качественный сервис по организации VIP&nbsp;чартеров «под ключ»
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header__phone">
+                            <a class="header__phone-number" href="tel:84951341494">
+                                <svg class="ic_header">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                                8 (495) 134-14-94
+                            </a>
+                            <a class="header__email" href="mailto:info@mijet.ru">info@mijet.ru</a>
+                        </div>
+                        <div class="header__button" data-bs-toggle="modal" data-bs-target="#buyme">
+                            <span>Заказать рейс</span>
+
+                        </div>
+                    </div>
+                    <div class="mobile_wrp">
+                        <div class="mobile_buttons">
+
+                            <a href="https://api.whatsapp.com/send?phone=7916841397111111"> <svg class="ic_mob">
+                                    <use xlink:href="./img/sprite.svg#call2"></use>
+                                </svg></a>
+                            <a href="tel:8916841397111111"> <svg class="ic_mob">
+                                    <use xlink:href="./img/sprite.svg#mailw"></use>
+                                </svg></a>
+                            <a href="tel:8916841397111111"> <svg class="ic_mob">
+                                    <use xlink:href="./img/sprite.svg#wsw"></use>
+                                </svg></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="header__top-menu">
+                    <div class="wrapper">
+                        <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                        <div class="header-wrap clearfix">
+                            <div class="top-mnu">
+                                <ul class="sf-menu">
+                                    <li><a href="/about.html">О компании</a></li>
+                                    <li><a href="/offers.html">Предложения</a></li>
+                                    <li><a href="/planes.html">Авиафлот</a></li>
+                                    <li><a href="/contacts.html">Empty Legs</a></li>
+                                    <li><a href="/contacts.html">Jet Sharing</a></li>
+                                    <li><a href="/news.html">Авиановости</a></li>
+                                    <li><a href="/contacts.html">Контакты</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+        <div class="heading-page">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Предложения</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                    <!--  <li><a href="/catalog.html">Услуги</a></li>-->
+                    <li>Предложения</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <section class="main">
+            <div class="container-lg">
+    <div class="product-card">
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+
+                <div class="slider-wrapper">
+                    <ul class="slider-thumb">
+                        <li class="type-image"><img src="./img/slide1.jpg"></li>
+                        <li class="type-image"><img src="./img/slide2.jpg"></li>
+                        <li class="type-image"><img src="./img/slide3.jpg"></li>
+                        <li class="type-image"><img src="./img/slide4.jpg"></li>
+                        <li class="type-image"><img src="./img/slide5.jpg"></li>
+                    </ul>
+
+                    <ul class="slider-preview">
+
+                        <li class="big-image"><a data-fancybox="gallery" href="./img/slide1.jpg"><img src="./img/slide1.jpg" alt="alt"></a></li>
+                        <li class="big-image"><a data-fancybox="gallery" href="./img/slide2.jpg"><img src="./img/slide2.jpg" alt="alt"></a></li>
+                        <li class="big-image"><a data-fancybox="gallery" href="./img/slide3.jpg"><img src="./img/slide3.jpg" alt="alt"></a></li>
+                        <li class="big-image"><a data-fancybox="gallery" href="./img/slide4.jpg"><img src="./img/slide4.jpg" alt="alt"></a></li>
+
+                        <li class="big-image"><a data-fancybox="gallery" href="./img/slide5.jpg"><img src="./img/slide5.jpg" alt="alt"></a></li>
+
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-lg-12 col-xl-6">
+                <div class="infocard">
+                    <!-- <div class="item__sticker item__sticker--red"> В наличии</div>-->
+
+
+                </div>
+                <div class="card-title">
+                    <h1>Airbus Corporate Jetliner(ACJ)</h1>
+                </div>
+
+
+                <div class="product_btns">
+                    <div class="btn-product" data-bs-toggle="modal" data-bs-target="#buyme">Заказать Jet</div>
+                    <div class="questions_block">
+                        <div class="questions_block--links">
+                            <a class="q_link" href="mailto:#">
+                                <svg class="ic_quest">
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                </svg>
+
+                            </a>
+
+                        </div>
+                        <div class="questions_block--text">
+                            Остались вопросы?<br>Напишите нам!
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="tizers-card">
+                    <div class="tizer">
+                        <div class="tizer_img">
+                            <img src="../img/tizer1.svg" alt="">
+
+                        </div>
+                        <div class="tizer_txt"> Конкурентная цена на чартеры. Доступные Empty Legs</div>
+                    </div>
+                    <div class="tizer">
+                        <div class="tizer_img">
+                            <img src="../img/tizer3.svg" alt="">
+                        </div>
+                        <div class="tizer_txt"> Премиальное обслуживание с момента заказа рейса до посадки самолета</div>
+
+                    </div>
+                    <div class="tizer">
+                        <div class="tizer_img">
+                            <img src="../img/tizer4.svg" alt="">
+
+                        </div>
+                        <div class="tizer_txt">Бортовое питание - блюда из лучших ресторанов мира</div>
+                    </div>
+                </div>
+
+                <hr>
+
+
+            </div>
+            <div class="col-xl-12">
+                <div class="plane-tab">
+                    <nav>
+                        <div class="nav nav-tabs nav-card" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-descr-tab" data-bs-toggle="tab" data-bs-target="#nav-descr" role="tab" aria-controls="nav-descr" aria-selected="true">Описание</a>
+                            <a class="nav-link" id="nav-char-tab" data-bs-toggle="tab" data-bs-target="#nav-char" role="tab" aria-controls="nav-char" aria-selected="false">Характеристики</a>
+
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-descr" role="tabpanel" aria-labelledby="nav-descr-tab">
+                            <div class="description_card lcard__char">
+                                <p>Современный и просторный A319 Airbus Corporate Jetliner создан на базе среднемагистрального пассажирского самолета Airbus A319.</p>
+                                <p> Эта версия широко используется во всем мире в качестве корпоративного лайнера или правительственного само-лета. ACJ занимает нишу бизнес-джетов супер-класса — самолет не превышает по стоимости лидеров дальнемагистрального класса Gulfstream V и Global Express, но превосходит их по объему салона в три раза.
+                                <p> Дальность полета с восемью пассажирами на борту составляет 11100 км., что позволяет долететь из Москвы до Йоханнесбурга.</p>
+                                <p> ACJ стал первым в мире бизнес-джетом, оборудованным электродистанционной системой управления (ЭДСУ) и сертифицированным для выполнения посадки по категории 3В — при нулевой видимости, что позволяет приземляться даже в плохую погоду. </p>
+                                <p>На ACJ можно совершать трансконтинентальные перелеты, самолет сертифицирован для выполнения полетов над протяженными водными пространствами по требованиям ETOPS. Благодаря топливосберегающей аэродинамической схеме и использованию легких композитных материалов джет экономит топливо — расход горючего составляет не более 2500 кг/ч. ACJ унифицирован со всеми семействами самолетов Airbus, что позволяет обслуживать его в любой точке мира, где расположены технические центры компании. В 2006 году поступило около 20 заказов на лайнеры семейства ACJ.</p>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-char" role="tabpanel" aria-labelledby="nav-char-tab">
+
+
+                            <div class="card-data">
+
+                                <div class="card-data__row tables">
+                                    <table class="table">
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Дальность</td>
+                                                <td class="end">11 000 км</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Крейсерская скорость</td>
+                                                <td class="end">850 км/ч</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Максимальная высота полета</td>
+                                                <td class="end">12 500 м</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Максимальный взлетный вес</td>
+                                                <td class="end">75 500 кг</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Максимальное число пассажиров</td>
+                                                <td class="end">48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Оптимальное число пассажиров</td>
+                                                <td class="end">25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Длина салона</td>
+                                                <td class="end">23.78 м</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ширина салона</td>
+                                                <td class="end">3.70 м</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__logos">
+                    <img src="./img/logo-blue.svg" alt="логотип mijet">
+                </div>
+
+                <div class="footer__descriptor">Качественный сервис по организации VIP чартеров «под ключ»</div>
+                <div class="footer__social">
+                    <a href="#"> <svg class="ic_social">
+                            <use xlink:href="img/sprite.svg#insta"></use>
+                        </svg></a>
+                    <div class="footer__socialtext">
+                        Следите за нами в Инстаграм!
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Информация
+                </div>
+                <div class="footer__phones">
+                    <a class="footer__phone" href="tel:+79044488840">+7(495)134-14-94</a>
+                    <a class="footer__phone" href="tel:+79044488840">+7(967)721-20-81</a>
+                </div>
+                <div class="footer__ws">
+                    <a href="https://wa.me/79044488840">Консультация Whtaspapp</a>
+                </div>
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <a href="mailto:protek-rnd@ya.ru">info@mijet.ru</a>
+                </div>
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#marker"></use>
+                    </svg>
+                    <a href="./contacts.html">
+                        г. Москва,
+                        ВТГМО Даниловский, ул 2-я Рощинская, д. 4
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Каталог услуг
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./catalog.html">О компании</a></li>
+                    <li><a href="./catalog.html">Предложения</a></li>
+                    <li><a href="./catalog.html">Авиафлот</a></li>
+                    <li><a href="./catalog.html">Empty Legs</a></li>
+                    <li><a href="./catalog.html">Jet Sharing</a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Клиентам
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./information.html">Политика конфиденциальности</a></li>
+                    <li><a href="./information.html">Пользовательское соглашение</a></li>
+
+                    <li><a href="./information.html">Авиановости</a></li>
+                </ul>
+                <div class="payment">
+                    <div class="payment__item"><img src="./img/icon1.svg" alt="мир"></div>
+                    <div class="payment__item"><img src="./img/icon2.svg" alt="мастеркард "></div>
+                    <div class="payment__item"><img src="./img/icon3.svg" alt="лого"></div>
+                    <div class="payment__item"><img src="./img/icon4.svg" alt="виза"></div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__info">
+            <div class="footer__privacy">
+                Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.
+            </div>
+            <div class="footer__delosait">
+                <a href="https://wwww.delosait.ru">Сделано на delosait.ru</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="callme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-7">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Перезвоним,&nbsp;ответим на&nbsp;все вопросы, подготовим коммерческое предложение</div><br>
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Имя" required>
+                                <!--  <label for="userphone">Введите Ваш телефон <span>*</span></label>-->
+                                <input class="form_input__modal phone_mask" name="Телефон" type="text" placeholder="Телефон" required>
+                                <input class="form_input__modal" name="Электронная почта" type="email" placeholder="Электронная почта" required>
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox1">
+                                        <input type="checkbox" id="Checkbox1" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox1"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте Sash-oil.ru">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Комерческое предложение">
+
+
+                        </form>
+                        <div id="success">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-5 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="8(800)2000 600"> +7(904)4488840</a>
+                                        <a href="mailto:protek-rnd@ya.ru">
+
+                                            protek-rnd@ya.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="askme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Задайте вопрос нашим консультантам</div><br>
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Ваше имя" required>
+
+                                <!--  <label for="userphone">Введите Ваш email <span>*</span></label>-->
+                                <input class="form_input__modal" name="Электронная почта" type="text" placeholder="Электронная почта" required>
+                                <textarea class="form_input__modal" placeholder="Ваш вопрос" name="Сообщение" cols="30" rows="10"></textarea>
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте POSCLUB.RU">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Задать вопрос">
+
+
+                        </form>
+                        <div id="success2">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="8(800)2000 600">8 (495) 134-14-94</a>
+                                        <a href="mailto:info@yugsplitm.ru"> info@mijet.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="buyme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" name="#" method="post" action="#" enctype="multipart/form-data">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Оставьте заявку для уточнения деталей заказа</div><br>
+
+                                <input class="form_input__modal" name="Ваше имя" type="text" placeholder="Ваше имя" required>
+                                <input class="form_input__modal" name="Телефон" type="tel" placeholder="Ваш телефон" required>
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="./privacy.html">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <input type="hidden" name="project_name" value="Заполнена форма на сайте ЮгсплитМонтаж">
+                            <input type="hidden" name="admin_email" value="info@delosait.ru">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы Задать вопрос">
+
+
+                        </form>
+                        <div id="success2">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+
+                                        <a href="8(800)2000 600">8 (495) 134-14-94</a>
+                                        <a href="mailto:info@yugsplitm.ru"> info@mijet.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
