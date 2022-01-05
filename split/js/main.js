@@ -962,4 +962,7 @@ $(function () {
     dropDown.stop(false, true).slideToggle();
   });
 });
+$(function () {
+  $(".phone_mask").mask("8(999) 999-99-99");
+});
 //# sourceMappingURL=main.js.map
