@@ -1,0 +1,985 @@
+<?php
+function ValidateEmail($email)
+{
+   $pattern = '/^([0-9a-z]([-.\w]*[0-9a-z])*@(([0-9a-z])+([-\w]*[0-9a-z])*\.)+[a-z]{2,6})$/i';
+   return preg_match($pattern, $email);
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'layer7')
+{
+   $mailto = 'sale@wifiron.ru';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Пришла заявка с лендинга';
+   $message = 'Заявка на демо-доступ в личный кабинет';
+   $success_url = './ss.html';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'layer13')
+{
+   $mailto = 'sale@wifiron.ru';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Пришла заявка с лендинга';
+   $message = 'Заявка на демо-доступ в личный кабинет';
+   $success_url = './ss.html';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'layer24')
+{
+   $mailto = 'sale@wifiron.ru';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Пришла заявка с лендинга';
+   $message = 'Заявка с формы записи на бесплатное тестирование';
+   $success_url = './ss.html';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['formid']) && $_POST['formid'] == 'zvonok')
+{
+   $mailto = 'sale@wifiron.ru';
+   $mailfrom = isset($_POST['email']) ? $_POST['email'] : $mailto;
+   $subject = 'Пришла заявка с лендинга';
+   $message = 'Пришла заявка с лендинга';
+   $success_url = './ss.html';
+   $error_url = '';
+   $eol = "\n";
+   $error = '';
+   $internalfields = array ("submit", "reset", "send", "filesize", "formid", "captcha_code", "recaptcha_challenge_field", "recaptcha_response_field", "g-recaptcha-response");
+   $boundary = md5(uniqid(time()));
+   $header  = 'From: '.$mailfrom.$eol;
+   $header .= 'Reply-To: '.$mailfrom.$eol;
+   $header .= 'MIME-Version: 1.0'.$eol;
+   $header .= 'Content-Type: multipart/mixed; boundary="'.$boundary.'"'.$eol;
+   $header .= 'X-Mailer: PHP v'.phpversion().$eol;
+   try
+   {
+      if (!ValidateEmail($mailfrom))
+      {
+         $error .= "The specified email address (" . $mailfrom . ") is invalid!\n<br>";
+         throw new Exception($error);
+      }
+      $message .= $eol;
+      foreach ($_POST as $key => $value)
+      {
+         if (!in_array(strtolower($key), $internalfields))
+         {
+            if (!is_array($value))
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . $value . $eol;
+            }
+            else
+            {
+               $message .= ucwords(str_replace("_", " ", $key)) . " : " . implode(",", $value) . $eol;
+            }
+         }
+      }
+      $body  = 'This is a multi-part message in MIME format.'.$eol.$eol;
+      $body .= '--'.$boundary.$eol;
+      $body .= 'Content-Type: text/plain; charset=UTF-8'.$eol;
+      $body .= 'Content-Transfer-Encoding: 8bit'.$eol;
+      $body .= $eol.stripslashes($message).$eol;
+      if (!empty($_FILES))
+      {
+         foreach ($_FILES as $key => $value)
+         {
+             if ($_FILES[$key]['error'] == 0)
+             {
+                $body .= '--'.$boundary.$eol;
+                $body .= 'Content-Type: '.$_FILES[$key]['type'].'; name='.$_FILES[$key]['name'].$eol;
+                $body .= 'Content-Transfer-Encoding: base64'.$eol;
+                $body .= 'Content-Disposition: attachment; filename='.$_FILES[$key]['name'].$eol;
+                $body .= $eol.chunk_split(base64_encode(file_get_contents($_FILES[$key]['tmp_name']))).$eol;
+             }
+         }
+      }
+      $body .= '--'.$boundary.'--'.$eol;
+      if ($mailto != '')
+      {
+         mail($mailto, $subject, $body, $header);
+      }
+      header('Location: '.$success_url);
+   }
+   catch (Exception $e)
+   {
+      $errorcode = file_get_contents($error_url);
+      $replace = "##error##";
+      $errorcode = str_replace($replace, $e->getMessage(), $errorcode);
+      echo $errorcode;
+   }
+   exit;
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Гостевой WiFi с маркетинговыми возможностями и идентификацией посетителей для ресторанов и кафе</title>
+<meta name="generator" content="http://www.delosait.ru">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
+<link href="css/wiferon.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/wb.carousel.effects.min.js"></script>
+<script src="js/wb.carousel.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="js/wwb15.min.js"></script>
+<script>   
+   function displaylightbox(url, options)
+   {
+      options.items = { src: url };
+      options.type = 'iframe';
+      $.magnificPopup.open(options);
+   }
+</script>
+<script>   
+   $(document).ready(function()
+   {
+      $("a[data-rel='PhotoGallery4']").attr('rel', 'PhotoGallery4');
+      $("#PhotoGallery4").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      $("a[data-rel='PhotoGallery3']").attr('rel', 'PhotoGallery3');
+      $("#PhotoGallery3").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      $("a[href*='#Layer1']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#Layer1').offset().top }, 600, 'linear');
+      });
+      $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+      $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      $("a[data-rel='PhotoGallery2']").attr('rel', 'PhotoGallery2');
+      $("#PhotoGallery2").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      var Carousel1Opts =
+      {
+         delay: 30000,
+         duration: 1,
+         easing: 'linear',
+         mode: 'fade',
+         direction: '',
+         scalemode: 2,
+         pagination: true,
+         pagination_img_default: 'images/Carousel1-default.png',
+         pagination_img_active: 'images/Carousel1-active.png',
+         pause: null,
+         start: 0
+      };
+      $("#Carousel1").carouseleffects(Carousel1Opts);
+      $("#Carousel1_back a").click(function()
+      {
+         $('#Carousel1').carouseleffects('prev');
+      });
+      $("#Carousel1_next a").click(function()
+      {
+         $('#Carousel1').carouseleffects('next');
+      });
+      $("a[data-rel='PhotoGallery5']").attr('rel', 'PhotoGallery5');
+      $("#PhotoGallery5").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+      var Carousel2Opts =
+      {
+         delay: 346562560,
+         duration: 250,
+         easing: 'linear',
+         mode: 'forward',
+         direction: '',
+         scalemode: 2,
+         pagination: false,
+         pause: null,
+         start: 0
+      };
+      $("#Carousel2").carousel(Carousel2Opts);
+      $("a[href*='#Layer22']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#Layer22').offset().top }, 600, 'linear');
+      });
+      $("a[href*='#contact']").click(function(event)
+      {
+         event.preventDefault();
+         $('html, body').stop().animate({ scrollTop: $('#contact').offset().top }, 600, 'linear');
+      });
+   });
+</script>
+<script src="js/mask.js"></script><link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+   <div id="Layer1">
+      <div id="Layer1_Container">
+         <div id="wb_Image6">
+            <img src="images/iphone.png" id="Image6" alt="" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s"></div>
+         <div id="wb_Heading1">
+            <h1 id="Heading1">ВЗАИМОДЕЙСТВУЙТЕ СО СВОИМИ ГОСТЯМИ<span style="color:#fcd674;"> В СОЦИАЛЬНЫХ СЕТЯХ</span> ТАКЖЕ КРУТО,</h1></div>
+         <div id="wb_Text1">
+            <span style="color:#FFFFFF;">КАК ВЫ СОЗДАЕТЕ АТМОСФЕРУ В СВОИХ РЕСТОРАНАХ И ГОТОВИТЕ СВОИ ШИКАРНЫЕ БЛЮДА</span></div>
+         <div id="wb_Heading2">
+            <h2 id="Heading2">Гостевой WiFi<span style="color:#fcd674;">  с маркетинговыми возможностями и идентификацией посетителей</span> для ресторанов и кафе</h2></div>
+         <div id="wb_Shape1">
+            <a href="http://" onclick="ShowObjectWithEffect('zvonok', 1, 'dropdown', 500);ShowObjectWithEffect('podkladka', 1, 'fade', 500);return false;"><div id="Shape1" class="main-btn"><div id="Shape1_text"><span style="color:#000000;font-family:'Proxima Nova Bl';font-size:17px;">БЕСПЛАТНЫЙ ТЕСТ-ДРАЙВ</span></div></div></a></div>
+         <div id="wb_Image2">
+            <img src="images/video.png" id="Image2" alt=""></div>
+         <div id="wb_Text2">
+            <span style="color:#FFEE7A;">Смотрите видео с&nbsp; примером работы в реально действующем кафе</span></div>
+         <div id="wb_Text3">
+            <span style="color:#FFEE7A;">1 мин. 8 сек</span></div>
+         <div id="Layer3">
+            <div id="wb_Image4">
+               <img src="images/tizer3.png" id="Image4" alt=""></div>
+            <div id="wb_Text6">
+               <span style="color:#FFFFFF;">СООБЩИТЕ ИМ О НОВОМ ПРЕДЛОЖЕНИИ</span></div>
+         </div>
+         <div id="Layer4">
+            <div id="wb_Image5">
+               <img src="images/tizr2.png" id="Image5" alt=""></div>
+            <div id="wb_Text7">
+               <span style="color:#FFFFFF;">НАПОМНИТЕ О СЕБЕ, ЕСЛИ К ВАМ ДАВНО КТО-ТО НЕ ЗАХОДИЛ</span></div>
+         </div>
+         <div id="Layer2">
+            <div id="wb_Image3">
+               <img src="images/tizer1.png" id="Image3" alt=""></div>
+            <div id="wb_Text5">
+               <span style="color:#FFFFFF;">УЗНАЙТЕ, КТО ВАШИ ПОСЕТИТЕЛИ</span></div>
+         </div>
+      </div>
+   </div>
+   <div id="Layer5">
+      <div id="Layer5_Container">
+         <div id="wb_FontAwesomeIcon1">
+            <div id="FontAwesomeIcon1"><i class="fa fa-phone"></i></div></div>
+         <div id="wb_Text4">
+            <span style="color:#FFFFFF;"><strong><a href="tel:83952596026" class="phone">+7 3952 596 026</a></strong></span></div>
+         <div id="wb_FontAwesomeIcon2">
+            <a href="#" onclick="ShowObjectWithEffect('menu', 1, 'dropright', 500);return false;"><div id="FontAwesomeIcon2"><i class="fa fa-bars"></i></div></a></div>
+         <div id="wb_Image1">
+            <a href="#Layer1"><img src="images/logo.png" id="Image1" alt=""></a></div>
+      </div>
+   </div>
+   <div id="Layer6">
+      <div id="Layer6_Container">
+         <div id="wb_Image9">
+            <img src="images/dsecond-bg.png" id="Image9" alt=""></div>
+         <div id="wb_Image10">
+            <img src="images/d2phone1.png" id="Image10" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s"></div>
+         <div id="wb_Image12">
+            <img src="images/d2phone3.png" id="Image12" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.5s"></div>
+         <div id="wb_Text8">
+            <span style="color:#000000;">Здравствуйте, меня зовут Евгений, я руковожу отделом продаж компании “СРЕДА” в городе Иркутск. Я&nbsp;&nbsp; хочу&nbsp;&nbsp; предложить&nbsp;&nbsp; вам&nbsp;&nbsp; технологию,&nbsp;&nbsp; которая&nbsp;&nbsp; позволит&nbsp; сделать&nbsp; крутое&nbsp; взаимодействие&nbsp; с&nbsp; вашими клиентами,&nbsp;&nbsp; как&nbsp;&nbsp; в&nbsp;&nbsp; самом&nbsp;&nbsp; ресторане&nbsp;&nbsp; с&nbsp;&nbsp; помощью&nbsp;&nbsp; гостевого&nbsp;&nbsp; доступа&nbsp;&nbsp; wifi,&nbsp;&nbsp; так&nbsp;&nbsp; и&nbsp;&nbsp; в&nbsp;&nbsp; тех&nbsp;&nbsp; случаях,&nbsp; когда ваши&nbsp; гости&nbsp; находятся&nbsp; дома&nbsp; или&nbsp; на&nbsp; работе.<br>&nbsp; А&nbsp; когда&nbsp; планируется&nbsp; что-то&nbsp; интересное&nbsp; -&nbsp; пригласить&nbsp; их всех! </span></div>
+         <div id="wb_Shape2">
+            <a href="" onclick="ShowObjectWithEffect('zvonok', 1, 'dropdown', 500);ShowObjectWithEffect('podkladka', 1, 'fade', 500);return false;"><div id="Shape2" class="main-btn2"><div id="Shape2_text"><span style="color:#000000;font-family:'Proxima Nova Bl';font-size:17px;">Личная консультация</span></div></div></a></div>
+         <div id="wb_Image11">
+            <img src="images/d2phone2.png" id="Image11" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s"></div>
+         <div id="wb_Image7">
+            <img src="images/man.png" id="Image7" alt=""></div>
+         <div id="wb_Image8">
+            <img src="images/plashka.png" id="Image8" alt=""></div>
+         <div id="wb_Text9">
+            <span style="color:#000000;">Евгений Летов</span></div>
+         <div id="wb_Text10">
+            <span style="color:#7F7F7F;">Руководитель отдела продаж ООО “СРЕДА”</span></div>
+         <div id="wb_Image13">
+            <a href="https://www.instagram.com/wifiron/" target="_blank"><img src="images/insta.png" id="Image13" alt=""></a></div>
+      </div>
+   </div>
+   <form name="Layer7" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Layer7">
+      <input type="hidden" name="formid" value="layer7">
+      <div id="Layer7_Container">
+         <input type="text" id="Editbox1" class="phone1" name="Телефон" value="" spellcheck="false" required placeholder="&#1042;&#1072;&#1096; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;">
+         <div id="wb_Image14">
+            <img src="images/phobes.png" id="Image14" alt=""></div>
+         <div id="wb_Image15">
+            <img src="images/router-sm.png" id="Image15" alt=""></div>
+         <div id="wb_Image16">
+            <img src="images/direct.png" id="Image16" alt=""></div>
+         <div id="wb_Image17">
+            <img src="images/mac.png" id="Image17" alt=""></div>
+         <div id="wb_Text11">
+            <span style="color:#000000;">КАК ЭТО РАБОТАЕТ?</span></div>
+         <div id="wb_Shape3">
+            <div id="Shape3"></div></div>
+         <div id="wb_Text12">
+            <span style="color:#000000;"><strong>Все мобильные устройства с включенным WiFi</strong></span></div>
+         <div id="wb_Text13">
+            <span style="color:#000000;">в фоновом режиме каждые 3-5 сек. отправляют запросы на поиск знакомой WiFi сети, в которых содержится уникальный идентификатор мобильного устройства - MAC-адрес</span></div>
+         <div id="wb_Text14">
+            <span style="color:#000000;"><strong> WiFi радар собирает запросы</strong></span></div>
+         <div id="wb_Text15">
+            <span style="color:#000000;">мобильных устройств в радиусе 50 метров, извлекает и сохраняет MAC-адрес (к WiFi подключаться не нужно)</span></div>
+         <div id="wb_Text16">
+            <span style="color:#000000;"><strong>Собранные MAC-адреса хранятся на нашей платформе</strong></span></div>
+         <div id="wb_Text17">
+            <span style="color:#000000;">Вы получаете доступ в личный кабинет радара, выбираете период, вводите логин и выгружаете собранные MAC-адреса в свой рекламный кабинет Яндекс или myTarget в виде сегмента</span></div>
+         <div id="wb_Text18">
+            <span style="color:#000000;"><strong>При создании рекламной кампании</strong></span></div>
+         <div id="wb_Text19">
+            <span style="color:#000000;">в Вашем рекламном кабинете Яндекс Директ будет доступен выгруженный из нашей платформы сегмент</span></div>
+         <div id="wb_Text20" class="dots">
+            <span style="color:#000000;"><a href="javascript:displaylightbox('./lk-screen.html',{width:280,height:523,centerOnScroll:false,overlayOpacity:0.8,overlayColor:'#000',scrolling:'no'})" class="orange" target="_self">Скриншот личного кабинета</a></span></div>
+         <div id="wb_Text21" class="dots">
+            <span style="color:#000000;"><a href="javascript:displaylightbox('./direct-screen.html',{})" class="orange" target="_self">Как это выглядит</a></span></div>
+         <div id="wb_Image18">
+            <img src="images/call-answer.png" id="Image18" alt=""></div>
+<!-- scripts -->
+         <div id="Html2">
+            <script>            
+            $(".phone1").mask("8(999) 999-99-99");
+            </script></div>
+         <input type="submit" id="Button1" name="" value="Демо-доступ в личный кабинет" class="main-btn2">
+      </div>
+   </form>
+   <div id="Layer8">
+      <div id="Layer8_Container">
+         <div id="wb_PhotoGallery4">
+            <div id="PhotoGallery4">
+               <div class="thumbnails">
+                  <div class="thumbnail">
+                     <a href="images/gal4.jpg" data-rel=""><img alt="" src="images/gal4.jpg"></a>
+                  </div>
+                  <div class="clearfix visible-col1"></div>
+               </div>
+            </div></div>
+         <div id="wb_PhotoGallery3">
+            <div id="PhotoGallery3">
+               <div class="thumbnails">
+                  <div class="thumbnail">
+                     <a href="images/gal3.jpg" data-rel=""><img alt="" src="images/gal3.jpg"></a>
+                  </div>
+                  <div class="clearfix visible-col1"></div>
+               </div>
+            </div></div>
+         <div id="wb_Shape5">
+            <div id="Shape5"></div></div>
+         <div id="wb_Text22">
+            <span style="color:#000000;">ВОЗМОЖНОСТИ</span></div>
+         <div id="wb_PhotoGallery1">
+            <div id="PhotoGallery1">
+               <div class="thumbnails">
+                  <div class="thumbnail">
+                     <a href="images/gal1.jpg" data-rel=""><img alt="" src="images/gal1.jpg"></a>
+                  </div>
+                  <div class="clearfix visible-col1"></div>
+               </div>
+            </div></div>
+         <div id="wb_Text23">
+            <span style="color:#BE4B14;">Нажмите на картинку, чтобы увеличить</span></div>
+         <div id="wb_IconFont1">
+            <div id="IconFont1"><i class="material-icons">&#xe8ff;</i></div></div>
+         <div id="Layer9">
+            <div id="Layer9_Container">
+               <div id="wb_Text24" class="vozm">
+                  <span style="color:#FEE4AA;">01</span></div>
+               <div id="wb_Text25">
+                  <span style="color:#000000;"><strong>При&nbsp;&nbsp; авторизации&nbsp;&nbsp; </strong>в&nbsp;&nbsp; гостевой&nbsp;&nbsp; сети&nbsp;&nbsp; wifi,&nbsp;&nbsp; вместо&nbsp;&nbsp; страницы&nbsp;&nbsp; провайдера,&nbsp;&nbsp; которая&nbsp;&nbsp; у&nbsp;&nbsp; вас появляется&nbsp;&nbsp; сейчас,&nbsp; <strong>вы можете показать&nbsp;&nbsp; фирменную&nbsp;&nbsp; страницу </strong>&nbsp; авторизации,&nbsp; <strong>которую&nbsp;&nbsp; можно менять&nbsp;&nbsp; </strong>хоть&nbsp;&nbsp; каждый&nbsp;&nbsp; час,&nbsp; автоматически&nbsp;&nbsp; (утром,&nbsp;&nbsp; сказать&nbsp;&nbsp; гостям&nbsp;&nbsp; “доброе&nbsp;&nbsp; утро”;&nbsp;&nbsp; днем сообщить&nbsp; о&nbsp; том,&nbsp; что&nbsp; вечером&nbsp; будет&nbsp; событие;&nbsp; вечером&nbsp; напомнить,&nbsp; что&nbsp; у&nbsp; вас&nbsp; есть&nbsp; доставка и&nbsp; т.д.) </span></div>
+            </div>
+         </div>
+         <div id="wb_PhotoGallery2">
+            <div id="PhotoGallery2">
+               <div class="thumbnails">
+                  <div class="thumbnail">
+                     <a href="images/gal2.jpg" data-rel=""><img alt="" src="images/gal2.jpg"></a>
+                  </div>
+                  <div class="clearfix visible-col1"></div>
+               </div>
+            </div></div>
+         <div id="Layer10">
+            <div id="Layer10_Container">
+               <div id="wb_Text27">
+                  <span style="color:#000000;"><strong>Произвести&nbsp; авторизацию </strong>,&nbsp; как&nbsp; это&nbsp; требует&nbsp; законодательство, <strong>по&nbsp; номеру&nbsp; телефона ,</strong>&nbsp; но не&nbsp; с&nbsp; использованием&nbsp; sms,&nbsp; за&nbsp; которые&nbsp; необходимо&nbsp; оплачивать&nbsp; провайдеру&nbsp; (пакетами&nbsp; или по&nbsp; факту,&nbsp; но&nbsp; обязательно&nbsp; оплачивать),&nbsp; а&nbsp; с&nbsp; использованием&nbsp; бесплатного&nbsp; звонка&nbsp; на&nbsp; номер 8-800. </span></div>
+               <div id="wb_Text28" class="vozm">
+                  <span style="color:#FEE4AA;">02</span></div>
+            </div>
+         </div>
+         <div id="wb_Text26">
+            <span style="color:#BE4B14;">Нажмите на картинку, чтобы увеличить</span></div>
+         <div id="wb_IconFont2">
+            <div id="IconFont2"><i class="material-icons">&#xe8ff;</i></div></div>
+         <div id="wb_IconFont3">
+            <div id="IconFont3"><i class="material-icons">&#xe8ff;</i></div></div>
+         <div id="wb_Text29">
+            <span style="color:#BE4B14;">Нажмите на картинку, чтобы увеличить</span></div>
+         <div id="Layer11">
+            <div id="Layer11_Container">
+               <div id="wb_Text31" class="vozm">
+                  <span style="color:#FEE4AA;">03</span></div>
+               <div id="wb_Text30">
+                  <span style="color:#000000;"><strong>Предложите авторизоваться&nbsp; через&nbsp; социальную&nbsp; сеть ,&nbsp; </strong>с&nbsp; тем,&nbsp; чтобы&nbsp; предложить&nbsp; гостям подписаться&nbsp; на&nbsp; группу , поделиться&nbsp; вашей&nbsp; записью ,&nbsp; да&nbsp; и&nbsp; просто поздравить&nbsp; гостя&nbsp; с днем&nbsp; рождения . <br>Посмотрите&nbsp;&nbsp; кто&nbsp;&nbsp; авторизовался&nbsp;&nbsp; через&nbsp;&nbsp; социальные&nbsp; сети,&nbsp; а затем напишите&nbsp; гостю&nbsp; в&nbsp; личные сообщения.</span></div>
+            </div>
+         </div>
+         <div id="Layer12">
+            <div id="Layer12_Container">
+               <div id="wb_Text33" class="vozm">
+                  <span style="color:#FEE4AA;">04</span></div>
+               <div id="wb_Text32">
+                  <span style="color:#000000;"><strong>Сделайте&nbsp;&nbsp; опрос&nbsp;&nbsp; гостей&nbsp;&nbsp; </strong>о&nbsp;&nbsp; новом&nbsp;&nbsp; меню&nbsp;&nbsp; или&nbsp;&nbsp; новом&nbsp;&nbsp; интерьере&nbsp;&nbsp; (только&nbsp;&nbsp; постоянных&nbsp;&nbsp; или всех. Или покажите&nbsp; рекламный&nbsp; баннер ,&nbsp; например,&nbsp; о&nbsp; том,&nbsp; что&nbsp; у&nbsp; вас&nbsp; новое&nbsp; меню&nbsp; доставки. Расскажите&nbsp; о&nbsp; том,&nbsp; что&nbsp; есть&nbsp; очень&nbsp; хорошая&nbsp; акция&nbsp; или&nbsp; скоро&nbsp; состоится&nbsp; розыгрыш&nbsp; и,&nbsp; при&nbsp; нажатии на&nbsp; кнопку&nbsp; “подробнее”,&nbsp; переадресуйте&nbsp; гостя&nbsp; на&nbsp; страницу&nbsp;&nbsp; с&nbsp; подробностями&nbsp; акции. </span></div>
+            </div>
+         </div>
+         <div id="wb_IconFont4">
+            <div id="IconFont4"><i class="material-icons">&#xe8ff;</i></div></div>
+         <div id="wb_Text34">
+            <span style="color:#BE4B14;">Нажмите на картинку, чтобы увеличить</span></div>
+         <div id="wb_Text35">
+            <span style="color:#000000;">Всё&nbsp; это&nbsp; легко&nbsp; и&nbsp; удобно&nbsp; настраивается&nbsp; </span><span style="color:#BE4B14;">в&nbsp; личном&nbsp; кабинете&nbsp; </span><span style="color:#000000;">вашими&nbsp; специалистами&nbsp; по&nbsp; рекламе&nbsp; и маркетологами. </span></div>
+      </div>
+   </div>
+   <form name="Layer13" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Layer13">
+      <input type="hidden" name="formid" value="layer13">
+      <div id="Layer13_Container">
+         <div id="wb_BulletedList1">
+            <div>
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item0"><p style="color:#FFFFFF;">С&nbsp; помощью&nbsp; каких&nbsp; социальных&nbsp; сетей&nbsp;авторизовались&nbsp; гости</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item1"><p style="color:#FFFFFF;">Новые&nbsp; и&nbsp; постоянные&nbsp; посетители&nbsp; по&nbsp; дням</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item2"><p style="color:#FFFFFF;">Охват&nbsp; страниц&nbsp; гостей, авторизованных&nbsp;с&nbsp;помощью&nbsp; соцсетей</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item3"><p style="color:#FFFFFF;">Количество&nbsp; просмотров&nbsp; стартовой&nbsp; страницы</p>
+                  <p style="color:#FFFFFF;">и&nbsp;рекламных&nbsp; баннеров</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item4"><p style="color:#FFFFFF;">Пол,&nbsp; возраст&nbsp; и&nbsp; количество&nbsp; гостей</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item5"><p style="color:#FFFFFF;">Почасовая&nbsp; загрузка&nbsp; ресторана</p></div>
+            </div>
+            <div style="clear:both">
+               <div class="bullet" style=""><img src="images/bullet.png" style="width:23px;height:23px;" alt=""></div>
+               <div class="item item6"><p style="color:#FFFFFF;">Оборудование&nbsp; и&nbsp; операционные&nbsp; системы, </p>
+                  <p style="color:#FFFFFF;">с&nbsp; помощью&nbsp; которых&nbsp; наши&nbsp; гости&nbsp; подключались&nbsp; к&nbsp;гостевой&nbsp; wifi&nbsp; сети.</p></div>
+            </div>
+         </div>
+         <input type="text" id="Editbox2" class="phone1" name="Телефон" value="" spellcheck="false" required placeholder="&#1042;&#1072;&#1096; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;">
+         <div id="wb_Carousel1">
+            <div id="Carousel1">
+               <div class="frame frame-1">
+               </div>
+               <div class="frame frame-2" style="display:none">
+               </div>
+               <div class="frame frame-3" style="display:none">
+               </div>
+               <div class="frame frame-4" style="display:none">
+               </div>
+               <div class="frame frame-5" style="display:none">
+               </div>
+               <div class="frame frame-6" style="display:none">
+               </div>
+               <div class="frame frame-7" style="display:none">
+               </div>
+            </div>
+            <div id="Carousel1_back"><a><img alt="Back" src="images/prev.png"></a></div>
+            <div id="Carousel1_next"><a><img alt="Next" src="images/next.png"></a></div>
+         </div>
+         <input type="submit" id="Button2" name="" value="Демо-доступ в личный кабинет" class="main-btn2">
+         <div id="wb_Image19">
+            <img src="images/call-answer2.png" id="Image19" alt=""></div>
+         <div id="wb_Text36">
+            <span style="color:#FFFFFF;">В&nbsp; вашем&nbsp; личном&nbsp; кабинете&nbsp; есть&nbsp; </span><span style="color:#FED778;">вся информация,&nbsp; </span><span style="color:#FFFFFF;">которая&nbsp; позволит&nbsp; лучше&nbsp; узнать&nbsp; гостей</span></div>
+<!-- scripts -->
+         <div id="Html3">
+            <script>            
+            $(".phone1").mask("8(999) 999-99-99");
+            </script></div>
+      </div>
+   </form>
+   <div id="Layer14">
+      <div id="Layer14_Container">
+         <div id="wb_Image20">
+            <img src="images/ellipses.png" id="Image20" alt=""></div>
+         <div id="wb_Image22">
+            <img src="images/plaha.png" id="Image22" alt=""></div>
+         <div id="wb_Text37">
+            <span style="color:#000000;">Но,&nbsp; и это&nbsp; не&nbsp; всё... </span></div>
+         <div id="wb_Image21">
+            <img src="images/router.png" id="Image21" alt=""></div>
+         <div id="wb_Text38">
+            <span style="color:#BE4B14;">01</span></div>
+         <div id="wb_Text39">
+            <span style="color:#000000;">Не все&nbsp; гости&nbsp; <strong>подключаются&nbsp; к&nbsp; гостевому&nbsp; wifi . </strong> Кто-то&nbsp; просто&nbsp; приходит&nbsp; позавтракать,&nbsp; пообедать, поужинать,&nbsp; отдохнуть&nbsp; и&nbsp; приятно&nbsp; провести&nbsp; время&nbsp; в&nbsp; приятной&nbsp; атмосфере&nbsp; и&nbsp; в&nbsp; хорошей&nbsp; компании. </span></div>
+         <div id="wb_Text41">
+            <span style="color:#BE4B14;">02</span></div>
+         <div id="wb_Text42">
+            <span style="color:#000000;"><strong>Есть гости,&nbsp; </strong>которые&nbsp; <strong>были&nbsp; в&nbsp; одних&nbsp; и не&nbsp; были&nbsp; в&nbsp; других&nbsp; ваших&nbsp; ресторанах</strong>,&nbsp; потому&nbsp; что&nbsp; не&nbsp; знают о&nbsp;&nbsp; том,&nbsp;&nbsp; что&nbsp;&nbsp; там&nbsp;&nbsp; их&nbsp;&nbsp; ждет&nbsp;&nbsp; тот&nbsp;&nbsp; же&nbsp;&nbsp; высокий&nbsp;&nbsp; уровень&nbsp;&nbsp; обслуживания,&nbsp;&nbsp; отличная&nbsp;&nbsp; кухня&nbsp;&nbsp; и&nbsp;&nbsp; отличная атмосфера.&nbsp; </span></div>
+         <div id="wb_Text43">
+            <span style="color:#BE4B14;">03</span></div>
+         <div id="wb_Text44">
+            <span style="color:#BE4B14;">04</span></div>
+         <div id="wb_Text46">
+            <span style="color:#BE4B14;">05</span></div>
+         <div id="wb_Text40">
+            <span style="color:#000000;"><strong>Есть&nbsp; гости,&nbsp;&nbsp; </strong>которые&nbsp;&nbsp; были&nbsp;&nbsp; в&nbsp;&nbsp; ваших&nbsp;&nbsp; ресторанах,&nbsp;&nbsp; <strong>но&nbsp; не&nbsp;&nbsp; подписаны&nbsp;&nbsp; на&nbsp;&nbsp; группы&nbsp;&nbsp; и&nbsp;&nbsp; аккаунты&nbsp;&nbsp; в социальных&nbsp; сетях</strong>&nbsp;&nbsp; и&nbsp; не&nbsp; знают&nbsp; о&nbsp; том,&nbsp; что&nbsp; интересного&nbsp; происходит&nbsp; у&nbsp; вас,&nbsp; какая&nbsp; там&nbsp; кипит&nbsp; жизнь.</span></div>
+         <div id="wb_Text47">
+            <span style="color:#000000;"><strong>Есть&nbsp;&nbsp; те,&nbsp;&nbsp; </strong>кто&nbsp;&nbsp; пришел&nbsp;&nbsp; на&nbsp;&nbsp; розыгрыш&nbsp;&nbsp; в&nbsp;&nbsp; торговый&nbsp;&nbsp; центр&nbsp;&nbsp; <strong>или&nbsp;&nbsp; проходил&nbsp;&nbsp; мимо</strong>&nbsp;&nbsp; в&nbsp;&nbsp; момент&nbsp;&nbsp; красивого&nbsp;&nbsp; и шумного&nbsp; шоу.&nbsp; Почему&nbsp; бы&nbsp; не&nbsp; пообщаться&nbsp; с&nbsp; ними&nbsp; в&nbsp; социальных&nbsp; сетях&nbsp; после&nbsp; розыгрыша?</span></div>
+         <div id="wb_Text45">
+            <span style="color:#000000;"><strong>Есть&nbsp; и&nbsp; те, кто&nbsp; бывает&nbsp; рядом,&nbsp; кто&nbsp; рядом&nbsp; живет&nbsp; или&nbsp; работает ,&nbsp; </strong>возможно,&nbsp; проезжает&nbsp; мимо,&nbsp; но&nbsp; по каким-то&nbsp; причинам&nbsp; не&nbsp; стал&nbsp; вашим&nbsp; гостем,&nbsp; но&nbsp; мог&nbsp; бы.</span></div>
+         <div id="wb_Image23">
+            <img src="images/letov.png" id="Image23" alt=""></div>
+         <div id="wb_Text48">
+            <span style="color:#000000;"><strong>Всех этих людей можно “догнать” после мероприятия в социальных сетях и </strong></span><span style="color:#BE4B14;"><strong>пригласить в рестораны</strong></span></div>
+         <div id="wb_Text49">
+            <span style="color:#7F7F7F;"><em>Мобильный Wi-Fi-сенсор это умеет - :)</em></span></div>
+      </div>
+   </div>
+   <div id="Layer15">
+      <div id="Layer15_Container">
+         <div id="wb_Text50">
+            <span style="color:#000000;">КАКИЕ АУДИТОРИИ ВАМ ДОСТУПНЫ?</span></div>
+         <div id="Layer17" onclick="$('#Carousel2').carousel('goto,2');return false;" class="foto" class="foto">
+            <div id="wb_Shape7">
+               <a href="http://"><div id="Shape7" class="main-btn3"><div id="Shape7_text"><span style="color:#000000;font-family:'Proxima Nova Rg';font-size:17px;">Гости&nbsp; ресторана,&nbsp; которые&nbsp; не&nbsp; подключались&nbsp; к&nbsp; Гостевой&nbsp; сети&nbsp; WiFi&nbsp; (их “видел”&nbsp; WiFi-Сенсор). </span></div></div></a></div>
+            <div id="wb_Image25">
+               <img src="images/aud2.png" id="Image25" alt=""></div>
+         </div>
+         <div id="wb_Image26">
+            <img src="images/pl.png" id="Image26" alt=""></div>
+         <div id="wb_PhotoGallery5">
+            <div id="PhotoGallery5">
+               <div class="thumbnails">
+                  <div class="thumbnail">
+                     <a href="images/auds.jpg" data-rel=""><img alt="" src="images/auds.jpg"></a>
+                  </div>
+                  <div class="clearfix visible-col1"></div>
+               </div>
+            </div></div>
+         <div id="wb_Text51">
+            <span style="color:#000000;">С&nbsp;&nbsp; использованием&nbsp;&nbsp; предлагаемой&nbsp;&nbsp; технологии,&nbsp;&nbsp; кроме&nbsp;&nbsp; обычных&nbsp;&nbsp; источников&nbsp;&nbsp; для&nbsp;&nbsp; таргетированной рекламы,&nbsp; маркетологу&nbsp; и&nbsp; smm-специалисту&nbsp; доступны&nbsp; следующие&nbsp; инструменты&nbsp; и&nbsp; аудитории: </span></div>
+         <div id="wb_Carousel2">
+            <div id="Carousel2">
+               <div class="frame">
+                  <div id="wb_Text54">
+                     <span style="color:#000000;">Кроме&nbsp; пола&nbsp; и&nbsp; возраста,&nbsp; мы&nbsp; сможем&nbsp; эту&nbsp; аудиторию&nbsp; разделить&nbsp; на&nbsp; новых&nbsp; и&nbsp; постоянных&nbsp; гостей.&nbsp; <br> <br>Постоянных&nbsp; сможем&nbsp; разделить&nbsp; по&nbsp; количеству&nbsp; и&nbsp; частоте&nbsp; посещений. <br> <br>При&nbsp;&nbsp; авторизации,&nbsp; с&nbsp; помощью&nbsp; рекламных&nbsp; баннеров,&nbsp; мы&nbsp; расскажем&nbsp; о&nbsp; том,&nbsp; какие&nbsp; действуют&nbsp; акции, какие&nbsp; скоро&nbsp; дегустации,&nbsp; вечеринки&nbsp; планируются,&nbsp; проведем&nbsp; опрос.&nbsp;&nbsp; <br>Все&nbsp; варианты&nbsp; предложений&nbsp; для&nbsp; того,&nbsp; чтобы&nbsp; гость&nbsp; вернулся&nbsp; к&nbsp; нам&nbsp; еще,&nbsp; приходил&nbsp; чаще,&nbsp; приходил&nbsp; с друзьями&nbsp; и&nbsp; партнерами,&nbsp; не&nbsp; только&nbsp; на&nbsp; обед,&nbsp; но&nbsp; и&nbsp; на&nbsp; ужин. <br> <br>Кроме&nbsp;&nbsp; того,&nbsp;&nbsp; есть&nbsp;&nbsp; возможность&nbsp;&nbsp; написать&nbsp;&nbsp; авторизованному&nbsp;&nbsp; пользователю&nbsp;&nbsp; в&nbsp;&nbsp; личные&nbsp;&nbsp; сообщения: спросить,&nbsp; пригласить,&nbsp; поговорить. <br> <br>А&nbsp; если&nbsp; он&nbsp; авторизован&nbsp; через&nbsp; Вконтакте,&nbsp; то&nbsp; еще&nbsp; и&nbsp; поздравить&nbsp; с&nbsp; днем&nbsp; рождения.</span></div>
+               </div>
+               <div class="frame">
+                  <div id="wb_Text55">
+                     <span style="color:#000000;">Эту&nbsp; аудиторию&nbsp; мы&nbsp; тоже&nbsp; можем&nbsp; разделить&nbsp; на&nbsp; новых&nbsp; и&nbsp; постоянных&nbsp; гостей.&nbsp; <br> <br>Кроме&nbsp; mac-адресов&nbsp; устройств,&nbsp; с&nbsp; которыми&nbsp; приходили&nbsp; наши&nbsp; гости&nbsp; в&nbsp; ресторан,&nbsp; мы&nbsp; ничего&nbsp; не&nbsp; видим, но...&nbsp;&nbsp; выгрузив&nbsp;&nbsp; эти&nbsp;&nbsp; данные&nbsp;&nbsp; в&nbsp;&nbsp; рекламные&nbsp;&nbsp; сети&nbsp;&nbsp; myTarget&nbsp;&nbsp; (Вконтакте,&nbsp;&nbsp; Одноклассники,&nbsp;&nbsp; mail.ru&nbsp;&nbsp; и партнеры)&nbsp;&nbsp; и&nbsp;&nbsp; Яндекс,&nbsp;&nbsp; мы&nbsp;&nbsp; можем&nbsp;&nbsp; в&nbsp;&nbsp; рекламе&nbsp;&nbsp; обращаться&nbsp;&nbsp; к&nbsp;&nbsp; своим&nbsp;&nbsp; посетителям&nbsp;&nbsp; и&nbsp;&nbsp; приглашать&nbsp;&nbsp; их вступить&nbsp; в&nbsp; наши&nbsp; группы&nbsp; в&nbsp; социальных&nbsp; сетях,&nbsp; заказать&nbsp; столик&nbsp; на&nbsp; наше&nbsp; мероприятие,&nbsp; пригласить&nbsp; на день&nbsp;&nbsp; рождения&nbsp;&nbsp; ресторана,&nbsp;&nbsp; на&nbsp;&nbsp; обновленный&nbsp;&nbsp; завтрак&nbsp;&nbsp; или&nbsp;&nbsp; ужин,&nbsp;&nbsp; сообщить&nbsp;&nbsp; об&nbsp;&nbsp; условиях бронирования&nbsp; новогоднего&nbsp; банкета. <br> <br>Т.е.&nbsp;&nbsp; несмотря&nbsp;&nbsp; на&nbsp;&nbsp; то,&nbsp;&nbsp; что&nbsp;&nbsp; гость&nbsp; пришел,&nbsp; пообедал&nbsp; и&nbsp; никаких&nbsp; данных&nbsp; о&nbsp; себе&nbsp; не&nbsp; оставил,&nbsp; мы&nbsp; имеем возможность&nbsp; контактировать&nbsp; с&nbsp; ним.<br> </span></div>
+               </div>
+               <div class="frame">
+                  <div id="wb_Text53">
+                     <span style="color:#000000;">Аудитория,&nbsp; которая&nbsp; может&nbsp; быть&nbsp; интересной&nbsp; для&nbsp; роста&nbsp; количества&nbsp; гостей&nbsp; в&nbsp; ресторанах. <br> <br>В&nbsp;&nbsp; нашем&nbsp;&nbsp; распоряжении&nbsp;&nbsp; есть&nbsp;&nbsp; mac-адреса&nbsp;&nbsp; устройств,&nbsp;&nbsp; с&nbsp;&nbsp; которыми&nbsp; люди&nbsp; проходили&nbsp; или&nbsp; проезжали мимо&nbsp;&nbsp; нашего&nbsp;&nbsp; ресторана.&nbsp;&nbsp; Выгрузив&nbsp;&nbsp; эти&nbsp;&nbsp; данные&nbsp;&nbsp; в&nbsp;&nbsp; рекламные&nbsp;&nbsp; сети&nbsp;&nbsp; myTarget&nbsp;&nbsp; (Вконтакте, Одноклассники,&nbsp;&nbsp; mail.ru&nbsp;&nbsp; и&nbsp;&nbsp; партнеры)&nbsp;&nbsp; и&nbsp;&nbsp; Яндекс,&nbsp;&nbsp; мы&nbsp;&nbsp; можем&nbsp;&nbsp; в&nbsp;&nbsp; рекламе&nbsp;&nbsp; обращаться&nbsp; к&nbsp; этим&nbsp; людям&nbsp; с целью&nbsp; пригласить&nbsp; их&nbsp; впервые&nbsp; в&nbsp; наш&nbsp; ресторан.&nbsp; Может&nbsp; быть&nbsp; пригласить&nbsp; их&nbsp; на&nbsp; бизнес&nbsp; -&nbsp; ланч,&nbsp; может быть&nbsp; на&nbsp; вечеринку,&nbsp; или&nbsp; отметить&nbsp; их&nbsp; торжество.&nbsp; <br> <br>Пригласим&nbsp; их&nbsp; вступить&nbsp; в&nbsp; наши&nbsp; группы&nbsp; в&nbsp; социальных&nbsp; сетях,&nbsp; заказать&nbsp; столик&nbsp; на&nbsp; наше&nbsp; мероприятие, пригласить&nbsp;&nbsp; на&nbsp;&nbsp; день&nbsp;&nbsp; рождения&nbsp;&nbsp; ресторана,&nbsp;&nbsp; на&nbsp;&nbsp; обновленный&nbsp;&nbsp; завтрак&nbsp;&nbsp; или&nbsp;&nbsp; ужин,&nbsp;&nbsp; сообщить&nbsp;&nbsp; об условиях&nbsp; бронирования&nbsp; новогоднего&nbsp; банкета&nbsp; или&nbsp; просто&nbsp; пригласить&nbsp; на&nbsp; бизнес&nbsp; -&nbsp; ланч.&nbsp; <br><br><strong>То,&nbsp; что&nbsp; человек&nbsp; проехал&nbsp; мимо&nbsp; позволяет&nbsp; нам&nbsp; пригласить&nbsp; его&nbsp; в&nbsp; гости&nbsp; с&nbsp; помощью&nbsp; рекламы.&nbsp; </strong></span></div>
+               </div>
+               <div class="frame">
+                  <div id="wb_Text56">
+                     <span style="color:#000000;">В&nbsp; вашем&nbsp; случае,&nbsp; когда&nbsp; есть&nbsp; много&nbsp; ресторанов&nbsp; с&nbsp; разной&nbsp; концепцией,&nbsp; возможностей&nbsp; еще&nbsp; больше.&nbsp; <br> <br>Аудитория&nbsp;&nbsp; одного&nbsp;&nbsp; ресторана,&nbsp;&nbsp; может&nbsp;&nbsp; быть&nbsp;&nbsp; приглашена&nbsp;&nbsp; в&nbsp; другой,&nbsp; в&nbsp; третий&nbsp; с&nbsp; тем,&nbsp; чтобы&nbsp; найти&nbsp; для каждого&nbsp; гостя&nbsp; среди&nbsp; ваших&nbsp; ресторанов&nbsp; рестораны&nbsp; на&nbsp; любой&nbsp; случай&nbsp; и&nbsp; любое&nbsp; настроение.&nbsp; </span></div>
+               </div>
+            </div>
+         </div>
+         <div id="Layer16" onclick="$('#Carousel2').carousel('goto,1');return false;" class="foto">
+            <div id="wb_Image24">
+               <img src="images/aud1.png" id="Image24" alt=""></div>
+            <div id="wb_Shape4">
+               <a href=""><div id="Shape4" class="main-btn3"><div id="Shape4_text"><span style="color:#000000;font-family:'Proxima Nova Rg';font-size:17px;">Гости&nbsp;&nbsp; ресторана,&nbsp;&nbsp; которые&nbsp;&nbsp; авторизовались&nbsp;&nbsp; в&nbsp;&nbsp; Гостевой&nbsp;&nbsp; сети&nbsp;&nbsp; WiFi&nbsp;&nbsp; с использованием&nbsp; социальных&nbsp; сетей. </span></div></div></a></div>
+         </div>
+         <div id="Layer18" onclick="$('#Carousel2').carousel('goto,3');return false;" class="foto" class="foto">
+            <div id="wb_Image28">
+               <img src="images/aud31.png" id="Image28" alt=""></div>
+            <div id="wb_Shape8">
+               <a href="http://"><div id="Shape8" class="main-btn3"><div id="Shape8_text"><span style="color:#000000;font-family:'Proxima Nova Rg';font-size:17px;">Прошедшие&nbsp; (проехавшие)&nbsp; мимо&nbsp; и&nbsp; не&nbsp; зашедшие&nbsp; в&nbsp; ресторан. </span></div></div></a></div>
+         </div>
+         <div id="wb_IconFont5">
+            <div id="IconFont5"><i class="material-icons">&#xe8ff;</i></div></div>
+         <div id="Layer19" onclick="$('#Carousel2').carousel('goto,4');return false;" class="foto" class="foto">
+            <div id="wb_Image27">
+               <img src="images/aud4.png" id="Image27" alt=""></div>
+            <div id="wb_Shape9">
+               <a href="http://"><div id="Shape9" class="main-btn3"><div id="Shape9_text"><span style="color:#000000;font-family:'Proxima Nova Rg';font-size:17px;">Дополнительные&nbsp; аудитории. </span></div></div></a></div>
+         </div>
+         <div id="wb_Text52">
+            <span style="color:#BE4B14;">Нажмите на картинку, чтобы увеличить</span></div>
+      </div>
+   </div>
+   <div id="Layer20">
+      <div id="Layer20_Container">
+         <div id="wb_Text57">
+            <span style="color:#FFFFFF;">ПОПРОБУЙТЕ НАШИ УСЛУГИ </span><span style="color:#FED778;">БЕСПЛАТНО</span><span style="color:#FFFFFF;"> В ТЕЧЕНИЕ 7 ДНЕЙ</span></div>
+         <div id="wb_Text58">
+            <span style="color:#FFFFFF;"> МЫ НАСТРОИМ&nbsp; ДЛЯ&nbsp; ЛЮБОГО&nbsp; ВАШЕГО&nbsp; РЕСТОРАНА&nbsp; КОМПЛЕКТ&nbsp; ОБОРУДОВАНИЯ&nbsp; ГОСТЕВОЙ&nbsp; WIFI&nbsp; СЕТИ&nbsp; И&nbsp; WIFI-СЕНСОР КАБИНЕТ&nbsp; С&nbsp; ПОЛНЫМ&nbsp; ФУНКЦИОНАЛОМ,&nbsp; О&nbsp; КОТОРОМ&nbsp; БЫЛО&nbsp; РАССКАЗАНО&nbsp; ВЫШЕ.&nbsp; </span></div>
+         <div id="wb_Text59">
+            <span style="color:#FFFFFF;">Вы&nbsp; сможете&nbsp; использовать весь&nbsp; функционал,&nbsp; без&nbsp; ограничений.,<br>в том&nbsp; числе: <br>- создавать&nbsp; выгрузки&nbsp; в&nbsp; рекламные&nbsp; кабинеты; <br>- рекламировать&nbsp; акции,&nbsp; события,&nbsp; <br>- делать&nbsp; опросы&nbsp; гостей&nbsp; и&nbsp; т.д. </span></div>
+         <div id="wb_Shape10">
+            <a href="" onclick="ShowObjectWithEffect('zvonok', 1, 'dropdown', 500);ShowObjectWithEffect('podkladka', 1, 'fade', 500);return false;"><div id="Shape10" class="main-btn2"><div id="Shape10_text"><span style="color:#000000;font-family:'Proxima Nova Bl';font-size:17px;">ОСТАВИТЬ ЗАЯВКУ</span></div></div></a></div>
+         <div id="wb_Image29">
+            <img src="images/comp1.png" id="Image29" alt="" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"></div>
+         <div id="wb_Image30">
+            <img src="images/comp2.png" id="Image30" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s"></div>
+         <div id="wb_Image31">
+            <img src="images/comp3.png" id="Image31" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.5s"></div>
+         <div id="wb_Image32">
+            <img src="images/comp4.png" id="Image32" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="2s"></div>
+         <div id="wb_Image33">
+            <img src="images/comp5.png" id="Image33" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="2.5s"></div>
+         <div id="Layer21">
+            <div id="wb_Text60">
+               <span style="color:#FFFFFF;">Собранная&nbsp;&nbsp; аудитория,&nbsp;&nbsp; вне&nbsp;&nbsp; зависимости&nbsp;&nbsp; от&nbsp;&nbsp; принятого&nbsp;&nbsp; решения,&nbsp;&nbsp; останется&nbsp;&nbsp; в&nbsp;&nbsp; ваших&nbsp;&nbsp; рекламных кабинетах&nbsp; и&nbsp; может&nbsp; использоваться&nbsp; вами&nbsp; далее&nbsp; так,&nbsp; как&nbsp; вы&nbsp; посчитаете&nbsp; нужным. </span></div>
+         </div>
+         <div id="wb_Image34">
+            <img src="images/comp6.png" id="Image34" alt="" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="3s"></div>
+      </div>
+   </div>
+   <div id="Layer22">
+      <div id="Layer22_Container">
+         <div id="wb_Shape11">
+            <div id="Shape11"></div></div>
+         <div id="wb_Image35">
+            <img src="images/price.png" id="Image35" alt=""></div>
+         <div id="wb_Text61">
+            <span style="color:#000000;">СТОИМОСТЬ ОБОРУДОВАНИЯ И СЕРВИСА</span></div>
+         <div id="wb_Image36">
+            <img src="images/price-man.png" id="Image36" alt=""></div>
+         <div id="wb_Text62">
+            <span style="color:#000000;">В&nbsp;&nbsp; соответствии&nbsp;&nbsp; с&nbsp;&nbsp; условиями&nbsp;&nbsp; акций,&nbsp;&nbsp; при&nbsp;&nbsp; оплате&nbsp;&nbsp; лицензии&nbsp;&nbsp; за&nbsp;&nbsp; 6&nbsp;&nbsp; месяцев&nbsp;&nbsp; и&nbsp;&nbsp; более,&nbsp; возможно предоставление&nbsp; стандартного&nbsp; набора&nbsp; оборудования&nbsp; (без&nbsp; специальных&nbsp; опций)&nbsp; в&nbsp; пользование без&nbsp; оплаты&nbsp; на&nbsp; весь&nbsp; период&nbsp; пользования&nbsp; услугами.&nbsp; </span></div>
+         <div id="wb_Text64">
+            <span style="color:#000000;"><strong>Оборудование</strong></span></div>
+         <div id="wb_Text65">
+            <span style="color:#000000;"><strong>Цена</strong></span></div>
+         <div id="wb_Text67">
+            <span style="color:#000000;"><strong>Сервис</strong></span></div>
+         <hr id="Line1">
+         <hr id="Line2">
+         <hr id="Line3">
+         <hr id="Line4">
+         <hr id="Line5">
+         <hr id="Line6">
+         <div id="wb_Text69">
+            <span style="color:#000000;"><strong>18 000 руб.</strong></span></div>
+         <div id="wb_Text70">
+            <span style="color:#000000;"><strong>20 000 руб.</strong></span></div>
+         <div id="wb_Text71">
+            <span style="color:#000000;">30 000&nbsp; </span><span style="color:#000000;">&#1088;&#1091;&#1073;</span><span style="color:#000000;">. /</span><span style="color:#000000;">&#1084;&#1077;&#1089;</span><span style="color:#000000;">. (</span><span style="color:#000000;">&#1073;&#1077;&#1079;</span><span style="color:#000000;">&nbsp; </span><span style="color:#000000;">&#1089;&#1082;&#1080;&#1076;&#1082;&#1080;</span><span style="color:#000000;">);&nbsp; </span></div>
+         <div id="wb_Text72">
+            <span style="color:#000000;">23 500 руб. /мес. (со скидкой 15%);&nbsp; </span></div>
+         <div id="wb_Text73">
+            <span style="color:#000000;">18 000&nbsp; руб. /мес. (со скидкой 40%);&nbsp; </span></div>
+         <div id="wb_Text74">
+            <span style="color:#000000;">10 500&nbsp; руб. /мес. (без&nbsp; скидки);&nbsp; </span></div>
+         <div id="wb_Text63">
+            <span style="color:#000000;">Точка&nbsp; доступа&nbsp; -&nbsp; Mikrotik&nbsp; 2.4/5GHz&nbsp; -&nbsp; средней&nbsp; мощности&nbsp; со&nbsp; специальным&nbsp; ПО&nbsp; -&nbsp; (1&nbsp; -&nbsp; 2&nbsp; зала среднее&nbsp; количество&nbsp; гостей)&nbsp; +&nbsp; Радар&nbsp; стационарный&nbsp; MikroTik&nbsp; со&nbsp; специальным&nbsp; ПО </span></div>
+         <div id="wb_Text66">
+            <span style="color:#000000;">Точка&nbsp; доступа&nbsp; -&nbsp; Mikrotik&nbsp; 2.4/5GHz&nbsp; -&nbsp; средней&nbsp; мощности&nbsp; со&nbsp; специальным&nbsp; ПО&nbsp; -&nbsp; (1&nbsp; -&nbsp; 2&nbsp; зала большое&nbsp; количество&nbsp; гостей)&nbsp; +&nbsp; Радар&nbsp; стационарный&nbsp; MikroTik&nbsp; со&nbsp; специальным&nbsp; ПО </span></div>
+         <div id="wb_Text68">
+            <span style="color:#000000;">При&nbsp; оплате&nbsp; сервиса&nbsp; для&nbsp; одного&nbsp; ресторана: </span></div>
+         <div id="wb_Text75">
+            <span style="color:#000000;">- за&nbsp; 1&nbsp; месяц&nbsp; <br>- за&nbsp; 3&nbsp; месяца <br>- за&nbsp; 6&nbsp; месяцев&nbsp; <br>- за&nbsp; 12&nbsp; месяцев</span></div>
+      </div>
+   </div>
+   <div id="contact">
+      <div id="contact_Container">
+         <div id="wb_Text77">
+            <span style="color:#BE4B14;"><strong>Главное меню</strong></span></div>
+         <div id="wb_FontAwesomeIcon10">
+            <div id="FontAwesomeIcon10"><i class="fa fa-map-marker"></i></div></div>
+         <div id="wb_Text79">
+            <span style="color:#4F4F4F;"><strong>Адрес</strong></span></div>
+         <div id="wb_FontAwesomeIcon11">
+            <div id="FontAwesomeIcon11"><i class="fa fa-phone"></i></div></div>
+         <div id="wb_Text81">
+            <span style="color:#4F4F4F;"><strong>Контакты</strong></span></div>
+         <div id="wb_FontAwesomeIcon13">
+            <a href="https://www.instagram.com/wifiron/"><div id="FontAwesomeIcon13"><i class="fa fa-instagram"></i></div></a></div>
+         <div id="wb_TextMenu1">
+            <span><a href="./about.html" class="gray">&#1054; &#1082;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1080;</a></span>
+            <span><a href="./cases.html" class="gray">&#1050;&#1077;&#1081;&#1089;&#1099;</a></span>
+            <span><a href="./law.html" class="gray">&#1047;&#1072;&#1082;&#1086;&#1085;&#1085;&#1086;&#1089;&#1090;&#1100; &#1090;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080;</a></span>
+            <span><a href="./privacy.html" class="gray">&#1055;&#1086;&#1083;&#1080;&#1090;&#1080;&#1082;&#1072; &#1082;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;</a></span>
+         </div>
+         <div id="wb_Text76">
+            <span style="color:#000000;">ООО”СРЕДА” г.Иркутск, ул.Киевская, 9А</span></div>
+         <div id="wb_Text78">
+            <span style="color:#000000;"><a href="tel:83952596026 " class="gray_phone">+7&nbsp; (3952) 596-026 </a><br><a href="tel:89027639891" class="gray_phone">+7&nbsp; (902) 763-98-91 (WhatsApp)</a></span></div>
+         <div id="wb_FontAwesomeIcon3">
+            <a href="https://vk.com/wifiron" target="_blank"><div id="FontAwesomeIcon3"><i class="fa fa-vk"></i></div></a></div>
+         <div id="wb_FontAwesomeIcon4">
+            <a href="mailto:info@wifiron.ru"><div id="FontAwesomeIcon4"><i class="fa fa-envelope-o"></i></div></a></div>
+         <div id="wb_FontAwesomeIcon5">
+            <a href="https://www.facebook.com/wifiron.ru" target="_blank"><div id="FontAwesomeIcon5"><i class="fa fa-facebook-f"></i></div></a></div>
+         <form name="Layer24" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="Layer24">
+            <input type="hidden" name="formid" value="layer24">
+            <input type="text" id="Editbox3" class="phone1" name="Телефон" value="" spellcheck="false" required placeholder="&#1042;&#1072;&#1096; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;">
+            <div id="wb_Text80">
+               <span style="color:#000000;">ДЛЯ ЗАПИСИ НА БЕСПЛАТНОЕ ТЕСТИРОВАНИЕ ТЕХНОЛОГИИ ОСТАВЬТЕ ЗАЯВКУ</span></div>
+            <div id="wb_Image37">
+               <img src="images/call-answer.png" id="Image37" alt=""></div>
+            <input type="submit" id="Button3" name="" value="ОТПРАВИТЬ" class="main-btn2">
+            <div id="wb_Checkbox1">
+               <input type="checkbox" id="Checkbox1" name="Политика конфеденциальности" value="Принята" checked><label for="Checkbox1"></label></div>
+            <div id="wb_Text82">
+               <span style="color:#7F7F7F;">Принимаю политику конфеденциальности</span></div>
+         </form>
+         <div id="wb_Text83">
+            <span style="color:#000000;"><a href="http://www.delosait.ru" class="gray_phone">Сделано на delosait.ru</a></span></div>
+      </div>
+   </div>
+   <div id="Layer23">
+      <div id="mymap">
+         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A13b3fb5c2d01e9a703ebea731131e3d47129c60edf069a400e4fc819002bd071&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe></div>
+   </div>
+   <div id="menu">
+      <div id="menu_Container">
+         <div id="wb_Image38">
+            <img src="images/logo.png" id="Image38" alt=""></div>
+         <div id="wb_FontAwesomeIcon7">
+            <a href="#" onclick="ShowObjectWithEffect('menu', 0, 'dropright', 500);return false;"><div id="FontAwesomeIcon7"><i class="fa fa-times"></i></div></a></div>
+         <div id="wb_TextMenu2">
+            <span><a href="./about.html" class="menu">&#1054; &#1082;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1080;</a></span>
+            <span><a href="./cases.html" class="menu">&#1050;&#1077;&#1081;&#1089;&#1099;</a></span>
+            <span><a href="./law.html" class="menu">&#1047;&#1072;&#1082;&#1086;&#1085;&#1085;&#1086;&#1089;&#1090;&#1100; &#1090;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080;</a></span>
+            <span><a href="./privacy.html" class="menu">&#1055;&#1086;&#1083;&#1080;&#1090;&#1080;&#1082;&#1072; &#1082;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;</a></span>
+         </div>
+         <div id="wb_FontAwesomeIcon15">
+            <div id="FontAwesomeIcon15"><i class="fa fa-map-marker"></i></div></div>
+         <div id="wb_FontAwesomeIcon16">
+            <div id="FontAwesomeIcon16"><i class="fa fa-phone"></i></div></div>
+         <div id="wb_FontAwesomeIcon8">
+            <a href="https://www.instagram.com/wifiron/"><div id="FontAwesomeIcon8"><i class="fa fa-instagram"></i></div></a></div>
+         <div id="wb_FontAwesomeIcon9">
+            <a href="https://vk.com/wifiron" target="_blank"><div id="FontAwesomeIcon9"><i class="fa fa-vk"></i></div></a></div>
+         <div id="wb_FontAwesomeIcon12">
+            <a href="https://www.facebook.com/wifiron.ru" target="_blank"><div id="FontAwesomeIcon12"><i class="fa fa-facebook-f"></i></div></a></div>
+         <div id="wb_FontAwesomeIcon14">
+            <a href="mailto:info@wifiron.ru"><div id="FontAwesomeIcon14"><i class="fa fa-envelope-o"></i></div></a></div>
+         <div id="wb_Text85">
+            <span style="color:#FFFFFF;"><strong>Контакты</strong></span></div>
+         <div id="wb_Text87">
+            <span style="color:#FFFFFF;"><strong>Адрес</strong></span></div>
+         <div id="wb_Text84">
+            <span style="color:#000000;"><a href="tel:83952596026 " class="menu">+7&nbsp; (3952) 596-026 </a><br><a href="tel:89027639891" class="menu">+7&nbsp; (902) 763-98-91 (WhatsApp)</a></span></div>
+         <div id="wb_Text86">
+            <span style="color:#FFFFFF;">ООО”СРЕДА” г.Иркутск, ул.Киевская, 9А</span></div>
+      </div>
+   </div>
+   <div id="podkladka" onclick="ShowObject('podkladka', 0);ShowObject('zvonok', 0);return false;">
+   </div>
+   <form name="zvonok" method="post" action="<?php echo basename(__FILE__); ?>" enctype="multipart/form-data" accept-charset="UTF-8" id="zvonok">
+      <input type="hidden" name="formid" value="zvonok">
+      <div id="zvonok_Container">
+         <input type="text" id="Editbox4" name="Имя" value="" spellcheck="false" required placeholder="&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1042;&#1072;&#1096;&#1077; &#1080;&#1084;&#1103;">
+         <div id="wb_Text91">
+            <span style="color:#000000;">Ваше имя </span><span style="color:#FF0000;">*</span></div>
+         <div id="wb_Text98">
+            <span style="color:#000000;">ВВЕДИТЕ ВАШИ ДАННЫЕ</span></div>
+         <div id="wb_FontAwesomeIcon6">
+            <a href="#" onclick="ShowObjectWithEffect('zvonok', 0, 'dropup', 500);ShowObjectWithEffect('podkladka', 0, 'fade', 500);return false;"><div id="FontAwesomeIcon6"><i class="fa fa-times"></i></div></a></div>
+         <div id="wb_Text99">
+            <span style="color:#000000;">Ваш телефон </span><span style="color:#FF0000;">*</span></div>
+         <input type="text" id="Editbox5" class="phone1" name="Телефон" value="" spellcheck="false" required placeholder="&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; &#1042;&#1072;&#1096; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;">
+         <input type="submit" id="Button4" name="" value="Отправить">
+         <div id="wb_Text100">
+            <span style="color:#696969;">Нажимая кнопку &quot;Отправить я принимаю условия Пользовательского соглашения</span></div>
+<!-- scripts -->
+         <div id="Html4">
+            <script>            
+            $(".phone1").mask("8(999) 999-99-99");
+            </script></div>
+      </div>
+   </form>
+   <script src="js/wow.js"></script>	
+   <script>    new WOW().init();
+   </script>
+   <script>   //<![CDATA[ 
+   $(window).load(function(){
+   $(function() {
+       $(".foto").click(function(){
+           $(this).css("opacity", "1");
+       });
+   });
+   });//]]>  
+   </script></body>
+</html>

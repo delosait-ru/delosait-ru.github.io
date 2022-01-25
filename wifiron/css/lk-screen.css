@@ -1,0 +1,46 @@
+body {
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image1 {
+   vertical-align: top;
+}
+#Image1 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#wb_Image1 {
+   height: 542px;
+   left: 143px;
+   position: absolute;
+   top: 39px;
+   width: 739px;
+   z-index: 0;
+}
+@media only screen and (max-width: 1023px) {
+body {
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Image1 {
+   display: inline;
+   height: 234px;
+   left: 0px;
+   margin: 0;
+   padding: 0;
+   top: 13px;
+   visibility: visible;
+   width: 319px;
+}
+}

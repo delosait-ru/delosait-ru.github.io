@@ -1,0 +1,1726 @@
+body {
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image6 {
+   vertical-align: top;
+}
+#Image6 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#Layer1 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url(../images/bg-main.jpg);
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+}
+#wb_Image1 {
+   vertical-align: top;
+}
+#Image1 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading1 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 37px;
+   font-weight: normal;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Text1 div {
+   text-align: left;
+}
+#wb_Text1 {
+   line-height: 1.8;
+}
+#Heading2 {
+   line-height: 1.8;
+}
+input#Editbox1::-webkit-input-placeholder {
+   color: #BE4B14;
+}
+input#Editbox2::-webkit-input-placeholder {
+   color: #BE4B14;
+}
+#Shape1_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape2_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape4_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape7_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape8_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape9_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape10_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+.main-btn {
+   border-radius: 800px  !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0), inset 0.314px -5.992px 0px 0px rgb(201, 145, 50)  !important;
+   padding-bottom: 10px;
+}
+.main-btn:hover {
+   border-radius: 800px  !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0), inset 0.314px -5.992px 0px 0px rgb(201, 145, 50)  !important;
+   padding-bottom: 10px;
+}
+.main-btn2 {
+   border-radius: 800px  !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.15), inset 0.314px -5.992px 0px 0px rgb(201, 145, 50)  !important;
+   padding-bottom: 10px;
+}
+.main-btn2:hover {
+   border-radius: 800px  !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0, 0.15), inset 0.314px -5.992px 0px 0px rgb(201, 145, 50)  !important;
+   padding-bottom: 10px;
+}
+#wb_Image2:hover {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   opacity: 1  !important;
+   transition: all .5s linear;
+}
+#wb_Image2 {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   transition: all .5s linear;
+}
+#Layer5 {
+   left: 0px  !important;
+   margin-left: 0  !important;
+}
+a.orange {
+   border-bottom: 1px dashed;
+   color: #BE4B14;
+   text-decoration: none;
+}
+.vozm {
+   line-height: 1.79;
+}
+#wb_Carousel1 .pagination {
+   bottom: -15px  !important;
+}
+@media(max-width:460px) {
+.main-btn {
+   border-radius: 800px  !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.44), inset 0.314px -5.992px 0px 0px rgb(201, 145, 50)  !important;
+   padding-bottom: 10px;
+}
+#wb_Carousel1 .pagination {
+   display: none  !important;
+}
+#Carousel1_back {
+   left: 10px  !important;
+}
+#Carousel1_next {
+   right: 10px  !important;
+}
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Heading2 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   text-align: left;
+}
+#wb_Shape1 {
+   transform-origin: 50% 50%;
+   transform: rotate(0deg);
+}
+#Shape1 {
+   background-color: #FDBB41;
+   background: linear-gradient(to top, #FDBB41 0%, #FCD67A 100%);
+   border: 0px #245580 solid;
+   border-radius: 25px;
+   box-shadow: -1px 5px 0px #C99132;
+   height: 59px;
+   left: 1px;
+   position: absolute;
+   top: 0px;
+   top: 0px;
+   width: 289px;
+}
+#Shape1:hover {
+   background-color: #FDC864;
+   background: linear-gradient(to top, #FDC864 0%, #FDE1A2 100%);
+   border: 0px #FCD67A solid;
+}
+#Shape1_text {
+   height: 22px;
+   left: 13px;
+   overflow: hidden;
+   position: absolute;
+   text-align: center;
+   top: 21px;
+   width: 263px;
+   word-wrap: break-word;
+}
+#Shape1:hover span {
+   color: #000000  !important;
+}
+#Shape1 span:hover {
+   color: #000000  !important;
+}
+#Layer2 {
+   background-color: #0C0C0C;
+   background-image: none;
+}
+#wb_Image3 {
+   vertical-align: top;
+}
+#Image3 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#wb_Text5 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text5 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Text5 div {
+   text-align: left;
+}
+#Layer3 {
+   background-color: #0C0C0C;
+   background-image: none;
+}
+#wb_Image4 {
+   vertical-align: top;
+}
+#Image4 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#wb_Text6 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text6 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Text6 div {
+   text-align: left;
+}
+#Layer4 {
+   background-color: #0C0C0C;
+   background-image: none;
+}
+#wb_Image5 {
+   vertical-align: top;
+}
+#Image5 {
+   border: 0px solid #000000;
+   height: 100%;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   width: 100%;
+}
+#wb_Text7 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text7 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Text7 div {
+   text-align: left;
+}
+#wb_FontAwesomeIcon1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   vertical-align: top;
+}
+#wb_FontAwesomeIcon1:hover {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #245580;
+}
+#FontAwesomeIcon1 {
+   height: 20px;
+   width: 36px;
+}
+#FontAwesomeIcon1 i {
+   color: #FDE1A2;
+   display: inline-block;
+   font-size: 20px;
+   line-height: 20px;
+   vertical-align: middle;
+   width: 14px;
+}
+#wb_FontAwesomeIcon1:hover i {
+   color: #FDE1A2;
+}
+#wb_Text4 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 21px;
+   font-weight: normal;
+}
+#wb_Text4 div {
+   text-align: left;
+}
+#Layer5 {
+   background-color: rgba(12,12,12,0.60);
+   background-image: none;
+}
+#wb_Shape1 {
+   height: 64px;
+   left: 26px;
+   position: absolute;
+   top: 365px;
+   width: 290px;
+   z-index: 10;
+}
+#wb_FontAwesomeIcon1 {
+   height: 20px;
+   left: 873px;
+   position: absolute;
+   text-align: center;
+   top: 17px;
+   width: 36px;
+   z-index: 20;
+}
+#wb_Image1 {
+   height: 42px;
+   left: 0px;
+   position: absolute;
+   top: 6px;
+   width: 185px;
+   z-index: 22;
+}
+#wb_Text4 {
+   height: 25px;
+   left: 909px;
+   position: absolute;
+   top: 15px;
+   width: 195px;
+   z-index: 21;
+}
+#wb_Text5 {
+   height: 46px;
+   left: 103px;
+   position: absolute;
+   top: 66px;
+   width: 218px;
+   z-index: 3;
+}
+#wb_Image3 {
+   height: 65px;
+   left: 22px;
+   position: absolute;
+   top: 57px;
+   width: 65px;
+   z-index: 2;
+}
+#wb_Text6 {
+   height: 69px;
+   left: 115px;
+   position: absolute;
+   top: 55px;
+   width: 165px;
+   z-index: 1;
+}
+#wb_Image4 {
+   height: 65px;
+   left: 32px;
+   position: absolute;
+   top: 57px;
+   width: 65px;
+   z-index: 0;
+}
+#wb_Text7 {
+   height: 69px;
+   left: 106px;
+   position: absolute;
+   top: 55px;
+   width: 218px;
+   z-index: 5;
+}
+#wb_Image5 {
+   height: 65px;
+   left: 22px;
+   position: absolute;
+   top: 57px;
+   width: 65px;
+   z-index: 4;
+}
+#wb_Image6 {
+   height: 532px;
+   left: 775px;
+   position: absolute;
+   top: 246px;
+   width: 279px;
+   z-index: 6;
+}
+#wb_Text1 {
+   height: 29px;
+   left: 33px;
+   position: absolute;
+   top: 154px;
+   width: 676px;
+   z-index: 8;
+}
+#wb_Heading2 {
+   height: 100px;
+   left: 32px;
+   position: absolute;
+   top: 260px;
+   width: 631px;
+   z-index: 9;
+}
+#Layer1 {
+   display: block;
+   float: left;
+   height: 873px;
+   position: relative;
+   text-align: center;
+   width: 100%;
+   z-index: 23;
+}
+#Layer2 {
+   height: 222px;
+   left: 8px;
+   position: absolute;
+   text-align: left;
+   top: 650px;
+   width: 356px;
+   z-index: 12;
+}
+#wb_Heading1 {
+   height: 58px;
+   left: 31px;
+   position: absolute;
+   top: 201px;
+   width: 711px;
+   z-index: 7;
+}
+#Layer3 {
+   height: 222px;
+   left: 421px;
+   position: absolute;
+   text-align: left;
+   top: 650px;
+   width: 356px;
+   z-index: 11;
+}
+#Layer5_Container {
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   text-align: left;
+   width: 1170px;
+}
+#Layer4 {
+   height: 222px;
+   left: 809px;
+   position: absolute;
+   text-align: left;
+   top: 650px;
+   width: 356px;
+   z-index: 13;
+}
+#Layer1_Container {
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   text-align: left;
+   width: 1170px;
+}
+#Layer5 {
+   height: 55px;
+   left: 50%;
+   margin-left: -585px;
+   position: fixed;
+   position: fixed;
+   text-align: center;
+   top: 0px;
+   width: 100%;
+   z-index: 25;
+   z-index: 900;
+}
+@media only screen and (min-width: 980px) and (max-width: 1169px) {
+body {
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Image6 {
+   display: inline;
+   height: 526px;
+   left: 700px;
+   margin: 0;
+   padding: 0;
+   top: 88px;
+   visibility: visible;
+   width: 277px;
+}
+#Layer1 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url(../images/bg-main.jpg);
+   background-position: center top  !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 716px;
+   margin: 0;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer1 {
+   margin: 0;
+   width: 100%;
+}
+#Layer1_Container {
+   width: 980px;
+}
+#wb_Image1 {
+   display: inline;
+   height: 42px;
+   left: 10px;
+   margin: 0;
+   padding: 0;
+   top: 4px;
+   visibility: visible;
+   width: 185px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Bl";
+   font-size: 37px;
+   font-style: normal;
+   font-weight: normal;
+   height: 73px;
+   left: 31px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 177px;
+   visibility: visible;
+   width: 711px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   text-align: left;
+}
+#Heading1 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 37px;
+   font-weight: normal;
+}
+#wb_Text1 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 29px;
+   left: 31px;
+   top: 148px;
+   visibility: visible;
+   width: 676px;
+}
+#wb_Text1 {
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 {
+   line-height: 1.8;
+}
+#Heading2 {
+   line-height: 1.8;
+}
+input#Editbox1::-webkit-input-placeholder {
+   color: #E96C30 !important;
+}
+input#Editbox2::-webkit-input-placeholder {
+   color: #E96C30;
+}
+#Shape1_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape2_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape4_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+.main-btn {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn:hover {
+   border-radius: 800px !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn2 {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.15),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn2:hover {
+   border-radius: 800px !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0, 0.15),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+#wb_Image2:hover {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   opacity: 1 !important;
+   transition: all .5s linear;
+}
+#wb_Image2 {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   transition: all .5s linear;
+}
+#Layer5 {
+   left: 0px !important;
+   margin-left: 0 !important;
+}
+a.orange {
+   border-bottom: 1px dashed;
+   color: #BE4B14;
+   text-decoration: none;
+}
+@media(max-width:460px) {
+.main-btn {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.44),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 100px;
+   left: 31px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 251px;
+   visibility: visible;
+   width: 631px;
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   text-align: left;
+}
+#Heading2 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Shape1 {
+   display: inline;
+   height: 64px;
+   left: 27px;
+   margin: 0;
+   top: 353px;
+   visibility: visible;
+   width: 290px;
+}
+#Shape1 {
+   height: 59px;
+   width: 289px;
+}
+#Shape1_text {
+   height: 22px;
+   left: 13px;
+   top: 21px;
+   width: 263px;
+}
+#Layer2 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 0px;
+   text-decoration: none;
+   top: 491px;
+   visibility: visible;
+   width: 276px;
+}
+#wb_Image3 {
+   display: inline;
+   height: 65px;
+   left: 22px;
+   margin: 0;
+   padding: 0;
+   top: 57px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text5 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 66px;
+   left: 103px;
+   top: 56px;
+   visibility: visible;
+   width: 173px;
+}
+#wb_Text5 {
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer3 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 352px;
+   text-decoration: none;
+   top: 491px;
+   visibility: visible;
+   width: 276px;
+}
+#wb_Image4 {
+   display: inline;
+   height: 65px;
+   left: 24px;
+   margin: 0;
+   padding: 0;
+   top: 58px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text6 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 66px;
+   left: 107px;
+   top: 56px;
+   visibility: visible;
+   width: 158px;
+}
+#wb_Text6 {
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer4 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 701px;
+   text-decoration: none;
+   top: 491px;
+   visibility: visible;
+   width: 276px;
+}
+#wb_Image5 {
+   display: inline;
+   height: 65px;
+   left: 22px;
+   margin: 0;
+   padding: 0;
+   top: 57px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text7 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 110px;
+   left: 106px;
+   top: 56px;
+   visibility: visible;
+   width: 143px;
+}
+#wb_Text7 {
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_FontAwesomeIcon1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FDE1A2;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 20px;
+   left: 712px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 15px;
+   visibility: visible;
+   width: 36px;
+}
+#FontAwesomeIcon1 {
+   height: 20px;
+   width: 36px;
+}
+#FontAwesomeIcon1 i {
+   font-size: 20px;
+   line-height: 20px;
+   width: 14px;
+}
+#wb_Text4 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 25px;
+   left: 748px;
+   top: 13px;
+   visibility: visible;
+   width: 180px;
+}
+#wb_Text4 {
+   font-family: "Proxima Nova Rg";
+   font-size: 21px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer5 {
+   background-color: rgba(12,12,12,0.60);
+   background-image: none;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 50px;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer5 {
+   width: 100%;
+}
+#Layer5_Container {
+   width: 980px;
+}
+#FilePublisher1 {
+   display: inline;
+   height: 36px;
+   left: 1019px;
+   top: 199px;
+   visibility: visible;
+   width: 38px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+body {
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Image6 {
+   display: inline;
+   height: 256px;
+   left: 479px;
+   margin: 0;
+   padding: 0;
+   top: 272px;
+   visibility: visible;
+   width: 134px;
+}
+#Layer1 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url(../images/bg-main.jpg);
+   background-position: center bottom  !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 690px;
+   margin: 0;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer1 {
+   margin: 0;
+   width: 100%;
+}
+#Layer1_Container {
+   width: 768px;
+}
+#wb_Image1 {
+   display: inline;
+   height: 42px;
+   left: 10px;
+   margin: 0;
+   padding: 0;
+   top: 4px;
+   visibility: visible;
+   width: 185px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Bl";
+   font-size: 37px;
+   font-style: normal;
+   font-weight: normal;
+   height: 70px;
+   left: 31px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 177px;
+   visibility: visible;
+   width: 711px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   text-align: left;
+}
+#Heading1 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 37px;
+   font-weight: normal;
+}
+#wb_Text1 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 29px;
+   left: 32px;
+   top: 148px;
+   visibility: visible;
+   width: 676px;
+}
+#wb_Text1 {
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 {
+   line-height: 1.8;
+}
+#Heading2 {
+   line-height: 1.8;
+}
+input#Editbox1::-webkit-input-placeholder {
+   color: #BE4B14;
+}
+input#Editbox2::-webkit-input-placeholder {
+   color: #BE4B14;
+}
+#Shape1_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape2_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+#Shape4_text {
+   text-shadow: 0px 1px 0px #ffee7a;
+}
+.main-btn {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn:hover {
+   border-radius: 800px !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn2 {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.15),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+.main-btn2:hover {
+   border-radius: 800px !important;
+   box-shadow: 0px 20px 10px 0px rgb(0, 0, 0, 0.15),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+#wb_Image2:hover {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   opacity: 1 !important;
+   transition: all .5s linear;
+}
+#wb_Image2 {
+   -o-transition: all .5s linear;
+   -webkit-transition: all .5s linear;
+   transition: all .5s linear;
+}
+#Layer5 {
+   left: 0px !important;
+   margin-left: 0 !important;
+}
+a.orange {
+   border-bottom: 1px dashed;
+   color: #BE4B14;
+   text-decoration: none;
+}
+@media(max-width:460px) {
+.main-btn {
+   border-radius: 800px !important;
+   box-shadow: 0px 26px 15px 0px rgb(0, 0, 0, 0.44),inset 0.314px -5.992px 0px 0px rgb(201, 145, 50) !important;
+   padding-bottom: 10px;
+}
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 100px;
+   left: 32px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 247px;
+   visibility: visible;
+   width: 409px;
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   text-align: left;
+}
+#Heading2 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Shape1 {
+   display: inline;
+   height: 64px;
+   left: 35px;
+   margin: 0;
+   top: 347px;
+   visibility: visible;
+   width: 290px;
+}
+#Shape1 {
+   height: 59px;
+   width: 289px;
+}
+#Shape1_text {
+   height: 22px;
+   left: 13px;
+   top: 21px;
+   width: 263px;
+}
+#Layer2 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 0px;
+   text-decoration: none;
+   top: 461px;
+   visibility: visible;
+   width: 233px;
+}
+#wb_Image3 {
+   display: inline;
+   height: 65px;
+   left: 22px;
+   margin: 0;
+   padding: 0;
+   top: 57px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text5 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 60px;
+   left: 98px;
+   top: 59px;
+   visibility: visible;
+   width: 127px;
+}
+#wb_Text5 {
+   font-family: "Proxima Nova Bl";
+   font-size: 16px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer3 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 268px;
+   text-decoration: none;
+   top: 461px;
+   visibility: visible;
+   width: 233px;
+}
+#wb_Image4 {
+   display: inline;
+   height: 65px;
+   left: 24px;
+   margin: 0;
+   padding: 0;
+   top: 58px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text6 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 100px;
+   left: 107px;
+   top: 57px;
+   visibility: visible;
+   width: 104px;
+}
+#wb_Text6 {
+   font-family: "Proxima Nova Bl";
+   font-size: 16px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer4 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 222px;
+   left: 532px;
+   text-decoration: none;
+   top: 461px;
+   visibility: visible;
+   width: 233px;
+}
+#wb_Image5 {
+   display: inline;
+   height: 65px;
+   left: 22px;
+   margin: 0;
+   padding: 0;
+   top: 57px;
+   visibility: visible;
+   width: 65px;
+}
+#wb_Text7 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 100px;
+   left: 106px;
+   top: 57px;
+   visibility: visible;
+   width: 121px;
+}
+#wb_Text7 {
+   font-family: "Proxima Nova Bl";
+   font-size: 16px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_FontAwesomeIcon1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FDE1A2;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 20px;
+   left: 501px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 15px;
+   visibility: visible;
+   width: 36px;
+}
+#FontAwesomeIcon1 {
+   height: 20px;
+   width: 36px;
+}
+#FontAwesomeIcon1 i {
+   font-size: 20px;
+   line-height: 20px;
+   width: 14px;
+}
+#wb_Text4 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 25px;
+   left: 533px;
+   top: 13px;
+   visibility: visible;
+   width: 191px;
+}
+#wb_Text4 {
+   font-family: "Proxima Nova Rg";
+   font-size: 21px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer5 {
+   background-color: rgba(0,0,0,0.60);
+   background-image: none;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 50px;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer5 {
+   width: 99.7396%;
+}
+#Layer5_Container {
+   width: 766px;
+}
+#FilePublisher1 {
+   display: inline;
+   height: 36px;
+   left: 790px;
+   top: 616px;
+   visibility: visible;
+   width: 38px;
+}
+}
+@media only screen and (max-width: 767px) {
+body {
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Image6 {
+   display: inline;
+   height: 193px;
+   left: 169px;
+   margin: 0;
+   padding: 0;
+   top: 312px;
+   visibility: visible;
+   width: 101px;
+}
+#Layer1 {
+   background-attachment: scroll;
+   background-color: transparent;
+   background-image: url(../images/bg-main.jpg);
+   background-position: center top  !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 703px;
+   margin: 0;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer1 {
+   margin: 0;
+   width: 100%;
+}
+#Layer1_Container {
+   width: 320px;
+}
+#wb_Image1 {
+   display: inline;
+   height: 23px;
+   left: 2px;
+   margin: 0;
+   padding: 0;
+   top: 6px;
+   visibility: visible;
+   width: 105px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 72px;
+   left: 15px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 97px;
+   visibility: visible;
+   width: 216px;
+}
+#wb_Heading1 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   text-align: left;
+}
+#Heading1 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Bl";
+   font-size: 19px;
+   font-weight: normal;
+}
+#wb_Text1 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 22px;
+   left: 15px;
+   top: 75px;
+   visibility: visible;
+   width: 276px;
+}
+#wb_Text1 {
+   font-family: "Proxima Nova Rg";
+   font-size: 15px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   height: 40px;
+   left: 15px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 169px;
+   visibility: visible;
+   width: 294px;
+}
+#wb_Heading2 {
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   text-align: left;
+}
+#Heading2 {
+   color: #FFFFFF;
+   font-family: "Proxima Nova Rg";
+   font-size: 15px;
+   font-weight: normal;
+}
+#wb_Shape1 {
+   display: inline;
+   height: 64px;
+   left: 15px;
+   margin: 0;
+   top: 227px;
+   visibility: visible;
+   width: 290px;
+}
+#Shape1 {
+   height: 59px;
+   width: 289px;
+}
+#Shape1_text {
+   height: 22px;
+   left: 13px;
+   top: 21px;
+   width: 263px;
+}
+#Layer2 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 131px;
+   left: 4px;
+   text-decoration: none;
+   top: 457px;
+   visibility: visible;
+   width: 98px;
+}
+#wb_Image3 {
+   display: inline;
+   height: 33px;
+   left: 16px;
+   margin: 0;
+   padding: 0;
+   top: 11px;
+   visibility: visible;
+   width: 33px;
+}
+#wb_Text5 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 45px;
+   left: 15px;
+   top: 57px;
+   visibility: visible;
+   width: 83px;
+}
+#wb_Text5 {
+   font-family: "Proxima Nova Bl";
+   font-size: 12px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer3 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 131px;
+   left: 106px;
+   text-decoration: none;
+   top: 457px;
+   visibility: visible;
+   width: 112px;
+}
+#wb_Image4 {
+   display: inline;
+   height: 33px;
+   left: 8px;
+   margin: 0;
+   padding: 0;
+   top: 11px;
+   visibility: visible;
+   width: 33px;
+}
+#wb_Text6 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 60px;
+   left: 9px;
+   top: 56px;
+   visibility: visible;
+   width: 96px;
+}
+#wb_Text6 {
+   font-family: "Proxima Nova Bl";
+   font-size: 12px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer4 {
+   background-color: #0C0C0C;
+   background-image: none;
+   display: inline;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 132px;
+   left: 221px;
+   text-decoration: none;
+   top: 457px;
+   visibility: visible;
+   width: 98px;
+}
+#wb_Image5 {
+   display: inline;
+   height: 33px;
+   left: 9px;
+   margin: 0;
+   padding: 0;
+   top: 11px;
+   visibility: visible;
+   width: 33px;
+}
+#wb_Text7 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 75px;
+   left: 5px;
+   top: 57px;
+   visibility: visible;
+   width: 88px;
+}
+#wb_Text7 {
+   font-family: "Proxima Nova Bl";
+   font-size: 12px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_FontAwesomeIcon1 {
+   background-color: transparent;
+   background-image: none;
+   color: #FDE1A2;
+   display: none;
+   font-family: Arial;
+   font-size: 8px;
+   font-style: normal;
+   font-weight: normal;
+   height: 20px;
+   left: 7px;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   top: 0px;
+   visibility: hidden;
+   width: 36px;
+}
+#FontAwesomeIcon1 {
+   height: 20px;
+   width: 36px;
+}
+#FontAwesomeIcon1 i {
+   font-size: 20px;
+   line-height: 20px;
+   width: 14px;
+}
+#wb_Text4 {
+   background-color: transparent;
+   background-image: none;
+   display: inline;
+   height: 17px;
+   left: 150px;
+   top: 7px;
+   visibility: visible;
+   width: 135px;
+}
+#wb_Text4 {
+   font-family: "Proxima Nova Rg";
+   font-size: 15px;
+   font-weight: normal;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#Layer5 {
+   background-color: rgba(0,0,0,0.60);
+   background-image: none;
+   display: inline;
+   font-family: "Proxima Nova Rg";
+   font-size: 19px;
+   font-style: normal;
+   font-weight: normal;
+   height: 34px;
+   text-decoration: none;
+   visibility: visible;
+}
+#Layer5 {
+   width: 100%;
+}
+#Layer5_Container {
+   width: 320px;
+}
+#FilePublisher1 {
+   display: inline;
+   height: 36px;
+   left: 364px;
+   top: 1466px;
+   visibility: visible;
+   width: 38px;
+}
+}

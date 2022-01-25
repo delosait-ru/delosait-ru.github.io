@@ -1,0 +1,222 @@
+@font-face {
+   font-family: "Proxima Nova Rg";
+   src: url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "Proxima Nova Bl";
+   src: url('../fonts/ProximaNova-Extrabld.woff') format('woff'), url('../fonts/ProximaNova-Extrabld.ttf') format('truetype'), url('../fonts/ProximaNova-Extrabld.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "Material Icons";
+   font-style: normal;
+   font-weight: 400;
+   src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/MaterialIcons-Regular.woff) format('woff'), url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   direction: ltr;
+   display: inline-block;
+   font-family: "Material Icons";
+   font-feature-settings: "liga";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: normal;
+   letter-spacing: normal;
+   line-height: 1;
+   text-rendering: optimizeLegibility;
+   text-transform: none;
+   white-space: nowrap;
+   word-wrap: normal;
+}
+a {
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited {
+   color: #800080;
+}
+a:active {
+   color: #FF0000;
+}
+a:hover {
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus,
+textarea:focus,
+select:focus {
+   outline: none;
+}
+.visibility-hidden {
+   visibility: hidden;
+}
+a.phone {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phone:visited {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phone:active {
+   background: #FFFFFF;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.phone:hover {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.orange {
+   color: #BE4B14;
+   text-decoration: none;
+}
+a.orange:visited {
+   color: #BE4B14;
+   text-decoration: none;
+}
+a.orange:active {
+   color: #BE4B14;
+   text-decoration: none;
+}
+a.orange:hover {
+   color: #E96C30;
+   text-decoration: none;
+}
+a.gray {
+   color: #3F3F3F;
+   text-decoration: underline;
+}
+a.gray:visited {
+   color: #3F3F3F;
+   text-decoration: underline;
+}
+a.gray:active {
+   color: #3F3F3F;
+   text-decoration: underline;
+}
+a.gray:hover {
+   color: #ED7D31;
+   text-decoration: none;
+}
+a.gray_phone {
+   color: #3F3F3F;
+   text-decoration: none;
+}
+a.gray_phone:visited {
+   color: #3F3F3F;
+   text-decoration: none;
+}
+a.gray_phone:active {
+   color: #3F3F3F;
+   text-decoration: none;
+}
+a.gray_phone:hover {
+   color: #ED7D31;
+   text-decoration: underline;
+}
+a.menu {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu:visited {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu:active {
+   background: #FFFFFF;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu:hover {
+   color: #ED7D31;
+   text-decoration: underline;
+}
+h1,
+.h1 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 32px;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+h2,
+.h2 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 27px;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+h3,
+.h3 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 24px;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+h4,
+.h4 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 21px;
+   font-style: italic;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+h5,
+.h5 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 19px;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+h6,
+.h6 {
+   background-color: transparent;
+   color: #000000;
+   display: inline;
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: bold;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   text-decoration: none;
+}
+.CustomStyle {
+   background-color: transparent;
+   color: #2E74B5;
+   font-family: "Courier New";
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+}
+@media only screen and (min-width: 980px) and (max-width: 1169px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+}
+@media only screen and (max-width: 767px) {
+}
