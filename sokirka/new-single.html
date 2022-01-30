@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon.png">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<!-- Styles -->
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	
+
+	<!-- Подключение svg -->
+	<script src="img/svg-sprite/svg-sprite.js"></script>
+	<div class="svg-placeholder" style="display: none;"></div>
+	<script>document.querySelector('.svg-placeholder').innerHTML = SVG_SPRITE;</script>
+
+</head>
+
+<body class="inner-page">
+		<!-- Header -->
+		<header class="header header-single">
+
+			<div class="heading">
+				<ul class="social">
+					<li class="social__item">
+						<span>Vk</span>
+						<a class="social__icon social__icon_vk" href="#">
+							<svg  width="21" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<span>Fb</span>
+						<a class="social__icon social__icon_fb" href="#">
+							<svg  width="14" height="17">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<span>Tw</span>
+						<a class="social__icon social__icon_tw" href="#">
+							<svg  width="18" height="15">
+								<use xlink:href="#twitter"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__icon social__icon_inst" href="#">
+							<svg   width="16" height="16">
+								<use xlink:href="#instagram"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="heading__block">
+					<a href="#" class="heading__bag">
+						<svg width="17" height="20">
+							<use xlink:href="#bag"/>
+						</svg>
+					</a>
+					<div class="language">
+						<ul>
+							<li class="lang-item active">
+								<a href="#">Ru</a>
+							</li>
+							<li class="lang-item">
+								<a href="#">En</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="control">
+					<a href="#enter" class="control__enter popup-link-1">
+						<svg class="control__icon" width="19" height="17">
+							<use xlink:href="#login"/>
+						</svg>
+						Вход
+					</a>
+					<a style="display: none;" href="cabinet.html" class="control__enter control__enter_cab">
+						<svg class="control__icon" width="16" height="16">
+							<use xlink:href="#user"/>
+						</svg>
+						Личный кабинет
+					</a>
+					<a href="#reg" class="control__reg noise popup-link-2">Регистрация</a>
+				</div>
+			</div>
+
+			<div class="navigation">
+				<a href="index.html" class="logo noise">
+					<p class="logo__icon">JC</p>
+					<p class="logo__desc">legal Advisory Services</p>
+				</a>
+
+				<div class="navigation__wrap">
+					<a href="#call" class="call popup-link-1">
+						<div class="call__icon btn">
+							<svg width="22" height="22">
+								<use xlink:href="#phone-solid"/>
+							</svg>
+						</div>
+						<div class="call__block">
+							<p class="call__text">Заказать звонок</p>
+							<p class="call__number">+ 7 (495) 567-28-15</p>
+						</div>
+					</a>
+					
+					<!-- Main menu -->
+					<nav id="nav-wrap" class="menu">
+						
+						<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+						<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+						<ul id="nav" class="menu__list">
+							<li class="active"><a href="index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><span><a href="services.html">Услуги</a></span>
+								<ul>
+									<li><a href="service.html">Корпоративная практика, M&A</a></li>
+									<li><a href="service.html">Интеллектуальная собственность</a></li>
+									<li><a href="service.html">Интернет-бизнес и цифровая экономика</a></li>
+									<li><a href="service.html">Информационные технологии / TMT</a></li>
+									<li><a href="service.html">Government Relations</a></li>
+									<li><a href="service.html">Коммерческая практика</a></li>
+								</ul>
+							</li>
+							<li><a href="reviews.html">Отзывы</a></li>
+							<li><a href="contacts.html#">Контакты</a></li>
+							<li><a href="market.html">Магазин</a></li>
+						</ul>
+					</nav><!-- End main menu -->
+					
+					<div class="widget widget_search">
+						<form role="search" method="get" id="searchform" action="#">
+					
+							<input class="text-search" type="search" value="" placeholder="Поиск">
+							<input type="submit" class="submit-search" value="" />
+					
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="caption">
+				<div class="wrapper">
+					<h1 class="caption__title">Новости</h1>
+					<div class="caption__bc">
+						<span>
+							<a href="index.html">Главная</a>
+						</span>
+						<span class="sep">/</span>
+						<span>
+							<a href="news.html">Новости</a>
+						</span>
+						<span class="sep">/</span>
+						<span class="current">Как вернуть долг, если должник ликвидировался?</span>
+					</div>
+				</div>
+			</div>
+			
+		</header><!-- End header -->
+
+
+		<!-- Service -->
+		<section class="single event">
+			<div class="event-top" style="background: #fff url(img/post-bg.jpg) no-repeat center top/ cover;">
+				<div class="wrapper">
+					<div class="event-top__wrap">
+						<div class="add-time">
+							<svg width="13" height="13">
+								<use xlink:href="#time"/>
+							</svg>
+							<p class="add-time__date">20.05.2018</p>
+						</div>
+						<div class="rate"></div>
+					</div>
+					<h1 class="event-top__title">
+						Как вернуть долг, если должник ликвидировался?
+					</h1>
+					<ul class="tags-list">
+						<li><a href="#">Судебная практика</a></li>
+						<li><a href="#">Социальная сфера</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="event__content">
+					<p>Взаимодействие между юридическими лицами осуществляется исключительно по договору. Однако, если сотрудничать с сомнительными компаниями, даже подписанные документы не гарантируют финансовой безопасности.</p>
+					<p>К сожалению, компании-должники часто ведут себя недобросовестно. Они не поддерживают диалог, не отвечают на официальную корреспонденцию, не говоря уже о том, что не извещают должным образом о начале процессе ликвидации фирмы. В результате вы ожидаете поступление денежных средств от фирмы, которой уже не существует.</p>
+					<p>И всё же закон на вашей стороне. Он гласит, что если организация не уведомила кредиторов о начале процесса ликвидации, вследствие чего их требования не попали в ликвидационный баланс, денежные средства можно вернуть, даже если предприятие успешно закрылось.</p>
+					<h4 class="event__subtitle">Как оспорить решение налоговой инспекции</h4>
+					<p>Процесс ликвидации завершается сразу после внесения соответствующей записи в ЕГРЮЛ. Однако решениеИФНС возможно оспорить в вышестоящей инстанции или суде.</p>
+					<p>Если вы решили действовать через суд, следует подать заявление с требованием о признании решения ИФНС недействительным. Законодательством предусмотрен особый порядок подачи подобных заявлений. Он представлен в гл. 24 АПК. Следует помнить о сроках обращения в суд. Он отсчитывается с момента занесения соответствующей записи в ЕГРЮЛ. Заявление следует обязательно обосновать. Так вы можете сообщить о том, что должник не уведомил кредиторов о начале процесса ликвидации или о неверных данных, которые получила налоговая инспекция.</p>
+					<h4 class="event__subtitle">Как взыскать задолженность с физических лиц</h4>
+					<p>Суд может вынести решение о том, что ликвидация фирмы-должника произведена законно. В этом случае можно предъявить требования о возмещении убытков к членам ликвидационной комиссии. Однако придётся доказать совокупность обстоятельств.</p>
+					<img src="img/post.jpg" alt="Изображение">
+					<h4 class="event__subtitle">Как получить деньги через распределение имущества</h4>
+					<p>Также вы вправе подать иск о распределении имущества должника, если оно осталось у ликвидированной компании. Особенности данной процедуры подробно расписаны в ст. 64 ГК. Кроме того, к имуществу компании относятся его требования к третьим лицам. Это может быть даже исполнение обязательств, не выполненных из-за нарушения очерёдности. Важно соблюдать сроки подачи заявления. Должно пройти не более 5 лет с даты внесения соответствующей записи в ЕГРЮЛ, то есть даты, когда компания должник официально перестала вести деятельность.</p>
+					<p>Чтобы вернуть задолженность в кратчайшие сроки, обращайтесь в юридическую компанию. Мы проведем тщательный правовой анализ, поможем собрать все необходимые документы и грамотно обоснуем ваши требования. Ваши деньги не исчезнут с ликвидацией должника.</p>
+					<div class="event__wrap">
+						<div class="share">
+							<p class="share__title">
+								<svg width="15" height="15">
+									<use xlink:href="#link"/>
+								</svg>
+								Поделиться:
+							</p>
+							<ul class="social">
+								<li class="social__item">
+									<span>Vk</span>
+									<a data-social="vkontakte" class="social__icon social__icon_vk" href="#">
+										<svg  width="21" height="18">
+											<use xlink:href="#vk"/>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<span>Fb</span>
+									<a data-social="facebook" class="social__icon social__icon_fb" href="#">
+										<svg  width="14" height="17">
+											<use xlink:href="#facebook"/>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<span>Tw</span>
+									<a data-social="twitter" class="social__icon social__icon_tw" href="#">
+										<svg  width="18" height="15">
+											<use xlink:href="#twitter"/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="event__nav">
+							<li class="prev">
+								<a href="#">Предыдущая новость</a>
+							</li>
+							<li class="next">
+								<a href="#">Следующая новость</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<aside class="sidebar">
+					<div class="widget widget_search">
+						<form role="search" method="get" id="searchform1" action="#">
+					
+							<input class="text-search" type="search" value="" placeholder="Поиск по новостям">
+							<input type="submit" class="submit-search" value="" />
+					
+						</form>
+					</div>
+					<div class="categories side-nav">
+						<h5 class="categories__title">
+							<svg  width="19" height="19">
+								<use xlink:href="#content-post"/>
+							</svg>
+							Категории новостей
+						</h5>
+						<ul>
+							<li>
+								<a href="#">Налоги и бухучет</a>
+								<span>8</span>
+							</li>
+							<li>
+								<a href="#">Судебная практика</a>
+								<span>15</span>
+							</li>
+							<li>
+								<a href="#">Социальная сфера</a>
+								<span>5</span>
+							</li>
+							<li>
+								<a href="#">Образование</a>
+								<span>7</span>
+							</li>
+							<li>
+								<a href="#">Новости в сфере IT</a>
+								<span>33</span>
+							</li>
+							<li>
+								<a href="#">Бизнес</a>
+								<span>31</span>
+							</li>
+							<li>
+								<a href="#">Проверки</a>
+								<span>14</span>
+							</li>
+						</ul>
+					</div>
+				
+					<div class="banner" style="background: url(img/banner.jpg) no-repeat center top/ cover;">
+						<h4 class="banner__title">Юридические консультации для малого бизнеса</h4>
+						<p class="banner__text">Не позволяйте юридическим вопросам отвлекать вас от ведения бизнеса</p>
+						<a href="#" class="banner__btn btn">Подробнее</a>
+					</div>
+				
+					<div class="subscr">
+						<div class="subscr__title">
+							<svg  width="19" height="19">
+								<use xlink:href="#mail"/>
+							</svg>
+							Подписаться на рассылку
+						</div>
+						<form action="#" class="subscr__form log" id="popupSubscribe">
+							<div class="log__group">
+								<label>Имя</label>
+								<input type="text" name="name_mod" class="log__input">
+							</div>
+							<div class="log__group">
+								<label>Email</label>
+								<input type="email" name="email" class="log__input">
+							</div>
+							<div class="log__btn">
+								<input id="subscribe" type="submit" data-submit value="Подписаться" class="btn"/>
+							</div>
+						</form>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__block">
+					<a href="index.html" class="logo noise">
+						<p class="logo__icon">JC</p>
+						<p class="logo__desc">legal Advisory Services</p>
+					</a>
+					<ul class="social">
+						<li class="social__item">
+							<span>Vk</span>
+							<a class="social__icon social__icon_vk" href="#">
+								<svg  width="21" height="18">
+									<use xlink:href="#vk"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<span>Fb</span>
+							<a class="social__icon social__icon_fb" href="#">
+								<svg  width="14" height="17">
+									<use xlink:href="#facebook"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<span>Tw</span>
+							<a class="social__icon social__icon_tw" href="#">
+								<svg  width="18" height="15">
+									<use xlink:href="#twitter"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__icon social__icon_inst" href="#">
+								<svg width="16" height="16">
+									<use xlink:href="#instagram"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<p class="footer__special">Разработано специально для коучинга WAYUP</p>
+				</div>
+				<nav class="guide">
+					<p class="guide__title">Карта сайта</p>
+					<ul>
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="index.html">О компании</a></li>
+						<li><a href="cases.html">Кейсы</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="news.html">Новости</a></li>
+					</ul>
+				</nav>
+				<div class="serv">
+					<p class="serv__title">Услуги</p>
+					<ul>
+						<li><a href="service.html">Корпоративная практика, M&A</a></li>
+						<li><a href="service.html">Информационные технологии / TMT</a></li>
+						<li><a href="service.html">Интеллектуальная собственность</a></li>
+						<li><a href="service.html">Government <br>Relations</a></li>
+						<li><a href="service.html">Интернет-бизнес и цифровая экономика</a></li>
+						<li><a href="#">Коммерческая практика</a></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<p class="contact__title">Контакты</p>
+					<ul class="contact__list">
+						<li class="contact__item">
+							<svg width="20" height="25">
+								<use xlink:href="#pin"/>
+							</svg>
+							<p class="contact__text contact__text_address">г. Москва, ул. Бутырская, 62
+				Z-Plaza, 5-й этаж</p>
+						</li>
+						<li class="contact__item">
+							<svg width="21" height="21">
+								<use xlink:href="#phone"/>
+							</svg>
+							<div class="contact__phones">
+								<a href="#" class="contact__text contact__text_phone">+ 7 (495) 577-18-11</a>
+								<a href="#" class="contact__text contact__text_phone">+ 7 (495) 567-28-15</a>
+							</div>
+						</li>
+						<li class="contact__item">
+							<svg width="25" height="19">
+								<use xlink:href="#mail"/>
+							</svg>
+							<p class="contact__text contact__text_mail">JClegal@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+					<p class="subscribe__title">Подписаться на рассылку новостей</p>
+					<form action="#" class="subscribe__form log" id="popupSubscribe">
+						<input type="text" name="email" class="subscribe__input" placeholder="Ваш email">
+						<div class="log__btn">
+							<input type="submit" data-submit value="Подписаться" class="btn"/>
+						</div>
+					</form>
+					<div class="control">
+						<div class="language">
+							<ul>
+								<li class="lang-item active">
+									<a href="#">Ru</a>
+								</li>
+								<li class="lang-item">
+									<a href="#">En</a>
+								</li>
+							</ul>
+						</div>
+						<div class="control__wrap">
+							<a href="#enter" class="control__enter popup-link-1">
+								<svg class="control__icon" width="19" height="17">
+									<use xlink:href="#login"/>
+								</svg>
+								Вход
+							</a>
+							<a style="display: none;" href="cabinet.html" class="control__enter control__enter_cab">
+								<svg class="control__icon" width="16" height="16">
+									<use xlink:href="#user"/>
+								</svg>
+								Личный кабинет
+							</a>
+							<a href="#reg" class="control__reg noise popup-link-2">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<p class="footer__copy">©2007-2018 Все права защищены</p>
+			</div>
+		</footer><!-- End footer -->
+
+
+<!-- MODAL WINDOWS-->
+
+<!-- Call me -->
+		<div id="call" class="callme mfp-hide">
+			<h4 class="login__title modal-title">Отправьте заявку</h4>
+			<p class="login__question modal-text">И наши специалисты свяжутся с вами!</p>
+			<form action="#" id="popupOrder" class="log callme-form">
+
+				<div class="log__group">
+					<label>Имя</label>
+					<input type="text" name="name_mod" class="log__input">
+				</div>
+
+				<div class="log__group show-pass">
+					<label>Телефон</label>
+					<input type="tel" name="tel" class="log__input">
+				</div>
+
+				<div class="log__btn">
+					<input id="send" type="submit" data-submit value="Отправить" class="btn"/>
+				</div>
+			</form>
+		</div>
+
+<!-- Login -->
+		<div id="enter" class="login mfp-hide">
+			<h4 class="login__title modal-title">Войдите в свой аккаунт</h4>
+			<p class="login__question modal-text">Еще нет учетной записи? <span><a href="#reg" class="popup-link-2 link-more">Зарегистрируйтесь сейчас</a></span>, это займет не более минуты</p>
+			<form action="#" id="log" class="log">
+
+				<span class="modal-сaution">Такого аккаунта не существует</span>
+				<span class="modal-сaution">Неверный E-mail или пароль</span>
+
+				<div class="log__group">
+					<label>Email</label>
+					<input type="email" name="email_mod" class="log__input">
+				</div>
+
+				<div class="log__group show-pass">
+					<label>Пароль</label>
+					<input id="password" type="password" name="password_mod" class="log__input">
+					<span class="log__eye password-eye" data-target="#password">
+						<svg width="34" height="22">
+							<use xlink:href="#eye"/>
+						</svg>
+					</span>
+				</div>
+				<div class="log__wrap">
+					<div class="log__group check">
+						<input id="check" type="checkbox" name="remember" value="remember">
+						<label for="check">Запомнить пароль</label>
+					</div>
+					<a href="#recovery" class="popup-link-1 log__forget">Забыли пароль?</a>
+				</div>
+				<div class="log__btn">
+					<input id="entry" type="submit" data-submit value="Войти" class="btn"/>
+				</div>
+			</form>
+			<div class="var">
+				<p class="var__text">Или войдите в систему с помощью</p>
+				<ul class="var__list">
+					<li>
+						<a href="#" class="var__link var__link_goo">
+							<svg width="14" height="14">
+								<use xlink:href="#google"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_vk">
+							<svg width="18" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_fb">
+							<svg width="16" height="16">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!-- Forget password -->
+		<div id="recovery" class="recovery mfp-hide">
+			<div class="forget">
+				<p class="forget__title modal-subtitle">Забыли пароль?</p>
+				<p class="forget__text modal-text">Введите ваш Email. Вам будет выслан проверочный код. После получения кода подтверждения вы сможете выбрать новый пароль для своей учетной записи.</p>
+				<form action="#" id="recover" class="log">
+				
+					<span class="modal-сaution">Пароль был отправлен на ваш Email</span>
+					<span class="modal-сaution">Пользователя с таким Email не существует</span>
+				
+					<div class="log__group">
+						<label>Email</label>
+						<input type="email" name="email_mod" class="log__input">
+					</div>
+					<div class="log__btn">
+						<input id="pass" type="submit" data-submit value="Отправить пароль" class="btn"/>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+<!---------------------- Сonfirmation code ---------------------->
+			<div class="confirm">
+				<p class="confirm__title  modal-subtitle">Введите код подтверждения</p>
+
+				<form action="#" id="key" class="log">
+
+					<span class="modal-сaution">Неверный код</span>
+
+					<div class="log__group">
+						<label>Код подтверждения</label>
+						<input type="text" name="confirm" class="log__input">
+					</div>
+					<div class="log__btn">
+						<input id="confirm" type="submit" data-submit value="Подтвердить" class="btn"/>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+
+<!---------------------- New password ---------------------->
+			<div class="new-pass">
+				<p class="new-pass__title  modal-subtitle">Придумайте новый пароль</p>
+				<p class="new-pass__text modal-text">Пароль должен содержать не менее 9 символов</p>
+
+				<form action="#" id="create" class="log">
+
+					<span class="modal-сaution">Вы успешно сменили пароль</span>
+
+					<div class="log__group show-pass">
+						<label>Новый пароль</label>
+						<input id="new-pass" type="password" name="password_mod" class="log__input">
+						<span class="log__eye password-eye" data-target="#new-pass">
+							<svg width="34" height="22">
+								<use xlink:href="#eye"/>
+							</svg>
+						</span>
+					</div>
+					<div class="log__group show-pass">
+						<label>Подтвердите пароль</label>
+						<input id="confirm-pass" type="password" name="password_mod" class="log__input">
+						<span class="log__eye password-eye" data-target="#confirm-pass">
+							<svg width="34" height="22">
+								<use xlink:href="#eye"/>
+							</svg>
+						</span>
+					</div>
+					<div class="log__wrap">
+						<div class="log__btn">
+							<input type="submit" id="conf" data-submit value="Подтвердить" class="btn"/>
+						</div>
+						<a href="#enter" class="popup-link-1 log__enter">Войти</a>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+
+		</div>
+
+<!-- Registration -->
+		<div id="reg" class="reg mfp-hide">
+			<h4 class="reg__title modal-title">Регистрация нового аккаунта</h4>
+			<p class="reg__question modal-text">Уже есть аккаунт? <span><a href="#enter" class="popup-link-1 link-more">Войдите</a></span></p>
+			
+			<form action="#" id="regist" class="log">
+
+				<span class="modal-сaution">Пароль должен содержать не менее 9 символов</span>
+				<span class="modal-сaution">Пользователь с таким адресом электронной почты уже существует</span>
+
+				<div class="log__group">
+					<label>Имя</label>
+					<input type="text" name="name_mod" class="log__input">
+				</div>
+				<div class="log__group">
+					<label>Email</label>
+					<input type="email" name="email_mod" class="log__input">
+				</div>
+				<div class="log__group">
+					<label>Телефон</label>
+					<input type="tel" name="tel_mod" class="log__input">
+				</div>
+				<div class="log__group show-pass">
+					<label>Пароль</label>
+					<input id="reg-pass" type="password" name="password_mod" class="log__input">
+					<span class="log__eye password-eye" data-target="#reg-pass">
+						<svg width="34" height="22">
+							<use xlink:href="#eye"/>
+						</svg>
+					</span>
+				</div>
+				<div class="log__wrap">
+					
+					<div class="log__btn">
+						<input id="do-reg" type="submit" data-submit value="Зарегистрироваться" class="btn"/>
+					</div>
+					<div class="log__group check">
+						<input id="rem" type="checkbox" name="remember" value="remember">
+						<label for="rem">Запомнить пароль</label>
+					</div>
+				</div>
+			</form>
+			<div class="var">
+				<p class="var__text">Или войдите в систему с помощью</p>
+				<ul class="var__list">
+					<li>
+						<a href="#" class="var__link var__link_goo">
+							<svg width="14" height="14">
+								<use xlink:href="#google"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_vk">
+							<svg width="18" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_fb">
+							<svg width="16" height="16">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Subscribe news -->
+		<div id="sub" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо!</p>
+			<p class="sub__text">Вы успешно подписались на нашу новостную рассылку</p>
+		</div>
+
+		<!-- Order -->
+		<div id="taken" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо!</p>
+			<p class="sub__text">Ваша заявка принята. Наши специалисты свяжутся с вами в ближайшее время.</p>
+		</div>
+
+		<!-- Message -->
+		<div id="callback" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо за отзыв!</p>
+			<p class="sub__text">Ваше мнение очень важно для нас. Спасибо, что уделили нам время</p>
+		</div>
+
+<!-- End modal -->
+
+
+<!-- Loader for form -->
+		<div id="form-loader">
+			<img src="img/eclipse.svg">
+		</div>
+
+<!-- Javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/goodshare.js@4/goodshare.min.js"></script>
+
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+
+</body>
+</html>

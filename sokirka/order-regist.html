@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon.png">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<!-- Styles -->
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	
+
+	<!-- Подключение svg -->
+	<script src="img/svg-sprite/svg-sprite.js"></script>
+	<div class="svg-placeholder" style="display: none;"></div>
+	<script>document.querySelector('.svg-placeholder').innerHTML = SVG_SPRITE;</script>
+
+</head>
+
+<body class="inner-page">
+		<!-- Header -->
+		<header class="header header-single">
+
+			<div class="heading">
+				<ul class="social">
+					<li class="social__item">
+						<span>Vk</span>
+						<a class="social__icon social__icon_vk" href="#">
+							<svg  width="21" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<span>Fb</span>
+						<a class="social__icon social__icon_fb" href="#">
+							<svg  width="14" height="17">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<span>Tw</span>
+						<a class="social__icon social__icon_tw" href="#">
+							<svg  width="18" height="15">
+								<use xlink:href="#twitter"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__icon social__icon_inst" href="#">
+							<svg   width="16" height="16">
+								<use xlink:href="#instagram"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<div class="heading__block">
+					<a href="#" class="heading__bag">
+						<svg width="17" height="20">
+							<use xlink:href="#bag"/>
+						</svg>
+					</a>
+					<div class="language">
+						<ul>
+							<li class="lang-item active">
+								<a href="#">Ru</a>
+							</li>
+							<li class="lang-item">
+								<a href="#">En</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="control">
+					<a href="#enter" class="control__enter popup-link-1">
+						<svg class="control__icon" width="19" height="17">
+							<use xlink:href="#login"/>
+						</svg>
+						Вход
+					</a>
+					<a href="#reg" class="control__reg noise popup-link-2">Регистрация</a>
+				</div>
+			</div>
+
+			<div class="navigation">
+				<a href="index.html" class="logo noise">
+					<p class="logo__icon">JC</p>
+					<p class="logo__desc">legal Advisory Services</p>
+				</a>
+
+				<div class="navigation__wrap">
+					<a href="#call" class="call popup-link-1">
+						<div class="call__icon btn">
+							<svg width="22" height="22">
+								<use xlink:href="#phone-solid"/>
+							</svg>
+						</div>
+						<div class="call__block">
+							<p class="call__text">Заказать звонок</p>
+							<p class="call__number">+ 7 (495) 567-28-15</p>
+						</div>
+					</a>
+					
+					<!-- Main menu -->
+					<nav id="nav-wrap" class="menu">
+						
+						<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+						<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+						<ul id="nav" class="menu__list">
+							<li class="active"><a href="index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><span><a href="services.html">Услуги</a></span>
+								<ul>
+									<li><a href="service.html">Корпоративная практика, M&A</a></li>
+									<li><a href="service.html">Интеллектуальная собственность</a></li>
+									<li><a href="service.html">Интернет-бизнес и цифровая экономика</a></li>
+									<li><a href="service.html">Информационные технологии / TMT</a></li>
+									<li><a href="service.html">Government Relations</a></li>
+									<li><a href="service.html">Коммерческая практика</a></li>
+								</ul>
+							</li>
+							<li><a href="reviews.html">Отзывы</a></li>
+							<li><a href="contacts.html#">Контакты</a></li>
+							<li><a href="market.html">Магазин</a></li>
+						</ul>
+					</nav><!-- End main menu -->
+					
+					<div class="widget widget_search">
+						<form role="search" method="get" id="searchform" action="#">
+					
+							<input class="text-search" type="search" value="" placeholder="Поиск">
+							<input type="submit" class="submit-search" value="" />
+					
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="caption">
+				<div class="wrapper">
+					<h1 class="caption__title">Корзина</h1>
+					<div class="caption__bc">
+						<span>
+							<a href="index.html">Главная</a>
+						</span>
+						<span class="sep">/</span>
+						<span>
+							<a href="news.html">Магазин</a>
+						</span>
+						<span class="sep">/</span>
+						<span class="current">Оформить заказ</span>
+					</div>
+				</div>
+			</div>
+			
+		</header><!-- End header -->
+
+
+		<!-- Service -->
+		<section class="single pay">
+			<div class="wrapper">
+
+				<form action="#" id="pay-form" class="pay__form log">
+					<div class="pay__block">
+						<h5 class="pay__title">Платежные реквизиты</h5>
+
+						<div class="log__wrap">
+
+							<div class="log__group">
+								<label>Имя</label>
+								<input type="text" name="name" class="log__input">
+							</div>
+
+							<div class="log__group">
+								<label>Фамилия</label>
+								<input type="text" name="lastname" class="log__input">
+							</div>
+
+						</div>
+
+						<div class="log__group log__group_company">
+							<label>Название компании</label>
+							<input type="text" name="company" class="log__input">
+						</div>
+
+						<div class="log__group log__group_select">
+							<label>Страна</label>
+							<select class="log__select" name="country">
+								<option value="AU">Австралия</option><option value="AT">Австрия</option><option value="AZ">Азербайджан</option><option value="AX">Аландские о-ва</option><option value="AL">Албания</option><option value="DZ">Алжир</option><option value="AS">Американское Самоа</option><option value="AI">Ангилья</option><option value="AO">Ангола</option><option value="AD">Андорра</option><option value="AQ">Антарктида</option><option value="AG">Антигуа и Барбуда</option><option value="AR">Аргентина</option><option value="AM">Армения</option><option value="AW">Аруба</option><option value="AF">Афганистан</option><option value="BS">Багамы</option><option value="BD">Бангладеш</option><option value="BB">Барбадос</option><option value="BH">Бахрейн</option><option value="BY">Беларусь</option><option value="BZ">Белиз</option><option value="BE">Бельгия</option><option value="BJ">Бенин</option><option value="BM">Бермуды</option><option value="BG">Болгария</option><option value="BO">Боливия</option><option value="BQ">Бонэйр, Синт-Эстатиус и Саба</option><option value="BA">Босния и Герцеговина</option><option value="BW">Ботсвана</option><option value="BR">Бразилия</option><option value="IO">Британская территория в Индийском океане</option><option value="BN">Бруней-Даруссалам</option><option value="BF">Буркина-Фасо</option><option value="BI">Бурунди</option><option value="BT">Бутан</option><option value="VU">Вануату</option><option value="VA">Ватикан</option><option value="GB">Великобритания</option><option value="HU">Венгрия</option><option value="VE">Венесуэла</option><option value="VG">Виргинские о-ва (Британские)</option><option value="VI">Виргинские о-ва (США)</option><option value="UM">Внешние малые о-ва (США)</option><option value="TL">Восточный Тимор</option><option value="VN">Вьетнам</option><option value="GA">Габон</option><option value="HT">Гаити</option><option value="GY">Гайана</option><option value="GM">Гамбия</option><option value="GH">Гана</option><option value="GP">Гваделупа</option><option value="GT">Гватемала</option><option value="GN">Гвинея</option><option value="GW">Гвинея-Бисау</option><option value="DE">Германия</option><option value="GG">Гернси</option><option value="GI">Гибралтар</option><option value="HN">Гондурас</option><option value="HK">Гонконг (специальный административный район)</option><option value="GD">Гренада</option><option value="GL">Гренландия</option><option value="GR">Греция</option><option value="GE">Грузия</option><option value="GU">Гуам</option><option value="DK">Дания</option><option value="JE">Джерси</option><option value="DJ">Джибути</option><option value="DG">Диего-Гарсия</option><option value="DM">Доминика</option><option value="DO">Доминиканская Республика</option><option value="EG">Египет</option><option value="ZM">Замбия</option><option value="EH">Западная Сахара</option><option value="ZW">Зимбабве</option><option value="IL">Израиль</option><option value="IN">Индия</option><option value="ID">Индонезия</option><option value="JO">Иордания</option><option value="IQ">Ирак</option><option value="IR">Иран</option><option value="IE">Ирландия</option><option value="IS">Исландия</option><option value="ES">Испания</option><option value="IT">Италия</option><option value="YE">Йемен</option><option value="CV">Кабо-Верде</option><option value="KZ">Казахстан</option><option value="KY">Каймановы о-ва</option><option value="KH">Камбоджа</option><option value="CM">Камерун</option><option value="CA">Канада</option><option value="IC">Канарские о-ва</option><option value="QA">Катар</option><option value="KE">Кения</option><option value="CY">Кипр</option><option value="KG">Киргизия</option><option value="KI">Кирибати</option><option value="CN">Китай</option><option value="KP">КНДР</option><option value="CC">Кокосовые о-ва</option><option value="CO">Колумбия</option><option value="KM">Коморы</option><option value="CG">Конго - Браззавиль</option><option value="CD">Конго - Киншаса</option><option value="XK">Косово</option><option value="CR">Коста-Рика</option><option value="CI">Кот-д&rsquo;Ивуар</option><option value="CU">Куба</option><option value="KW">Кувейт</option><option value="CW">Кюрасао</option><option value="LA">Лаос</option><option value="LV">Латвия</option><option value="LS">Лесото</option><option value="LR">Либерия</option><option value="LB">Ливан</option><option value="LY">Ливия</option><option value="LT">Литва</option><option value="LI">Лихтенштейн</option><option value="LU">Люксембург</option><option value="MU">Маврикий</option><option value="MR">Мавритания</option><option value="MG">Мадагаскар</option><option value="YT">Майотта</option><option value="MO">Макао (специальный административный район)</option><option value="MK">Македония</option><option value="MW">Малави</option><option value="MY">Малайзия</option><option value="ML">Мали</option><option value="MV">Мальдивы</option><option value="MT">Мальта</option><option value="MA">Марокко</option><option value="MQ">Мартиника</option><option value="MH">Маршалловы Острова</option><option value="MX">Мексика</option><option value="MZ">Мозамбик</option><option value="MD">Молдова</option><option value="MC">Монако</option><option value="MN">Монголия</option><option value="MS">Монтсеррат</option><option value="MM">Мьянма (Бирма)</option><option value="NA">Намибия</option><option value="NR">Науру</option><option value="NP">Непал</option><option value="NE">Нигер</option><option value="NG">Нигерия</option><option value="NL">Нидерланды</option><option value="NI">Никарагуа</option><option value="NU">Ниуэ</option><option value="NZ">Новая Зеландия</option><option value="NC">Новая Каледония</option><option value="NO">Норвегия</option><option value="AC">о-в Вознесения</option><option value="IM">о-в Мэн</option><option value="NF">о-в Норфолк</option><option value="CX">о-в Рождества</option><option value="SH">о-в Св. Елены</option><option value="TC">о-ва Тёркс и Кайкос</option><option value="AE">ОАЭ</option><option value="OM">Оман</option><option value="UN">Организация Объединенных Наций</option><option value="CK">Острова Кука</option><option value="PN">острова Питкэрн</option><option value="PK">Пакистан</option><option value="PW">Палау</option><option value="PS">Палестинские территории</option><option value="PA">Панама</option><option value="PG">Папуа &ndash; Новая Гвинея</option><option value="PY">Парагвай</option><option value="PE">Перу</option><option value="PL">Польша</option><option value="PT">Португалия</option><option value="PR">Пуэрто-Рико</option><option value="KR">Республика Корея</option><option value="RE">Реюньон</option><option value="RU">Россия</option><option value="RW">Руанда</option><option value="RO">Румыния</option><option value="SV">Сальвадор</option><option value="WS">Самоа</option><option value="SM">Сан-Марино</option><option value="ST">Сан-Томе и Принсипи</option><option value="SA">Саудовская Аравия</option><option value="SZ">Свазиленд</option><option value="MP">Северные Марианские о-ва</option><option value="SC">Сейшельские Острова</option><option value="BL">Сен-Бартелеми</option><option value="MF">Сен-Мартен</option><option value="PM">Сен-Пьер и Микелон</option><option value="SN">Сенегал</option><option value="VC">Сент-Винсент и Гренадины</option><option value="KN">Сент-Китс и Невис</option><option value="LC">Сент-Люсия</option><option value="RS">Сербия</option><option value="EA">Сеута и Мелилья</option><option value="SG">Сингапур</option><option value="SX">Синт-Мартен</option><option value="SY">Сирия</option><option value="SK">Словакия</option><option value="SI">Словения</option><option value="US">Соединенные Штаты</option><option value="SB">Соломоновы Острова</option><option value="SO">Сомали</option><option value="SD">Судан</option><option value="SR">Суринам</option><option value="SL">Сьерра-Леоне</option><option value="TJ">Таджикистан</option><option value="TH">Таиланд</option><option value="TW">Тайвань</option><option value="TZ">Танзания</option><option value="TG">Того</option><option value="TK">Токелау</option><option value="TO">Тонга</option><option value="TT">Тринидад и Тобаго</option><option value="TA">Тристан-да-Кунья</option><option value="TV">Тувалу</option><option value="TN">Тунис</option><option value="TM">Туркменистан</option><option value="TR">Турция</option><option value="UG">Уганда</option><option value="UZ">Узбекистан</option><option value="UA" selected>Украина</option><option value="WF">Уоллис и Футуна</option><option value="UY">Уругвай</option><option value="FO">Фарерские о-ва</option><option value="FM">Федеративные Штаты Микронезии</option><option value="FJ">Фиджи</option><option value="PH">Филиппины</option><option value="FI">Финляндия</option><option value="FK">Фолклендские о-ва</option><option value="FR">Франция</option><option value="GF">Французская Гвиана</option><option value="PF">Французская Полинезия</option><option value="TF">Французские Южные территории</option><option value="HR">Хорватия</option><option value="CF">ЦАР</option><option value="TD">Чад</option><option value="ME">Черногория</option><option value="CZ">Чехия</option><option value="CL">Чили</option><option value="CH">Швейцария</option><option value="SE">Швеция</option><option value="SJ">Шпицберген и Ян-Майен</option><option value="LK">Шри-Ланка</option><option value="EC">Эквадор</option><option value="GQ">Экваториальная Гвинея</option><option value="ER">Эритрея</option><option value="EE">Эстония</option><option value="ET">Эфиопия</option><option value="ZA">ЮАР</option><option value="GS">Южная Георгия и Южные Сандвичевы о-ва</option><option value="SS">Южный Судан</option><option value="JM">Ямайка</option><option value="JP">Япония</option><option value="EZ">Eurozone</option>
+							</select>
+						</div>
+
+						<div class="log__group">
+							<label>Адрес</label>
+							<input placeholder="Улица, квартира, дом" type="text" name="address" class="log__input">
+						</div>
+
+						<div class="log__group">
+							<label>Город</label>
+							<input type="text" name="city" class="log__input">
+						</div>
+
+						<div class="log__group">
+							<label>Штат</label>
+							<input type="text" name="state" class="log__input">
+						</div>
+
+						<div class="log__group">
+							<label>Почтовый индекс</label>
+							<input type="tel" name="zip" class="log__input">
+						</div>
+
+						<div class="log__wrap">
+
+							<div class="log__group">
+								<label>Телефон</label>
+								<input type="tel" name="tel" class="log__input">
+							</div>
+
+							<div class="log__group">
+								<label>Email</label>
+								<input type="email" name="email" class="log__input">
+							</div>
+
+						</div>
+						<p class="log__line"><span>*</span>Поля обязательные для заполнения</p>
+
+						<div class="log__group check">
+							<input id="acc" type="checkbox" name="create" value="yes">
+							<label for="acc">Создать аккаунт</label>
+						</div>
+					</div>
+
+					<div class="pay__block">
+						<h5 class="pay__title">Дополнительная информация</h5>
+						<div class="log__group log__group_textarea">
+							<label>Комментарии к заказу</label>
+							<textarea placeholder="Например, примечания к доставке" type="text" name="message" class="log__input"></textarea>
+						</div>
+					</div>
+
+					<div class="pay__block">
+						<h5 class="pay__title">Информация о заказe</h5>
+						<div class="table">
+							<div class="row">
+								<div class="col col-3-4">
+									<div class="table__head">Товар</div>
+									<div class="table__value name">Apple Watch Series 2 42mm Gold Aluminum Case with Toasted Coffe/Caramel Woven Nylon (MNPP2) <span class="count">х1</span></div>
+								</div>
+								<div class="col col-1-4">
+									<div class="table__head">Итого</div>
+									<div class="table__value ">$154</div>
+								</div>
+							</div><!-- /.row -->
+							<div class="row">
+								<div class="col col-3-4">Всего</div>
+								<div class="col col-1-4">$154</div>
+							</div><!-- /.row -->
+							<div class="row">
+								<div class="col col-3-4">Общий итог</div>
+								<div class="col col-1-4">$154</div>
+							</div><!-- /.row -->
+						</div>
+
+						<h5 class="pay__title">Способ оплаты</h5>
+						<div class="log__list">
+
+							<div class="log__group check">
+								<input id="cash" type="radio" name="create" value="cash" checked>
+								<label for="cash">Наличными при получении</label>
+							</div>
+
+							<div class="log__group check">
+								<input id="card" type="radio" name="create" value="card">
+								<label for="card">Оплата картой</label>
+							</div>
+
+							<div class="log__group check">
+								<input id="banking" type="radio" name="create" value="banking">
+								<label for="banking">Интернет-банкинг</label>
+							</div>
+
+							<div class="log__group check">
+								<input id="balans" type="radio" name="create" value="tel-balans">
+								<label for="balans">Баланс телефона</label>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="log__wrap">
+						<div class="log__group check">
+							<input id="insight" type="checkbox" name="learn" value="learn">
+							<label for="insight">Я прочитал и согласен с условиями <span><a href="#">пользовательского соглашения</a></span> и <span><a href="#">политикой конфиденциальности</a></span></label>
+						</div>
+						<div class="log__btn">
+							<input id="pay" data-submit type="submit" value="Оформить заказ" class="btn"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__block">
+					<a href="index.html" class="logo noise">
+						<p class="logo__icon">JC</p>
+						<p class="logo__desc">legal Advisory Services</p>
+					</a>
+					<ul class="social">
+						<li class="social__item">
+							<span>Vk</span>
+							<a class="social__icon social__icon_vk" href="#">
+								<svg  width="21" height="18">
+									<use xlink:href="#vk"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<span>Fb</span>
+							<a class="social__icon social__icon_fb" href="#">
+								<svg  width="14" height="17">
+									<use xlink:href="#facebook"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<span>Tw</span>
+							<a class="social__icon social__icon_tw" href="#">
+								<svg  width="18" height="15">
+									<use xlink:href="#twitter"/>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__icon social__icon_inst" href="#">
+								<svg width="16" height="16">
+									<use xlink:href="#instagram"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<p class="footer__special">Разработано специально для коучинга WAYUP</p>
+				</div>
+				<nav class="guide">
+					<p class="guide__title">Карта сайта</p>
+					<ul>
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="index.html">О компании</a></li>
+						<li><a href="cases.html">Кейсы</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="news.html">Новости</a></li>
+					</ul>
+				</nav>
+				<div class="serv">
+					<p class="serv__title">Услуги</p>
+					<ul>
+						<li><a href="service.html">Корпоративная практика, M&A</a></li>
+						<li><a href="service.html">Информационные технологии / TMT</a></li>
+						<li><a href="service.html">Интеллектуальная собственность</a></li>
+						<li><a href="service.html">Government <br>Relations</a></li>
+						<li><a href="service.html">Интернет-бизнес и цифровая экономика</a></li>
+						<li><a href="#">Коммерческая практика</a></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<p class="contact__title">Контакты</p>
+					<ul class="contact__list">
+						<li class="contact__item">
+							<svg width="20" height="25">
+								<use xlink:href="#pin"/>
+							</svg>
+							<p class="contact__text contact__text_address">г. Москва, ул. Бутырская, 62
+				Z-Plaza, 5-й этаж</p>
+						</li>
+						<li class="contact__item">
+							<svg width="21" height="21">
+								<use xlink:href="#phone"/>
+							</svg>
+							<div class="contact__phones">
+								<a href="#" class="contact__text contact__text_phone">+ 7 (495) 577-18-11</a>
+								<a href="#" class="contact__text contact__text_phone">+ 7 (495) 567-28-15</a>
+							</div>
+						</li>
+						<li class="contact__item">
+							<svg width="25" height="19">
+								<use xlink:href="#mail"/>
+							</svg>
+							<p class="contact__text contact__text_mail">JClegal@gmail.com</p>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+					<p class="subscribe__title">Подписаться на рассылку новостей</p>
+					<form action="#" class="subscribe__form log" id="popupSubscribe">
+						<input type="text" name="email" class="subscribe__input" placeholder="Ваш email">
+						<div class="log__btn">
+							<input type="submit" data-submit value="Подписаться" class="btn"/>
+						</div>
+					</form>
+					<div class="control">
+						<div class="language">
+							<ul>
+								<li class="lang-item active">
+									<a href="#">Ru</a>
+								</li>
+								<li class="lang-item">
+									<a href="#">En</a>
+								</li>
+							</ul>
+						</div>
+						<div class="control__wrap">
+							<a href="#enter" class="control__enter popup-link-1">
+								<svg class="control__icon" width="19" height="17">
+									<use xlink:href="#login"/>
+								</svg>
+								Вход
+							</a>
+							<a href="#reg" class="control__reg noise popup-link-2">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<p class="footer__copy">©2007-2018 Все права защищены</p>
+			</div>
+		</footer><!-- End footer -->
+
+
+<!-- MODAL WINDOWS-->
+
+<!-- Call me -->
+		<div id="call" class="callme mfp-hide">
+			<h4 class="login__title modal-title">Отправьте заявку</h4>
+			<p class="login__question modal-text">И наши специалисты свяжутся с вами!</p>
+			<form action="#" id="popupOrder" class="log callme-form">
+
+				<div class="log__group">
+					<label>Имя</label>
+					<input type="text" name="name_mod" class="log__input">
+				</div>
+
+				<div class="log__group show-pass">
+					<label>Телефон</label>
+					<input type="tel" name="tel" class="log__input">
+				</div>
+
+				<div class="log__btn">
+					<input id="send" type="submit" data-submit value="Отправить" class="btn"/>
+				</div>
+			</form>
+		</div>
+
+<!-- Login -->
+		<div id="enter" class="login mfp-hide">
+			<h4 class="login__title modal-title">Войдите в свой аккаунт</h4>
+			<p class="login__question modal-text">Еще нет учетной записи? <span><a href="#reg" class="popup-link-2 link-more">Зарегистрируйтесь сейчас</a></span>, это займет не более минуты</p>
+			<form action="#" id="log" class="log">
+
+				<span class="modal-сaution">Такого аккаунта не существует</span>
+				<span class="modal-сaution">Неверный E-mail или пароль</span>
+
+				<div class="log__group">
+					<label>Email</label>
+					<input type="email" name="email_mod" class="log__input">
+				</div>
+
+				<div class="log__group show-pass">
+					<label>Пароль</label>
+					<input id="password" type="password" name="password_mod" class="log__input">
+					<span class="log__eye password-eye" data-target="#password">
+						<svg width="34" height="22">
+							<use xlink:href="#eye"/>
+						</svg>
+					</span>
+				</div>
+				<div class="log__wrap">
+					<div class="log__group check">
+						<input id="check" type="checkbox" name="remember" value="remember">
+						<label for="check">Запомнить пароль</label>
+					</div>
+					<a href="#recovery" class="popup-link-1 log__forget">Забыли пароль?</a>
+				</div>
+				<div class="log__btn">
+					<input id="entry" type="submit" data-submit value="Войти" class="btn"/>
+				</div>
+			</form>
+			<div class="var">
+				<p class="var__text">Или войдите в систему с помощью</p>
+				<ul class="var__list">
+					<li>
+						<a href="#" class="var__link var__link_goo">
+							<svg width="14" height="14">
+								<use xlink:href="#google"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_vk">
+							<svg width="18" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_fb">
+							<svg width="16" height="16">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!-- Forget password -->
+		<div id="recovery" class="recovery mfp-hide">
+			<div class="forget">
+				<p class="forget__title modal-subtitle">Забыли пароль?</p>
+				<p class="forget__text modal-text">Введите ваш Email. Вам будет выслан проверочный код. После получения кода подтверждения вы сможете выбрать новый пароль для своей учетной записи.</p>
+				<form action="#" id="recover" class="log">
+				
+					<span class="modal-сaution">Пароль был отправлен на ваш Email</span>
+					<span class="modal-сaution">Пользователя с таким Email не существует</span>
+				
+					<div class="log__group">
+						<label>Email</label>
+						<input type="email" name="email_mod" class="log__input">
+					</div>
+					<div class="log__btn">
+						<input id="pass" type="submit" data-submit value="Отправить пароль" class="btn"/>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+<!---------------------- Сonfirmation code ---------------------->
+			<div class="confirm">
+				<p class="confirm__title  modal-subtitle">Введите код подтверждения</p>
+
+				<form action="#" id="key" class="log">
+
+					<span class="modal-сaution">Неверный код</span>
+
+					<div class="log__group">
+						<label>Код подтверждения</label>
+						<input type="text" name="confirm" class="log__input">
+					</div>
+					<div class="log__btn">
+						<input id="confirm" type="submit" data-submit value="Подтвердить" class="btn"/>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+
+<!---------------------- New password ---------------------->
+			<div class="new-pass">
+				<p class="new-pass__title  modal-subtitle">Придумайте новый пароль</p>
+				<p class="new-pass__text modal-text">Пароль должен содержать не менее 9 символов</p>
+
+				<form action="#" id="create" class="log">
+
+					<span class="modal-сaution">Вы успешно сменили пароль</span>
+
+					<div class="log__group show-pass">
+						<label>Новый пароль</label>
+						<input id="new-pass" type="password" name="password_mod" class="log__input">
+						<span class="log__eye password-eye" data-target="#new-pass">
+							<svg width="34" height="22">
+								<use xlink:href="#eye"/>
+							</svg>
+						</span>
+					</div>
+					<div class="log__group show-pass">
+						<label>Подтвердите пароль</label>
+						<input id="confirm-pass" type="password" name="password_mod" class="log__input">
+						<span class="log__eye password-eye" data-target="#confirm-pass">
+							<svg width="34" height="22">
+								<use xlink:href="#eye"/>
+							</svg>
+						</span>
+					</div>
+					<div class="log__wrap">
+						<div class="log__btn">
+							<input type="submit" id="conf" data-submit value="Подтвердить" class="btn"/>
+						</div>
+						<a href="#enter" class="popup-link-1 log__enter">Войти</a>
+					</div>
+				</form>
+				<a href="#enter" class="popup-link-1 link-more">
+					<svg width="18" height="20">
+						<use xlink:href="#nav-right"/>
+					</svg>
+					Назад
+				</a>
+			</div>
+
+		</div>
+
+<!-- Registration -->
+		<div id="reg" class="reg mfp-hide">
+			<h4 class="reg__title modal-title">Регистрация нового аккаунта</h4>
+			<p class="reg__question modal-text">Уже есть аккаунт? <span><a href="#enter" class="popup-link-1 link-more">Войдите</a></span></p>
+			
+			<form action="#" id="regist" class="log">
+
+				<span class="modal-сaution">Пароль должен содержать не менее 9 символов</span>
+				<span class="modal-сaution">Пользователь с таким адресом электронной почты уже существует</span>
+
+				<div class="log__group">
+					<label>Имя</label>
+					<input type="text" name="name_mod" class="log__input">
+				</div>
+				<div class="log__group">
+					<label>Email</label>
+					<input type="email" name="email_mod" class="log__input">
+				</div>
+				<div class="log__group">
+					<label>Телефон</label>
+					<input type="tel" name="tel_mod" class="log__input">
+				</div>
+				<div class="log__group show-pass">
+					<label>Пароль</label>
+					<input id="reg-pass" type="password" name="password_mod" class="log__input">
+					<span class="log__eye password-eye" data-target="#reg-pass">
+						<svg width="34" height="22">
+							<use xlink:href="#eye"/>
+						</svg>
+					</span>
+				</div>
+				<div class="log__wrap">
+					
+					<div class="log__btn">
+						<input id="do-reg" type="submit" data-submit value="Зарегистрироваться" class="btn"/>
+					</div>
+					<div class="log__group check">
+						<input id="rem" type="checkbox" name="remember" value="remember">
+						<label for="rem">Запомнить пароль</label>
+					</div>
+				</div>
+			</form>
+			<div class="var">
+				<p class="var__text">Или войдите в систему с помощью</p>
+				<ul class="var__list">
+					<li>
+						<a href="#" class="var__link var__link_goo">
+							<svg width="14" height="14">
+								<use xlink:href="#google"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_vk">
+							<svg width="18" height="18">
+								<use xlink:href="#vk"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="var__link var__link_fb">
+							<svg width="16" height="16">
+								<use xlink:href="#facebook"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+<!------------------ One click order ----------------------->
+		<div id="one-click" class="click mfp-hide">
+			<form action="#" id="popupOrder" class="click__form log order-form">
+				<div class="click__half">
+					<p class="click__head">Купить в один клик</p>
+					<p class="click__text">Оставьте свои контакнтые данные и мы свяжемся с вами в ближайшее время для уточнения заказа</p>
+					<div class="log__group">
+						<label>Имя</label>
+						<input type="text" name="name" class="log__input">
+					</div>
+					<div class="log__group">
+						<label>Телефон</label>
+						<input type="tel" name="tel" class="log__input">
+					</div>
+					<div class="log__btn">
+						<input id="ordered" type="submit" data-submit value="Отправить" class="btn"/>
+					</div>
+				</div>
+				<div class="click__half">
+					<p class="click__info">Информация о заказе</p>
+					<div class="result">
+						<div class="result__block">
+							<a href="#" class="result__image">
+								<img src="img/view1.jpg" alt="Товар">
+							</a>
+							<div class="result__desc">
+								<a href="#" class="result__title">Apple Watch Hermès</a>
+								<div class="result__price">
+									<span class="currency">$</span>
+									1299
+								</div>
+								<div class="quantity">
+									<span class="minus">-</span>
+									<input type="text" step="1" min="1" name="quantity" value="1" size="4" pattern="[0-9]*"/>
+									<span class="plus">+</span>
+								</div>
+								<div class="result__cost">
+									<p>Итого:</p> $<span>1299</span>
+								</div>
+								<a href="cart.html" class="click__link link-more">
+									<svg width="18" height="20">
+										<use xlink:href="#nav-right"/>
+									</svg>
+									Перейти в корзину
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<!-- Subscribe news -->
+		<div id="sub" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо!</p>
+			<p class="sub__text">Вы успешно подписались на нашу новостную рассылку</p>
+		</div>
+
+		<!-- Order -->
+		<div id="taken" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо!</p>
+			<p class="sub__text">Ваша заявка принята. Наши специалисты свяжутся с вами в ближайшее время.</p>
+		</div>
+
+		<!-- Message -->
+		<div id="callback" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо за отзыв!</p>
+			<p class="sub__text">Ваше мнение очень важно для нас. Спасибо, что уделили нам время</p>
+		</div>
+
+		<!-- Pay -->
+		<div id="pay" class="sub mfp-hide">
+			<p class="sub__thank">Спасибо! <br>Оплата прошла успешно</p>
+			<p class="sub__text">Мы отправили квитанцию об оплате на ваш Email</p>
+		</div>
+
+<!-- End modal -->
+
+
+<!-- Loader for form -->
+		<div id="form-loader">
+			<img src="img/eclipse.svg">
+		</div>
+
+<!-- Javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/goodshare.js@4/goodshare.min.js"></script>
+
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+
+</body>
+</html>
