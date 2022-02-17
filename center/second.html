@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+
+<body>
+    <main>
+        <div class="wrap">
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">
+                        <svg class="ic_number">
+                            <use xlink:href="img/sprite.svg#first"></use>
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">
+                            В какой сфере Вы планируете реализовать проект?
+                        </div>
+                        <div class="step_wrp">
+                            <div class="radio-tile-group">
+                                <div class="input-container container--plant">
+                                    <input id="plant" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon">
+                                            <svg class="ic_colored">
+                                                <use id="ic_plant" xlink:href="img/sprite.svg#plant2"></use>
+                                            </svg>
+                                        </div>
+                                        <label for="plant" class="radio-tile-label">Промышленное производство (включая пищевое)</label>
+                                    </div>
+                                    <div class="tooltip-hidden">
+                                        <div class="tooltip-info">
+                                            <div class="tooltip-question">
+                                                Является ли производство
+                                                экспортоориентированным?
+                                            </div>
+                                            <div class="tooltip-inputs">
+                                                <label class="ui-radiobox ui-radiobox_custom">
+                                                    <input class="input-hidden" type="radio" name="a" val="" checked> <span class="ui-radiobox__label">Да</span>
+                                                </label>
+
+                                                <label class="ui-radiobox ui-radiobox_custom">
+                                                    <input class="input-hidden" type="radio" name="a" val=""><span class="ui-radiobox__label ui-radiobox__label--red">Нет</span>
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="car" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon icon-car">
+                                            <svg class="ic_colored">
+                                                <use id="ic_car" xlink:href="img/sprite.svg#car2"></use>
+                                            </svg>
+
+                                        </div>
+                                        <label for="car" class="radio-tile-label">Складская-логистическая деятельность
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="hotel" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon">
+                                            <svg class="ic_colored">
+                                                <use id="ic_hotel" xlink:href="img/sprite.svg#hotel2"></use>
+                                            </svg>
+
+                                        </div>
+                                        <label for="plant" class="radio-tile-label">Гостиницы, туризм</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="gov" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon">
+                                            <svg class="ic_colored">
+                                                <use id="ic_gov" xlink:href="img/sprite.svg#gov2"></use>
+                                            </svg>
+
+                                        </div>
+                                        <label for="gov" class="radio-tile-label">Административно-деловой центр</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="sh" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon">
+                                            <svg class="ic_colored">
+                                                <use id="ic_sh" xlink:href="img/sprite.svg#sh2"></use>
+                                            </svg>
+
+                                        </div>
+                                        <label for="gov" class="radio-tile-label">Сельское хозяйство</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="radio-tile-group">
+                                <div class="input-container">
+                                    <input id="vopr" class="radio-button" type="radio" name="radio" />
+                                    <div class="radio-tile">
+                                        <div class="icon">
+                                            <svg class="ic_colored">
+                                                <use id="ic_vopr" xlink:href="img/sprite.svg#vopr2"></use>
+                                            </svg>
+
+                                        </div>
+                                        <label for="vopr" class="radio-tile-label">Другое</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+
+                    <div class="step-number step-number--active">
+                        <svg class="ic_number">
+                            <use xlink:href="img/sprite.svg#sec"></use>
+                        </svg>
+                    </div>
+
+                    <div class="step-content step-content--active">
+                        <div class="step-title">
+                            Какой общий объем инвестиций (кап. вложений)?
+                        </div>
+                        <div class="slider-wrp">
+                            <div class="box-minmax">
+                                <span>Менее 50 млн.</span>
+
+
+                            </div>
+                            <div class="range-slider range">
+                                <span id="rs-bullet" class="rs-label">800</span>
+
+                                <input id="rs-range-line" type="range" class="progress" value="40" min="1" max="100" step="1">
+                            </div>
+
+                            <div class="box-minmax">
+                                <span>Более 5 млрд.</span>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <!--    <script>
+        const progress = document.querySelector('.progress');
+        progress.addEventListener('input', function() {
+            const value = this.value;
+            this.style.background = `linear-gradient(to right, #000 10%, #000 ${value}%, #fff ${value}%, white 100%)`
+        })
+        var rangeSlider = document.getElementById("rs-range-line");
+        var rangeBullet = document.getElementById("rs-bullet");
+        rangeSlider.addEventListener("input", showSliderValue, false);
+
+        function showSliderValue() {
+            rangeBullet.innerHTML = rangeSlider.value;
+            var bulletPosition = (rangeSlider.value / rangeSlider.max);
+            rangeBullet.style.left = (bulletPosition * 497) + "px";
+        }
+    </script>-->
+
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">
+                        <svg class="ic_number">
+                            <use xlink:href="img/sprite.svg#thr"></use>
+                        </svg>
+                    </div>
+
+                    <div class="step-content">
+                        Третий шаг
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        <svg class="ic_number">
+                            <use xlink:href="img/sprite.svg#four"></use>
+                        </svg>
+                    </div>
+
+                    <div class="step-content">
+                        Четвертый шаг
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        <svg class="ic_number">
+                            <use xlink:href="img/sprite.svg#fiv"></use>
+                        </svg>
+                    </div>
+
+                    <div class="step-content">
+                        Пятый шаг
+                    </div>
+                </div>
+
+            </div>
+            <div class="next-prev">
+                <a class="arrow prev" href="fourth.html">
+                    <svg class="ic_next">
+                        <use xlink:href="img/sprite.svg#prev"></use>
+                    </svg>
+                    <span> Назад</span>
+                </a>
+                <a class="arrow next" href="#"><span>Далее</span>
+                    <svg class="ic_next">
+                        <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+
+</html>
