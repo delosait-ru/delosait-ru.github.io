@@ -1164,8 +1164,8 @@ html.mm-blocking #mm-blocker {
   }
 
   .slick-dots > li.slick-active > button {
-    background: #fff;
-    border: 2px solid #F88500;
+    background: #F88500;
+    opacity: 0.7;
   }
 }
 @media only screen and (max-width: 576px) {
