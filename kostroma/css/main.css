@@ -1598,6 +1598,11 @@ html.mm-blocking #mm-blocker {
   padding-right: 50px;
 }
 
+@media only screen and (max-width: 1399px) {
+  .stage4 .stage__info {
+    padding-right: 80px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .stages {
     flex-wrap: wrap;
