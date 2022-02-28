@@ -1186,14 +1186,14 @@ html.mm-blocking #mm-blocker {
   .slider__info {
     top: 15px;
     left: 20px;
-    width: 90%;
+    width: 95%;
   }
   .slider__title {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
   .slider__subtitle {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .collections {
