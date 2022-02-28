@@ -1098,6 +1098,15 @@ html.mm-blocking #mm-blocker {
   background: #F88500;
 }
 
+@media only screen and (max-width: 1400px) {
+  .slider__title {
+    font-size: 52px;
+  }
+
+  .header-wrap {
+    margin-top: 3px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .slider__info {
     top: 50px;
