@@ -350,10 +350,11 @@
   line-height: 150%;
 }
 
-.input-mounth {
+.input-slide {
   padding-top: 30px;
   margin-bottom: 0;
   font-size: 18px;
+  border-radius: 10px 10px 0 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -386,7 +387,7 @@
   margin-bottom: 5px;
 }
 
-.input-mounth {
+.input-slide {
   margin-bottom: 0;
 }
 
@@ -800,4 +801,3 @@
     padding: 20px 15px 30px 15px;
   }
 }
-/*# sourceMappingURL=main.css.map */
