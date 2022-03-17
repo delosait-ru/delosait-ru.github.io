@@ -993,7 +993,7 @@
                     <form action="#">
                         <div class="input_title">Ваш заказ</div>
 
-                        <div class="input-wrp errors">
+                        <div class="input-wrp">
                             <input class="calc-input input-err" type="text" placeholder="Марка товара">
                             <div class="err-msg">Укажите марку товара! </div>
                             <svg class="ic_err">
@@ -1005,7 +1005,7 @@
                         <div class="input_title">Калькулятор кредита</div>
                         <div class="input-wrp">
 
-                            <input class="calc-input input-mounth" type="text" value="6 мес.">
+                            <input class="calc-input input-mounth input-err" type="text" value="6 мес.">
                             <span class="credit-term">Срок кредита</span>
                             <div id="slider-range-max"></div>
                             <div class="pips">
@@ -1016,9 +1016,13 @@
                                 <div class="pip pip5">30 мес.</div>
                                 <div class="pip pip6">36 мес.</div>
                             </div>
+                            <div class="err-msg">Превышен допустимый срок кредитования! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
                         </div>
                         <div class="input-wrp input-wrp--slider">
-                            <input class="calc-input input-mounth" type="text" value="4000 ₽ ">
+                            <input class="calc-input input-mounth input-err" type="text" value="4000 ₽ ">
                             <span class="credit-term">Первоначальный взнос</span>
                             <div id="slider-range-max2"></div>
                             <div class="pips">
@@ -1029,9 +1033,13 @@
                                 <div class="pip pip5-5">40%</div>
 
                             </div>
+                            <div class="err-msg">Превышена допустимая сумма кредитования! </div>
+                            <svg class="ic_err">
+                                <use xlink:href="img/sprite.svg#err"></use>
+                            </svg>
                         </div>
                         <div class="input_title">Контактная информация</div>
-                        <div class="input-wrp errors">
+                        <div class="input-wrp">
                             <input class="calc-input input-err" type="text" placeholder="Фамилия">
                             <div class="err-msg">Укажите фамилию!</div>
                             <svg class="ic_err">
@@ -1042,7 +1050,7 @@
                             <input class="calc-input" disabled type="text" placeholder="Заблоченный инпут">
 
                         </div>
-                        <div class="input-wrp errors">
+                        <div class="input-wrp">
                             <input class="calc-input input-err" type="text" placeholder="Отчество">
                             <div class="err-msg">Укажите отчество (если есть)! </div>
                             <svg class="ic_err">
@@ -1050,7 +1058,7 @@
                             </svg>
 
                         </div>
-                        <div class="input-wrp errors">
+                        <div class="input-wrp">
                             <input class="calc-input input-err" type="text" placeholder="Мобильный телефон">
                             <div class="err-msg">Укажите номер телефона! </div>
                             <svg class="ic_err">
@@ -1061,14 +1069,14 @@
                         <div class="input_title">Данные заказа</div>
                         <div class="input-wrp">
 
-                            <div class="input-wrp errors">
+                            <div class="input-wrp">
                                 <input class="calc-input input-err" type="text" placeholder="Номер заказа">
                                 <div class="err-msg">Укажите номер заказа!</div>
                                 <svg class="ic_err">
                                     <use xlink:href="img/sprite.svg#err"></use>
                                 </svg>
                             </div>
-                            <div class="input-wrp errors">
+                            <div class="input-wrp">
                                 <input class="calc-input input-err" type="text" placeholder="Модель заказа">
                                 <div class="err-msg">Укажите модель заказа!</div>
                                 <svg class="ic_err">

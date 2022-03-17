@@ -102,7 +102,6 @@
 }
 
 .btn-lk {
-  font-family: "Arial", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,9 +110,13 @@
   -ms-flex-align: center;
   align-items: center;
   font-size: 13px;
+  opacity: 0.8;
 }
 .btn-lk:last-child {
   margin-right: 0;
+}
+.btn-lk:hover {
+  opacity: 1;
 }
 
 .ic_lk {
@@ -380,25 +383,25 @@
   border: 1px solid #cc003d;
   color: #cc003d;
   background: rgba(237, 0, 0, 0.05);
+  margin-bottom: 5px;
+}
+
+.input-mounth {
+  margin-bottom: 0;
 }
 
 .err-msg {
+  position: relative;
+  display: block;
   color: #cc003d;
   border-radius: 4px;
   font-size: 14px;
   padding: 7px;
-  display: none;
-  position: absolute;
   bottom: 0;
+  margin-bottom: 5px;
 }
 
-.errors {
-  position: relative;
-}
-.errors .err-msg {
-  display: block;
-}
-.errors .ic_err {
+.ic_err {
   position: absolute;
   right: 15px;
   top: 22px;
@@ -592,6 +595,16 @@
     font-size: 14px;
   }
 }
+.table thead th {
+  position: relative;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6 !important;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: transparent;
+}
+
 .section_lk {
   background: #F5FAFF;
   min-height: 100vh;
@@ -612,12 +625,6 @@
 .section_lk .table--lk > tbody {
   background: #fff;
 }
-.section_lk .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: #dee2e6 !important;
-}
-.section_lk thead tr {
-  border-bottom: 1px solid #dee2e6 !important;
-}
 .section_lk thead th {
   font-size: 14px;
   color: #868788;
@@ -637,11 +644,54 @@
   font-size: 13px;
 }
 
-.sorting_icon {
-  background-image: url("../img/sort_both.png");
-  background-repeat: no-repeat;
-  background-position: center right;
+.active-top::after {
+  right: 1em;
+  content: "\f0de";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem;
+  opacity: 1;
+  position: absolute;
+  bottom: 1.3em;
+  display: block;
+  opacity: 0.3;
   cursor: pointer;
+}
+.active-top::before {
+  content: "\f0dd";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: 16px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1.3em;
+  display: block;
+  cursor: pointer;
+}
+
+.active-bottom::after {
+  right: 1em;
+  content: "\f0de";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem;
+  opacity: 1;
+  position: absolute;
+  bottom: 1.3em;
+  display: block;
+  cursor: pointer;
+}
+.active-bottom::before {
+  content: "\f0dd";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: 16px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1.3em;
+  display: block;
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .bg_img {
@@ -652,6 +702,31 @@
 }
 .bg_img img {
   display: block;
+}
+
+.load-more {
+  padding: 7px;
+  background: #A3AEBC;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 170px;
+  color: #001e45;
+}
+.load-more:hover {
+  color: #001e45;
+  background: #94a1b1;
 }
 
 .section-enter {
@@ -700,6 +775,15 @@
   background: #94a1b1;
 }
 
+.btn-next--blocked {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.btn-next--blocked:hover {
+  color: #fff;
+  background: #a3aebc;
+}
+
 .bg_img {
   position: absolute;
   bottom: 0;
@@ -716,3 +800,4 @@
     padding: 20px 15px 30px 15px;
   }
 }
+/*# sourceMappingURL=main.css.map */
