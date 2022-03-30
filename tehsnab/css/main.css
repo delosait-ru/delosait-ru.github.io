@@ -1276,6 +1276,7 @@ html.mm-blocking #mm-blocker {
   color: #fff;
   height: 80px;
   padding: 0 15px;
+  margin-bottom: 20px;
 }
 .dashed-block--price--txt {
   font-weight: 700;
