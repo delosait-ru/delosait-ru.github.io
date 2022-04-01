@@ -1431,6 +1431,28 @@ html.mm-blocking #mm-blocker {
     margin-bottom: 40px;
     padding-top: 40px;
   }
+
+  .dashed-block--price {
+    display: flex;
+    align-items: center;
+    background: #84D2C4;
+    box-shadow: 0px 4px 4px rgba(114, 180, 169, 0.3);
+    border-radius: 19px;
+    color: #fff;
+    height: 80px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  .dashed-block--price--txt {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    height: 100%;
+    border-right: 2px solid #fff;
+    display: flex;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 576px) {
   .service {
