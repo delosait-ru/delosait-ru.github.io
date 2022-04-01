@@ -427,12 +427,12 @@ hr {
 }
 @media only screen and (max-width: 1200px) {
   .scrollup {
-    right: 10xp;
+    right: 10px;
   }
 }
 @media only screen and (max-width: 768px) {
   .scrollup {
-    display: none;
+    opacity: 0;
   }
 }
 @media only screen and (max-width: 768px) {
