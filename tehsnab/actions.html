@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+    <div class="container-lg">
+        <div class="header-wrp">
+            <a href="./" class="logo">
+                <img src="./img/logo.png" alt="Логотип техснаб">
+            </a>
+            <div class="header-info">
+                <div class="header-info__top">
+                    <div class="descriptor">Проектирование, монтаж и пуско-наладка комплексных систем безопасности на объектах</div>
+                    <div class="descriptor descriptor--right">Работаем c 10.00 до 21.00 <br>по Москве и Московской области</div>
+                </div>
+                <div class="header-info__bottom">
+                    <div class="h-phones">
+                        <a class="big-phone" href="tel:74959739395">+7 (495) 973-93-95</a>
+                        <a class="ws-phone" href="tel:74959739395">
+                            <svg class="ic_ws">
+                                <use xlink:href="img/sprite.svg#ws"></use>
+                            </svg>
+                            <p>Спросите нас в Whatsapp</p>
+                        </a>
+                    </div>
+                    <div class="h-adress">
+                        <svg class="ic_header ic-marker">
+                            <use xlink:href="img/sprite.svg#marker"></use>
+                        </svg>
+                        <p>г. Москва, Сходненский туп,<br> дом № 4. эт. 5, офис 506</p>
+
+                    </div>
+                    <div class="h-email">
+                        <svg class="ic_header">
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg>
+                        <a href="mailto:info@teh-sb.ru">info@teh-sb.ru</a>
+                    </div>
+
+                    <div class="btn-yellow" data-bs-toggle="modal" data-bs-target="#callme">Заявка на установку</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-menu">
+        <div class="container-lg">
+            <div class="main-wrapper">
+                <div class="mmenu-wrp fixed-line--wrp">
+                    <div class="wrapper">
+                        <a href="#mobile-menu" class="toggle-mnu"><span></span>
+                            <div class="tehsnab">ТЕХСНАБ</div>
+                        </a>
+                        <div class="header-wrap clearfix">
+                            <div class="top-mnu">
+                                <ul class="sf-menu">
+                                    <li><a href="/">Главная</a></li>
+                                    <li><a class="dropdwn" href="./services.html">Услуги</a>
+                                        <ul class="small-sub">
+
+                                            <li>
+                                                <a href="./information.html">Услуга 1</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./information.html">Услуга 2</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./information.html">Услуга 3</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="/projects.html">Проекты</a></li>
+                                    <li><a class="dropdwn" href="/catalog.html">О компании</a>
+                                        <ul class="small-sub">
+
+                                            <li>
+                                                <a href="./faq.html">Вопросы и ответы</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./actions.html">Акции</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="./vacan.html">Вакансии</a>
+                                            </li>
+                                            <li>
+                                                <a href="./testimonials.html">Отзывы</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="/contacts.html">Контакты</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixed_visible">
+                        <div class="h-phones">
+                            <a class="big-phone" href="tel:74959739395">+7 (495) 973-93-95</a>
+                            <a class="ws-phone" href="tel:74959739395">
+                                <svg class="ic_ws">
+                                    <use xlink:href="img/sprite.svg#ws"></use>
+                                </svg>
+                                <p>Спросите нас в Whatsapp</p>
+                            </a>
+                        </div>
+                        <div class="btn-green" data-bs-toggle="modal" data-bs-target="#callme">Заявка на установку</div>
+                    </div>
+                </div>
+                <div class="mobile_wrp">
+                    <div class="mobile_buttons">
+
+                        <a href="https://api.whatsapp.com/send?phone=7916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#call2"></use>
+                            </svg></a>
+                        <a href="tel:8916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#mailw"></use>
+                            </svg></a>
+                        <a href="tel:8916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#wsw"></use>
+                            </svg></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="heading-page">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Услуги компании</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                  <!--  <li><a href="/catalog.html">Услуги</a></li>-->
+                    <li>Услуги</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <section class="main">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 order1">
+                         <div class="buttons_block">
+     <div data-bs-toggle="modal" data-bs-target="#callme" class="calc_price_btn">
+         <svg class="ic_sidebar-small">
+             <use xlink:href="./img/sprite.svg#mall"></use>
+         </svg>
+         Оставить заявку
+     </div>
+     <div class="calc_price_btn" data-bs-toggle="modal" data-bs-target="#askme">
+         <svg class="ic_sidebar-small">
+             <use xlink:href="./img/sprite.svg#question"></use>
+         </svg>
+         Задать вопрос
+     </div>
+
+ </div>
+ <div class="sidebar-nav">
+     <nav>
+         <ul>
+             <li><a href="/faq.html">Вопросы и ответы</a></li>
+             <li class="active"><a href="/actions.html">Акции</a></li>
+             <li><a href="/vacan.html">Вакансии</a></li>
+             <li><a href="/testimonials.html">Отзывы</a></li>
+
+         </ul>
+     </nav>
+ </div>
+ <div class="tizers tizers--page">
+     <div class="tizer">
+         <div class="tizer__img">
+             <img src="./img/ic1.png" alt="">
+         </div>
+         <div class="tizer__txt">
+             Выезд инженера на&nbsp;объект - <span>бесплатно</span>
+         </div>
+     </div>
+     <div class="tizer">
+         <div class="tizer__img">
+             <img src="./img/ic2.png" alt="">
+         </div>
+         <div class="tizer__txt">
+             Работаем с любыми
+             объемами и&nbsp;проектами <span>любой сложности</span>
+
+         </div>
+     </div>
+     <div class="tizer">
+         <div class="tizer__img">
+             <img src="./img/ic3.png" alt="">
+         </div>
+         <div class="tizer__txt">
+             Приступим к работам
+             в течение 2-х дней после <span>подписания договора</span>
+         </div>
+     </div>
+ </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-9 order2">
+                        <div class="content">
+                            <div class="row">
+    <div class="col-sm-12">
+        <div class="service-item">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <div class="service-item__img">
+                        <img src="./img/item1.jpg" alt="alt">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="service__title service-item__title">
+                        Заголовок акции
+                    </div>
+                    <div class="service__list service-item__list">
+                       <p>Описание акции</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam harum quos perferendis illo ducimus, inventore aspernatur accusamus error ipsa adipisci, perspiciatis aperiam dolorem dolorum iure unde dignissimos, non delectus minus.</p>
+                    </div>
+                    <a href="./information.html" class="service-item__btn">
+                        <span> Подробнее</span>
+                        <svg class="ic_more">
+                            <use xlink:href="img/sprite.svg#more"></use>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-12">
+        <div class="service-item">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <div class="service-item__img">
+                        <img src="./img/item1.jpg" alt="alt">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="service__title service-item__title">
+                        Заголовок акции
+                    </div>
+                    <div class="service__list service-item__list">
+                       <p>Описание акции</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam harum quos perferendis illo ducimus, inventore aspernatur accusamus error ipsa adipisci, perspiciatis aperiam dolorem dolorum iure unde dignissimos, non delectus minus.</p>
+                    </div>
+                    <a href="./information.html" class="service-item__btn">
+                        <span> Подробнее</span>
+                        <svg class="ic_more">
+                            <use xlink:href="img/sprite.svg#more"></use>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-12">
+        <div class="service-item">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <div class="service-item__img">
+                        <img src="./img/item1.jpg" alt="alt">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="service__title service-item__title">
+                        Заголовок акции
+                    </div>
+                    <div class="service__list service-item__list">
+                       <p>Описание акции</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam harum quos perferendis illo ducimus, inventore aspernatur accusamus error ipsa adipisci, perspiciatis aperiam dolorem dolorum iure unde dignissimos, non delectus minus.</p>
+                    </div>
+                    <a href="./information.html" class="service-item__btn">
+                        <span> Подробнее</span>
+                        <svg class="ic_more">
+                            <use xlink:href="img/sprite.svg#more"></use>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+    <a href="#" class="scrollup"></a>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__logos">
+                    <img src="./img/logo.png" alt="логотип техснаб">
+                </div>
+                <div class="footer__descriptor">Монтаж, проектирование
+                    и пуско-наладка комплексных
+                    систем безопасности на объектах</div>
+
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Контакты
+                </div>
+                <div class="footer__ws">
+                    <a href="https://wa.me/79044488840">Консультация Whtaspapp</a>
+                </div>
+                <div class="footer__phones">
+                    <a class="footer__phone" href="tel:+79044488840">+7 (495) 973-93-95</a>
+                    <a class="footer__phone" href="tel:+79044488840">+7 (495) 973-93-95</a>
+                </div>
+
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                    <a href="mailto:info@teh-sb.ru">info@teh-sb.ru</a>
+                </div>
+                <div class="footer__contact">
+                    <svg class="footer__ic">
+                        <use xlink:href="img/sprite.svg#marker"></use>
+                    </svg>
+                    <a href="./contacts.html">
+                        Москва г, Сходненский туп, дом № 4. эт. 5, офис 506
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Каталог услуг
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./information.html">Охранно-пожарная сигнализация</a></li>
+                    <li><a href="./information.html">Автоматические установки</a></li>
+                    <li><a href="./information.html">Системы видеонаблюдения</a></li>
+                    <li><a href="./information.html">Системы контроля и управления доступом</a></li>
+                    <li><a href="./information.html">Системы оповещения и управления эвакуацией людей</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="footer__title">
+                    Клиентам
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="./faq.html">Вопросы и ответы</a></li>
+                    <li><a href="./actions.html">Акции и спецпредложения</a></li>
+                    <li><a href="./projects.html">Портфолио</a></li>
+                    <li><a href="./vacan.html">Вакансии</a></li>
+                    <li><a href="./testimonials.html">Отзывы</a></li>
+                </ul>
+                <div class="payment">
+                    <div class="payment__item"><img src="./img/icon1.svg" alt="мир"></div>
+                    <div class="payment__item"><img src="./img/icon2.svg" alt="мастеркард "></div>
+                    <div class="payment__item"><img src="./img/icon3.svg" alt="лого"></div>
+                    <div class="payment__item"><img src="./img/logo-visa-color.png" alt="виза"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="dashed">
+            <div class="dashed__date">
+                2013-2021 (с)ТехСБ
+            </div>
+            <a href="#" class="dashed__privacy">
+                Политика конфидициальности
+            </a>
+            <div class="dashed__social">
+                <div class="dashed__social_title">
+                    Мы в социальных сетях:
+                </div>
+                <a href="#" class="dashed__link">
+                    <img src="./img/telegram.png" alt="">
+                </a>
+                <a href="#" class="dashed__link">
+                    <img src="./img/vk.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="footer__info">
+            <div class="footer__privacy">
+                Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="modal fade" id="callme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        <form class="form_modal form" name="#" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Заявка с формы ОБРАТНЫЙ ЗВОНОК">
+
+                            <div class="form-group_modal">
+                                <div class="modal-title">Оставьте заявку для уточнения деталей заказа</div><br>
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Имя" required>
+                                <input class="form_input__modal phone_mask" data-validate-field="tel" name="Телефон" type="tel" placeholder="Телефон" required>
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox1">
+                                        <input type="checkbox" id="Checkbox1" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox1"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="/soglashenie">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+                        </form>
+                        <div id="success1">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="tel:{{ this.theme.phone_lnk }}">8 (800) 2000 600</a>
+                                        <a href="mailto:{{ this.theme.email }}">info@teh-sb.ru</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="vacanme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form2" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы ЗАЯВКА НА РАССЧЕТ">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Мы будем рады видеть вас в нашей команде!</div><br>
+
+                                <!--      <input class="form_input__modal" name="Имя" type="text" placeholder="Название компании" required>-->
+
+                                <input class="form_input__modal phone_mask" name="Телефон" type="tel" data-validate-field="tel" placeholder="Телефон" required>
+
+                                <input class="form_input__modal" name="Электронная почта" type="email" data-validate-field="email" placeholder="Электронная почта" required>
+                                <textarea class="form_input__modal" placeholder="Опишите Ваши требования к желаемой должности" name="Сообщение" cols="30" rows="10"></textarea>
+                                <div>Прикрепите файл с резюме<span class="files">(.docx, .rtf, .png, .jpg, .pdf)</span></div>
+                                <input class="form-control form-control-sm form-control form_input__modal" type="file" name="file[]" multiple>
+
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox2">
+                                        <input type="checkbox" id="Checkbox2" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox2"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="/soglashenie">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+
+                        </form>
+                        <div id="success2">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+                                        <a href="tel:{{ this.theme.phone_lnk }}">8(800)2000-600</a>
+                                        <a href="mailto:{{ this.theme.email }}"> 8(800)2000-600</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/kontakty">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="writeme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form3" name="#" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы ПОДПИСКА НА РАССЫЛКУ (получать спецпредложения)">
+
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Введите ваш электронный адрес для&nbsp;подписки на&nbsp;рассылку</div><br>
+
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Название компании" required>
+                                <input class="form_input__modal" name="Электронная почта" type="email" data-validate-field="email" placeholder="Электронная почта" required>
+
+
+
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox3">
+                                        <input type="checkbox" id="Checkbox3" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox3"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="/soglashenie">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+                        </form>
+                        <div id="success3">
+                            <div class="text_success"> Подписка<br>оформлена</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+
+
+                                        <a href="tel:{{ this.theme.phone_lnk }}">{{ this.theme.phone }}</a>
+                                        <a href="mailto:{{ this.theme.email }}"> {{ this.theme.email }}</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/kontakty">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="askme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form4" name="#" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы ЗАДАТЬ ВОПРОС">
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Задайте вопрос нашим консультантам</div><br>
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Название компании" required>
+
+                                <!--  <label for="userphone">Введите Ваш email <span>*</span></label>-->
+                                <input class="form_input__modal" name="Электронная почта" type="email" data-validate-field="email" placeholder="Электронная почта" required>
+                                <textarea class="form_input__modal" placeholder="Ваш вопрос" name="Сообщение" cols="30" rows="10" required></textarea>
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="/soglashenie">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+                        </form>
+                        <div id="success4">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+                                        <a href="tel:{{ this.theme.phone_lnk }}">8(800)2000-600</a>
+                                        <a href="mailto:{{ this.theme.email }}"> 8(800)2000-600</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/kontakty">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="testme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-8">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form4" name="#" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы ЗАДАТЬ ВОПРОС">
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Нам важно знать Ваше мнение о нашей работе</div><br>
+
+                                <div class="star-rating">
+                                    <div class="star-rating-title">Ваша оценка</div>
+                                    <div class="star-rating__wrap">
+                                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+                                    </div>
+                                </div>
+
+                                <!-- <label for="username">Введите Ваше имя <span>*</span></label>-->
+                                <input class="form_input__modal" name="Имя" type="text" placeholder="Название компании" required>
+
+                                <!--  <label for="userphone">Введите Ваш email <span>*</span></label>-->
+                                <input class="form_input__modal" name="Электронная почта" type="email" data-validate-field="email" placeholder="Электронная почта" required>
+                                <textarea class="form_input__modal" placeholder="Ваш отзыв" name="Текст отзыва" cols="30" rows="10" required></textarea>
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="custom_chek">
+                                    <div id="wb_Checkbox4">
+                                        <input type="checkbox" id="Checkbox4" name="Условия договора и политики конфиденциальности" value="Приняты" checked><label for="Checkbox4"></label>
+                                    </div>
+                                    <p>Я согласен на обработку моих персональных данных в соответствии с <a href="/soglashenie">Условиями</a></p>
+                                </div>
+
+                            </div>
+
+                        </form>
+                        <div id="success4">
+                            <div class="text_success"> Ваша заявка<br>успешно отправлена!</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+                                        <a href="tel:{{ this.theme.phone_lnk }}">8(800)2000-600</a>
+                                        <a href="mailto:{{ this.theme.email }}"> 8(800)2000-600</a>
+                                    </div>
+                                    <a class="modal-contacts__bottom" href="/kontakty">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
