@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>New site</title>
+
+
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+    <div class="container-lg">
+        <div class="header__top">
+            <a href="/" class="header__logo">
+                <img load="lazy " src="/img/logo.svg" alt="alt">
+            </a>
+            <div class="header__info">
+                <div class="header__wrp">
+                    <div class="header__tel">
+                        <a href="tel" :8800200600> <svg class="header__ic">
+                                <use xlink:href="img/sprite.svg#call"></use>
+                            </svg> 8(800)-200-600</a>
+                        <div class="header__tel-info">
+                            Звонок по России - бесплатный
+                        </div>
+                    </div>
+                </div>
+                <div class="header__btn c-btn btn-blue">Обратный звонок</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="menu_wrap">
+        <div class="container-lg">
+            <div class="menu_wrp">
+                <div class="wrapper">
+                    <a href="#mobile-menu" class="toggle-mnu"><span></span></a>
+                    <div class="header-wrap clearfix">
+                        <div class="top-mnu">
+                            <ul class="sf-menu">
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/objects.html">Объекты</a></li>
+                                <li><a class="dropdwn" href="/news.html">Новости</a>
+                                    <ul>
+                                        <li><a href="news.html">Статистика</a></li>
+                                        <li><a href="news.html">Новости законодательной базы ИЖС</a></li>
+                                        <li><a href="news.html">События</a></li>
+                                        <li><a href="news.html">Мероприятия</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/tehno.html">Дорожная карта</a></li>
+                                <li><a href="/tehno.html">Технологии строительства</a></li>
+                                <li><a href="/projecti-domov.html">Проекты домов</a></li>
+                                <li><a href="/gallery.html">Галерея</a></li>
+                                <li><a class="dropdwn" href="/about-com.html">Комитет</a>
+                                    <ul>
+                                        <li><a href="about-comitet.html">О комитете</a></li>
+                                        <li><a href="sostav-com.html">Состав комитета</a></li>
+                                        <li><a href="documents.html">Документы</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_wrp">
+                    <div class="mobile_buttons">
+
+                        <a href="https://api.whatsapp.com/send?phone=7916841397111111"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#ic1"></use>
+                            </svg></a>
+                        <a href="/contacts"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#ic5"></use>
+                            </svg></a>
+                        <a href="mailto:mail@mail.ru"> <svg class="ic_mob">
+                                <use xlink:href="./img/sprite.svg#ic3"></use>
+                            </svg></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="aside">
+    <div class="aside-block aside1" data-bs-placement="left" title="Заказать звонок" data-bs-toggle="modal" data-bs-tooltip="tooltip" data-bs-target="#callme">
+        <svg class="aside__ic">
+            <use xlink:href="img/sprite.svg#ic1"></use>
+        </svg>
+
+    </div>
+    <div class="aside-block aside2" href="#" data-bs-tooltip="tooltip" data-bs-placement="left" title="Задать вопрос" data-bs-toggle="modal" data-bs-target="#askme">
+        <svg class="aside__ic">
+            <use xlink:href="img/sprite.svg#ic2"></use>
+        </svg>
+
+    </div>
+    <a class="aside-block aside2" href="mailto:info@kupivozduh.com" data-bs-tooltip="tooltip" data-bs-placement="left" title="Написать письмо">
+        <svg class="aside__ic">
+            <use xlink:href="img/sprite.svg#ic3"></use>
+        </svg>
+
+    </a>
+    <a class="aside-block aside2" href="#ser5" data-bs-tooltip="tooltip" data-bs-placement="left" title="Свяжитесь с нами!">
+        <svg class="aside__ic">
+            <use xlink:href="img/sprite.svg#ic5"></use>
+        </svg>
+
+    </a>
+
+</div>
+
+        <div class="heading heading-page">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Заголовок первого уровня H1</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="/"><i class="fa fa-home">&nbsp; </i>Главная</a></li>
+                    <!--           <li><a href="/catalog.html">Услуги</a></li>-->
+                    <li>Хлебные крошки</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <main>
+            <div class="container-lg">
+    <div class="content">
+        <h2 class="content__h2">
+            Заголовок второго уровня
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur eveniet, delectus modi in quos esse, doloribus at et itaque qui commodi accusantium, provident a recusandae placeat possimus consequatur. Nihil!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur eveniet, delectus modi in quos esse, doloribus at et itaque qui commodi accusantium, provident a recusandae placeat possimus consequatur. Nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur eveniet, delectus modi in quos esse, doloribus at et itaque qui commodi accusantium, provident a recusandae placeat possimus consequatur. Nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur eveniet, delectus modi in quos esse, doloribus at et itaque qui commodi accusantium, provident a recusandae placeat possimus consequatur. Nihil!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur eveniet, delectus modi in quos esse, doloribus at et itaque qui commodi accusantium, provident a recusandae placeat possimus consequatur. Nihil!</p>
+    </div>
+</div>
+
+            <div class="container-lg">
+    <div class="map_wrp">
+       <div class="block-title">
+           Строящиеся объекты
+       </div>
+        <div id="map"></div>
+    </div>
+</div>
+
+            <div class="s-objects">
+    <div class="container-lg">
+        <div class="collect__arrows">
+        </div>
+        <div class="slider-objects">
+            <div>
+                <div class="object-item">
+                    <a class="object-item__img banner-shine" href="/house.html">
+                        <img loading="lazy" src="./img/house1.jpg" alt="">
+                    </a>
+                    <div class="object-item__wrp">
+                        <div class="object-item__builder">
+                            Девелопмент Юг
+                        </div>
+                        <div class="object-item__status object-item__status--green">Сдан</div>
+                    </div>
+                    <a class="object-item__title" href="/house.html">Проект каркасного дома “Нова”</a>
+                    <div class="object-item__place">г. Санкт-Петербург, Красногвардейский р-н</div>
+                    <a href="/house.html" class="news-item__btn c-btn btn-blue">
+                        Подробнее
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="object-item">
+                    <a class="object-item__img banner-shine" href="/house.html">
+                        <img loading="lazy" src="./img/house1.jpg" alt="">
+                    </a>
+                    <div class="object-item__wrp">
+                        <div class="object-item__builder">
+                            Девелопмент Юг
+                        </div>
+                        <div class="object-item__status object-item__status--green">Сдан</div>
+                    </div>
+                    <a class="object-item__title" href="/house.html">Проект каркасного дома “Нова”</a>
+                    <div class="object-item__place">г. Санкт-Петербург, Красногвардейский р-н</div>
+                    <a href="/house.html" class="news-item__btn c-btn btn-blue">
+                        Подробнее
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="object-item">
+                    <a class="object-item__img banner-shine" href="/house.html">
+                        <img loading="lazy" src="./img/house1.jpg" alt="">
+                    </a>
+                    <div class="object-item__wrp">
+                        <div class="object-item__builder">
+                            Девелопмент Юг
+                        </div>
+                        <div class="object-item__status object-item__status--green">Сдан</div>
+                    </div>
+                    <a class="object-item__title" href="/house.html">Проект каркасного дома “Нова”</a>
+                    <div class="object-item__place">г. Санкт-Петербург, Красногвардейский р-н</div>
+                    <a href="/house.html" class="news-item__btn c-btn btn-blue">
+                        Подробнее
+
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="object-item">
+                    <a class="object-item__img banner-shine" href="/house.html">
+                        <img loading="lazy" src="./img/house1.jpg" alt="">
+                    </a>
+                    <div class="object-item__wrp">
+                        <div class="object-item__builder">
+                            Девелопмент Юг
+                        </div>
+                        <div class="object-item__status object-item__status--green">Сдан</div>
+                    </div>
+                    <a class="object-item__title" href="/house.html">Проект каркасного дома “Нова”</a>
+                    <div class="object-item__place">г. Санкт-Петербург, Красногвардейский р-н</div>
+                    <a href="/house.html" class="news-item__btn c-btn btn-blue">
+                        Подробнее
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <footer class="footer">
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="footer__logo">
+                    <img loading="lazy" src="./img/logo-white.svg" alt="">
+                </div>
+                <form action="/search" method="get">
+                    <input class="footer__input" name="q" type="text" placeholder="Поиск по сайту" autocomplete="on">
+                    <button class="footer__btn" type="submit">
+                        <svg class="footer__ic">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+
+                    </button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="footer__heading">
+                            Главное меню
+                        </div>
+                        <ul class="footer__menu">
+                            <li><a href="#">Объекты</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Дорожная карта</a></li>
+                            <li><a href="#">Технологии строительства</a></li>
+                            <li><a href="#">Проекты домов</a></li>
+                            <li><a href="#">Галерея</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="footer__heading">
+                            Информация
+                        </div>
+                        <ul class="footer__menu">
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Пользовательское соглашение</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="col-sm-12">
+                <div class="footer__privacy">Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой статьями 437 ГК РФ.</div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="modal fade" id="askme" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-7">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="form_modal form3" name="#" method="post" action="mail/mail.php" enctype="multipart/form-data">
+                            <input type="hidden" name="admin_email[]" value="{{this.theme.email}}">
+                            <input type="hidden" name="form_subject" value="Сообщение с формы ЗАДАТЬ ВОПРОС">
+                            <div class="form-group_modal">
+
+                                <div class="modal-title">Задайте вопрос нашим консультантам</div><br>
+
+                                <label><span class="span-hidden">Введите имя</span> <input class="form_input__modal" name="Имя" type="text" placeholder="Имя" required></label>
+
+
+
+                                <label><span class="span-hidden">Введите email</span> <input class="form_input__modal" name="Электронная почта" type="email" placeholder="Электронная почта" data-validate-field="email"></label>
+                                <label> <textarea class="form_input__modal" placeholder="Ваш вопрос" name="Сообщение" cols="30" rows="10"></textarea></label>
+
+
+
+
+                            </div>
+                            <div class="form_group__bottom-modal">
+                                <input class="form_btn__modal" value="Oтправить" type="submit">
+                                <div class="cresults__agreement">
+                                    <div class="cresults__checkbox">
+                                        <label class="custom-checkbox">
+                                            <input class="checkbox-hidden" type="checkbox" name="Да" checked>
+                                            <span class="checkbox-wrap"></span>
+                                            <span class="checkbox-text">Нажимая на кнопку "Отправить" я принимаю <a href="#">Условия обработки персональных данных</a></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    <div class="col-sm-12 col-md-5 d-flex graypart">
+                        <div class="mc-wrp">
+                            <div class="modal-contacts">
+                                <div>
+                                    <div class="modal-contacts__heading">Также мы всегда
+                                        на&nbsp;связи по нашим
+                                        обычным контактам:</div>
+                                    <div class="modal-contacts__contacts">
+                                        <a href="tel:{{ this.theme.phone_lnk }}">8(800)2000-600</a>
+                                        <a href="mailto:{{ this.theme.email }}"> info@komitet.ru</a>
+                                    </div>
+
+                                    <a class="modal-contacts__bottom" href="/contacts.html">
+                                        <svg class="ic_modal">
+                                            <use xlink:href="img/sprite.svg#marker"></use>
+                                        </svg>
+
+                                        <span>Контакты</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.753544, 37.621211],
+                zoom: 4,
+                controls: []
+
+            });
+            myPlacemark1 = new ymaps.Placemark([55.761715, 37.570986], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark2 = new ymaps.Placemark([56.203067, 96.547666], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark3 = new ymaps.Placemark([55.748154, 37.804117], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark4 = new ymaps.Placemark([59.939099, 30.315877], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark5 = new ymaps.Placemark([59.939370, 30.377349], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark6 = new ymaps.Placemark([45.066806, 39.014947], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark7 = new ymaps.Placemark([45.015760, 38.966474], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark8 = new ymaps.Placemark([61.656524, 50.819807], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+
+            myPlacemark9 = new ymaps.Placemark([45.055824, 39.016016], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+
+            myPlacemark10 = new ymaps.Placemark([45.066806, 39.014947], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+            myPlacemark11 = new ymaps.Placemark([45.022768, 39.113627], {
+                // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                balloonContentBody: "<div class='ballon-body'> <div class = 'ballon-ttl'> Наименование объекта </div> <div class = 'ballon-more'> Lorem ipsum dolor sit amet, consectetur adipisicing elit.Ipsa in facere, earum, quam dicta similique </div><div class = 'ballon-img'><img src='/img/ballon.jpg'></div></div>",
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.'
+                hideIconOnBalloonOpen: false,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                //     iconImageHref: '/img/map.png',
+                // Размеры метки.
+                //  iconImageSize: [50, 64],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            });
+
+
+
+            myGeoObjects = [myPlacemark1, myPlacemark2, myPlacemark3, myPlacemark4, myPlacemark5, myPlacemark6, myPlacemark7, myPlacemark8, myPlacemark9, myPlacemark10, myPlacemark11];
+            clusterer = new ymaps.Clusterer();
+            clusterer.add(myGeoObjects);
+            myMap.geoObjects.add(clusterer);
+
+            var clusterIcons = [{
+                    href: 'static/imgs/placeholder.png',
+                    size: [53, 52],
+                    offset: [0, 0]
+                }],
+                clusterNumbers = [100],
+                clusterer = new ymaps.Clusterer({
+                    margin: [20],
+                    clusterIcons: clusterIcons,
+                    clusterDisableClickZoom: true,
+                    clusterNumbers: clusterNumbers
+                });
+            myMap.behaviors.enable('multiTouch');
+            myMap.controls.add('zoomControl');
+            myMap.behaviors.enable('drag');
+            myMap.behaviors.disable('scrollZoom');
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
